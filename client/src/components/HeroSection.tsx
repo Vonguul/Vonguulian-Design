@@ -16,7 +16,6 @@ export default function HeroSection() {
         style={{ backgroundImage: `url(${heroImage})` }}
       />
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
-      
       <div className="max-w-4xl mx-auto text-center relative z-10">
         <div className="relative inline-block mx-auto mb-6">
           <img 
@@ -50,7 +49,7 @@ export default function HeroSection() {
         >
           Transform your life with our curated digital products and expert consultation services
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap -mt-2.5">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap mt-[37px] mb-[37px]">
           <Button 
             onClick={() => scrollToSection('products')}
             variant="default"
