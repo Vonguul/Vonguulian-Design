@@ -240,14 +240,16 @@ export default function AboutUs() {
 
           {/* Historical Reference */}
           <div className="flex justify-center pt-12 mt-12 border-t border-black/10 dark:border-white/10">
-            <Button 
-              variant="outline"
-              size="lg"
-              className="rounded-full px-8"
-              data-testid="button-historical-reference"
-            >
-              Historical Reference
-            </Button>
+            <Link href="/history">
+              <Button 
+                variant="outline"
+                size="lg"
+                className="rounded-full px-8"
+                data-testid="button-historical-reference"
+              >
+                Historical Reference
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

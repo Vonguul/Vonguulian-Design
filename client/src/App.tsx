@@ -8,6 +8,7 @@ import BasicCheatsheets from "@/pages/BasicCheatsheets";
 import AboutUs from "@/pages/AboutUs";
 import VonguulFuture from "@/pages/VonguulFuture";
 import Catalog from "@/pages/Catalog";
+import History from "@/pages/History";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -18,6 +19,7 @@ function Router() {
       <Route path="/about" component={AboutUs} />
       <Route path="/future" component={VonguulFuture} />
       <Route path="/catalog" component={Catalog} />
+      <Route path="/history" component={History} />
       <Route component={NotFound} />
     </Switch>
   );
