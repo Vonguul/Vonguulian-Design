@@ -173,8 +173,7 @@ export default function ContactSection() {
                   size="lg"
                   disabled={false}
                   data-testid="button-send-message"
-                >
-                  {contactMutation.isPending ? "Sending..." : "Send Message"}
+                >Submit
                 </Button>
               </form>
             </Form>
