@@ -1,6 +1,7 @@
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { LucideIcon } from "lucide-react";
+import { Link } from "wouter";
 
 interface ProductCardProps {
   icon: LucideIcon;
@@ -11,9 +12,11 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ icon: Icon, title, description, price, purchaseLink = "#" }: ProductCardProps) {
+  const isInternalLink = purchaseLink?.startsWith("/");
+
   const handlePurchaseClick = () => {
     console.log(`Purchase clicked for ${title}`);
-    if (purchaseLink !== "#") {
+    if (purchaseLink !== "#" && !isInternalLink) {
       window.open(purchaseLink, '_blank');
     }
   };
@@ -40,14 +43,26 @@ export default function ProductCard({ icon: Icon, title, description, price, pur
         </p>
       </CardContent>
       <CardFooter>
-        <Button 
-          onClick={handlePurchaseClick}
-          className="w-full rounded-full"
-          variant="secondary"
-          data-testid={`button-purchase-${title.toLowerCase().replace(/\s+/g, '-')}`}
-        >
-          Purchase Now
-        </Button>
+        {isInternalLink ? (
+          <Link href={purchaseLink} className="w-full">
+            <Button 
+              className="w-full rounded-full"
+              variant="secondary"
+              data-testid={`button-purchase-${title.toLowerCase().replace(/\s+/g, '-')}`}
+            >
+              View Options
+            </Button>
+          </Link>
+        ) : (
+          <Button 
+            onClick={handlePurchaseClick}
+            className="w-full rounded-full"
+            variant="secondary"
+            data-testid={`button-purchase-${title.toLowerCase().replace(/\s+/g, '-')}`}
+          >
+            Purchase Now
+          </Button>
+        )}
       </CardFooter>
     </Card>
   );

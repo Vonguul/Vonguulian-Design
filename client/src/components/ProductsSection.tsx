@@ -33,7 +33,7 @@ export default function ProductsSection() {
             title="Basic Cheatsheet"
             description="Ideal for individuals who want a foundational understanding of the Human Design System"
             price="$40"
-            purchaseLink="#"
+            purchaseLink="/basic-cheatsheets"
           />
           <ProductCard
             icon={Palette}
