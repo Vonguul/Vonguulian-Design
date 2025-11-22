@@ -248,7 +248,7 @@ export default function AboutUs() {
                 Historical Reference
               </Button>
             </Link>
-            <Link href="/">
+            <Link href="/health">
               <Button 
                 variant="outline"
                 size="lg"
