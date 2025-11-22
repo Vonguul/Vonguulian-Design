@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowLeft, ChevronUp, Home } from "lucide-react";
 import { useEffect } from "react";
 import { useNavigation } from "@/hooks/useNavigation";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function AboutUs() {
   const { goBack, scrollToTop } = useNavigation();
@@ -272,6 +273,7 @@ export default function AboutUs() {
           </section>
         </div>
       </div>
+      <ScrollToTopButton />
     </div>
   );
 }

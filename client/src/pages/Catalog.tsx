@@ -5,6 +5,7 @@ import { Youtube, Instagram, Twitter, Mail } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
 import { useEffect } from "react";
 import { useNavigation } from "@/hooks/useNavigation";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function Catalog() {
   const { goBack, scrollToTop } = useNavigation();
@@ -247,6 +248,7 @@ export default function Catalog() {
           </section>
         </div>
       </div>
+      <ScrollToTopButton />
     </div>
   );
 }

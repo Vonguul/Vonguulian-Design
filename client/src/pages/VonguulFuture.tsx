@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowLeft, ChevronUp, Home } from "lucide-react";
 import { useEffect } from "react";
 import { useNavigation } from "@/hooks/useNavigation";
+import ScrollToTopButton from "@/components/ScrollToTopButton";
 
 export default function VonguulFuture() {
   const { goBack, scrollToTop } = useNavigation();
@@ -186,6 +187,7 @@ export default function VonguulFuture() {
           </section>
         </div>
       </div>
+      <ScrollToTopButton />
     </div>
   );
 }
