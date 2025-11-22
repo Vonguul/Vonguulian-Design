@@ -248,7 +248,7 @@ export default function AboutUs() {
                 Historical Reference
               </Button>
             </Link>
-            <Link href="/vonguul-future">
+            <Link href="/future">
               <Button 
                 variant="outline"
                 size="lg"
