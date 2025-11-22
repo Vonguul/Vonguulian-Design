@@ -62,11 +62,11 @@ export default function Catalog() {
                 <p className="text-muted-foreground mb-6">
                   One-on-one sessions designed to align your goals with your vision. Includes Blueprint Consultation and Alignment Coaching.
                 </p>
-                <a href="#contact" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>
+                <Link href="/#contact">
                   <Button variant="outline" data-testid="button-book-consultation">
                     Book a Session
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </section>
@@ -140,11 +140,11 @@ export default function Catalog() {
                 <p className="text-muted-foreground mb-6">
                   Participate in Vonguulian businesses and ventures. Share in the prosperity of our "mines" as they grow and generate returns for our members.
                 </p>
-                <a href="#contact" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>
+                <Link href="/#contact">
                   <Button variant="outline" data-testid="button-investment-info">
                     Learn More
                   </Button>
-                </a>
+                </Link>
               </div>
 
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 hover-elevate">
@@ -152,11 +152,11 @@ export default function Catalog() {
                 <p className="text-muted-foreground mb-6">
                   Access expert advice on building wealth, managing resources, and achieving financial freedom aligned with Vonguulian values.
                 </p>
-                <a href="#contact" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>
+                <Link href="/#contact">
                   <Button variant="outline" data-testid="button-financial-guidance">
                     Get Started
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </section>
@@ -186,11 +186,11 @@ export default function Catalog() {
                 <p className="text-muted-foreground mb-6">
                   We are continuously building partnerships with organizations that share our vision for progress, integrity, and community empowerment.
                 </p>
-                <a href="#contact" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>
+                <Link href="/#contact">
                   <Button variant="outline" data-testid="button-partnership-inquiry">
                     Inquire About Partnerships
                   </Button>
-                </a>
+                </Link>
               </div>
             </div>
           </section>
@@ -207,11 +207,11 @@ export default function Catalog() {
                   Back to Home
                 </Button>
               </Link>
-              <a href="#contact" onClick={() => document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })}>
+              <Link href="/#contact">
                 <Button variant="outline" size="lg" data-testid="button-contact-us">
                   Contact Us
                 </Button>
-              </a>
+              </Link>
             </div>
           </section>
         </div>
