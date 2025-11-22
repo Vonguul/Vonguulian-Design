@@ -14,12 +14,9 @@ export default function AboutUs() {
               Back to Home
             </Button>
           </Link>
-          <h1 className="font-serif text-5xl md:text-6xl font-bold text-white mb-4" data-testid="text-page-title">
-            About Vonguulian Design
-          </h1>
+          <h1 className="font-serif text-5xl md:text-6xl font-bold text-white mb-4" data-testid="text-page-title">About Vonguul</h1>
         </div>
       </div>
-
       {/* Content */}
       <div className="py-24 px-4 bg-white dark:bg-black">
         <div className="max-w-4xl mx-auto space-y-12">
