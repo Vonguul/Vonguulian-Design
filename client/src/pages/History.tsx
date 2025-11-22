@@ -495,51 +495,7 @@ export default function History() {
               </div>
             </div>
 
-            {/* X-Factor Summary */}
-            <div className="mt-8">
-              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">X-Factor – Summary</h3>
-              
-              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 space-y-6">
-                <div className="space-y-4 text-muted-foreground">
-                  <p>
-                    Vonguul's X-Factor isn't intended to be surmised as just history. For those who know me and how I operate, know that I am especially skilled at reverse engineering information. With such a large database of different ideas, experiences, and outcomes, creating a system that works for us isn't a fantasy story. This is not a dream, this is not a myth, we may not be able to present ourselves to our full potential today, but with consistent focused effort towards an effective goal we can exceed the expectations of our potential.
-                  </p>
-                  <p>
-                    No more begging, no more scamming, no more losing a winnable battle, no more thinking that big bro loves you, no more hiding the fact that the world we live in is ugly, no more expecting that the government can be trusted.
-                  </p>
-                  <p className="font-bold text-primary italic">
-                    God said this is disgusting and somebody has to clean it up.
-                  </p>
-                </div>
-
-                <div className="border-t border-black/10 dark:border-white/10 pt-6">
-                  <h4 className="font-bold text-primary mb-4">Actionable Next Steps</h4>
-                  <p className="text-sm mb-6">Begin your journey with our organization through these strategic pathways to exponential growth</p>
-                  
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div className="bg-primary/5 rounded-lg p-4">
-                      <h5 className="font-bold text-primary mb-3">Purchase Services</h5>
-                      <ul className="list-disc list-inside space-y-2 text-sm">
-                        <li>Explore our service catalog</li>
-                        <li>Select the options that align with your goals</li>
-                        <li>Complete any necessary forms</li>
-                        <li>Schedule your personalized growth consultation (if needed)</li>
-                      </ul>
-                    </div>
-
-                    <div className="bg-primary/5 rounded-lg p-4">
-                      <h5 className="font-bold text-primary mb-3">Join Community</h5>
-                      <ul className="list-disc list-inside space-y-2 text-sm">
-                        <li>Attend an introductory session to experience our approach</li>
-                        <li>Connect with us via Patreon or Discord for updates</li>
-                        <li>Participate in projects that showcase value</li>
-                        <li>Contribute to our commitment with a donation</li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </section>
         </div>
       </div>
