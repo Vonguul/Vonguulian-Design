@@ -5,12 +5,12 @@ import { ArrowLeft } from "lucide-react";
 
 export default function BasicCheatsheets() {
   const cheatsheets = [
-    { id: 1, title: "Foundational Human Design Cheatsheet", url: "#" },
-    { id: 2, title: "Manifestor Cheatsheet", url: "#" },
-    { id: 3, title: "Generator Cheatsheet", url: "#" },
-    { id: 4, title: "Manifesting Generator Cheatsheet", url: "#" },
-    { id: 5, title: "Projector Cheatsheet", url: "#" },
-    { id: 6, title: "Reflector Cheatsheet", url: "#" },
+    { id: 1, title: "Foundational Human Design Cheatsheet", url: "https://vonguulian.gumroad.com/l/HumDesCS" },
+    { id: 2, title: "Manifestor Cheatsheet", url: "https://vonguulian.gumroad.com/l/ManiCS" },
+    { id: 3, title: "Generator Cheatsheet", url: "https://vonguulian.gumroad.com/l/GenCS" },
+    { id: 4, title: "Manifesting Generator Cheatsheet", url: "https://vonguulian.gumroad.com/l/MGCS" },
+    { id: 5, title: "Projector Cheatsheet", url: "https://vonguulian.gumroad.com/l/ProCS" },
+    { id: 6, title: "Reflector Cheatsheet", url: "https://vonguulian.gumroad.com/l/RefCS" },
   ];
 
   return (
