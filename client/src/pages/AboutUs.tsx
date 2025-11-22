@@ -236,8 +236,8 @@ export default function AboutUs() {
             </div>
           </section>
 
-          {/* Historical Reference */}
-          <div className="flex justify-center pt-12 mt-12 border-t border-black/10 dark:border-white/10">
+          {/* Historical Reference & Future Ambition */}
+          <div className="flex justify-center gap-4 pt-12 mt-12 border-t border-black/10 dark:border-white/10">
             <Link href="/history">
               <Button 
                 variant="outline"
@@ -246,6 +246,16 @@ export default function AboutUs() {
                 data-testid="button-historical-reference"
               >
                 Historical Reference
+              </Button>
+            </Link>
+            <Link href="/vonguul-future">
+              <Button 
+                variant="outline"
+                size="lg"
+                className="rounded-full px-8"
+                data-testid="button-future-ambition"
+              >
+                Future Ambition
               </Button>
             </Link>
           </div>
