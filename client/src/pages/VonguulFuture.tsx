@@ -22,7 +22,6 @@ export default function VonguulFuture() {
           <p className="text-xl text-muted-foreground">Actionable Options & The Future Steps to Come</p>
         </div>
       </div>
-
       {/* Content */}
       <div className="py-24 px-4 bg-white dark:bg-black">
         <div className="max-w-4xl mx-auto space-y-16">
@@ -49,7 +48,7 @@ export default function VonguulFuture() {
                 <p className="text-muted-foreground mb-4">For those ready to deepen their commitment:</p>
                 <ul className="space-y-2 text-muted-foreground list-disc list-inside">
                   <li>Join our targeted Apprenticeship Programs</li>
-                  <li>Receive guidance from approved Vonguulian leaders</li>
+                  <li>Receive guidance from approved leaders</li>
                   <li>Access resources tailored to your individual potential</li>
                   <li>Create success from within our network</li>
                 </ul>
