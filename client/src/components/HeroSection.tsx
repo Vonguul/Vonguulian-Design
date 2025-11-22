@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import { Link } from "wouter";
 import heroImage from "@assets/Human Design Image_1763816146354.jpg";
 import logo from "@assets/Vonguulian Elite LogoClean_1763815831683.png";
 
@@ -35,7 +36,7 @@ export default function HeroSection() {
         >
           Transform your life with our curated digital products and expert consultation services
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
           <Button 
             onClick={() => scrollToSection('products')}
             variant="default"
@@ -54,6 +55,16 @@ export default function HeroSection() {
           >
             Book Consultation
           </Button>
+          <Link href="/about">
+            <Button 
+              variant="outline"
+              size="lg"
+              className="rounded-full px-8 border-2 border-primary text-primary bg-black/30 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground"
+              data-testid="button-dive-deeper"
+            >
+              Dive Deeper
+            </Button>
+          </Link>
         </div>
       </div>
     </section>
