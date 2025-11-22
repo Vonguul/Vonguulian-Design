@@ -1,8 +1,12 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft } from "lucide-react";
+import { useEffect } from "react";
 
 export default function VonguulFuture() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
       {/* Header */}
