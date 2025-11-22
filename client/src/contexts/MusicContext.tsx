@@ -16,11 +16,11 @@ interface MusicContextType {
 const MusicContext = createContext<MusicContextType | undefined>(undefined);
 
 const TRACK_MAP: Record<string, string> = {
-  '/about': '/assets/music/birthwrit.wav',
-  '/history': '/assets/music/war_of_the_profits.wav',
-  '/health': '/assets/music/demons.wav',
-  '/future': '/assets/music/remember_me.wav',
-  '/catalog': '/assets/music/intuition.wav',
+  '/about': '/assets/music/birthwrit.mp3',
+  '/history': '/assets/music/war_of_the_profits.mp3',
+  '/health': '/assets/music/demons.mp3',
+  '/future': '/assets/music/remember_me.mp3',
+  '/catalog': '/assets/music/intuition.mp3',
 };
 
 const DEFAULT_VOLUME = 0.1; // 10%
