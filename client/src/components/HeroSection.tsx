@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import heroImage from "@assets/Default_spiritual_consultation_service_ad_artwork_1763815776862.jpg";
+import heroImage from "@assets/Human Design Image_1763816146354.jpg";
 import logo from "@assets/Vonguulian Elite LogoClean_1763815831683.png";
 
 export default function HeroSection() {
