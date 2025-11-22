@@ -25,7 +25,7 @@ export default function HeroSection() {
             className="w-64 md:w-80 mx-auto opacity-95"
             data-testid="img-logo"
           />
-          <div className="absolute inset-0 flex items-end justify-center pb-8">
+          <div className="absolute inset-0 flex items-end justify-center pb-4">
             <Link href="/about">
               <Button 
                 variant="outline"
