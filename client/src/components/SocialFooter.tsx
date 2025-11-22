@@ -1,17 +1,18 @@
-import { Facebook, Instagram, Twitter, Linkedin, Mail } from "lucide-react";
+import { Youtube, Instagram, Twitter, Mail } from "lucide-react";
+import { SiTiktok } from "react-icons/si";
 
 interface SocialLink {
-  icon: typeof Facebook;
+  icon: typeof Youtube | typeof SiTiktok;
   href: string;
   label: string;
 }
 
 export default function SocialFooter() {
   const socialLinks: SocialLink[] = [
-    { icon: Facebook, href: "#", label: "Facebook" },
+    { icon: Youtube, href: "#", label: "YouTube" },
     { icon: Instagram, href: "#", label: "Instagram" },
     { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: Linkedin, href: "#", label: "LinkedIn" },
+    { icon: SiTiktok, href: "#", label: "TikTok" },
     { icon: Mail, href: "#", label: "Email" },
   ];
 
