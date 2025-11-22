@@ -3,6 +3,8 @@ import { queryClient } from "./lib/queryClient";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
+import { MusicProvider } from "@/contexts/MusicContext";
+import MusicControls from "@/components/MusicControls";
 import Home from "@/pages/Home";
 import BasicCheatsheets from "@/pages/BasicCheatsheets";
 import AboutUs from "@/pages/AboutUs";
@@ -31,8 +33,14 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <TooltipProvider>
-        <Toaster />
-        <Router />
+        <MusicProvider>
+          {/* Fixed music controls in top-right corner */}
+          <div className="fixed top-4 right-4 z-50">
+            <MusicControls />
+          </div>
+          <Toaster />
+          <Router />
+        </MusicProvider>
       </TooltipProvider>
     </QueryClientProvider>
   );
