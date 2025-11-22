@@ -47,7 +47,7 @@ export default function ServiceCard({ icon: Icon, title, description, price, boo
           </ul>
         )}
       </CardContent>
-      <CardFooter>
+      <CardFooter className="-mb-2.5">
         <Button 
           onClick={handleBookingClick}
           className="w-full rounded-full"
