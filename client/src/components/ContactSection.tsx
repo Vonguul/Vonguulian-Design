@@ -9,8 +9,7 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { insertContactMessageSchema } from "@shared/schema";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
-import { useMutation } from "@tanstack/react-query";
-import { apiRequest } from "@/lib/queryClient";
+import { useState } from "react";
 
 const contactFormSchema = insertContactMessageSchema.extend({
   email: z.string().email("Please enter a valid email address"),
@@ -20,6 +19,7 @@ type ContactFormData = z.infer<typeof contactFormSchema>;
 
 export default function ContactSection() {
   const { toast } = useToast();
+  const [isSubmitting, setIsSubmitting] = useState(false);
   
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
@@ -31,28 +31,43 @@ export default function ContactSection() {
     },
   });
 
-  const contactMutation = useMutation({
-    mutationFn: async (data: ContactFormData) => {
-      return apiRequest("POST", "/api/contact", data);
-    },
-    onSuccess: () => {
-      toast({
-        title: "Message sent!",
-        description: "We'll get back to you as soon as possible.",
+  const onSubmit = async (data: ContactFormData) => {
+    setIsSubmitting(true);
+    try {
+      const formData = new FormData();
+      formData.append("access_key", "8df90923-a6bc-4db5-babc-71661d4ae12f");
+      formData.append("from_name", data.fullName);
+      formData.append("email", data.email);
+      formData.append("service_interest", data.serviceInterest);
+      formData.append("message", data.message);
+
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: formData,
       });
-      form.reset();
-    },
-    onError: () => {
+
+      if (response.ok) {
+        toast({
+          title: "Message sent!",
+          description: "We'll get back to you as soon as possible.",
+        });
+        form.reset();
+      } else {
+        toast({
+          title: "Error",
+          description: "Failed to send message. Please try again.",
+          variant: "destructive",
+        });
+      }
+    } catch (error) {
       toast({
         title: "Error",
         description: "Failed to send message. Please try again.",
         variant: "destructive",
       });
-    },
-  });
-
-  const onSubmit = (data: ContactFormData) => {
-    contactMutation.mutate(data);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -167,10 +182,10 @@ export default function ContactSection() {
                   type="submit" 
                   className="w-full rounded-full"
                   size="lg"
-                  disabled={contactMutation.isPending}
+                  disabled={isSubmitting}
                   data-testid="button-send-message"
                 >
-                  {contactMutation.isPending ? "Sending..." : "Send Message"}
+                  {isSubmitting ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </Form>
