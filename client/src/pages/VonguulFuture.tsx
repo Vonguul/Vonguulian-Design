@@ -71,7 +71,7 @@ export default function VonguulFuture() {
                 <h3 className="font-serif text-2xl font-bold mb-4 text-primary">Immediate Actions You Can Take</h3>
                 <p className="text-muted-foreground mb-4">While we build the future, here's how you can support Vonguul today:</p>
                 <ul className="space-y-2 text-muted-foreground list-disc list-inside">
-                  <li>Patronize our businesses and services (our "mines" in Vonguul terminology)</li>
+                  <li>Patronize our businesses and services (our "mines" in Vonguulian terminology)</li>
                   <li>Utilize our Cheatsheets for personal development and learning</li>
                   <li>Explore Consultation Services through our Blueprint Consultation offering</li>
                   <li>Engage in Alignment Coaching to clarify your path forward</li>
