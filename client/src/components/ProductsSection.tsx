@@ -38,7 +38,7 @@ export default function ProductsSection() {
           <ProductCard
             icon={Palette}
             title="Custom Cheatsheet"
-            description="Ideal for individuals want to focus on their own personal development *Purchase before Blueprint Consultation"
+            description="Ideal for individuals who want to focus on their own personal development *Purchase before Blueprint Consultation"
             price="$80"
             purchaseLink="#"
           />

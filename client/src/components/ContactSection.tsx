@@ -38,16 +38,13 @@ export default function ContactSection() {
       formData.append("access_key", "d85adb9d-78ef-4f4b-8793-ddc0c1634515");
       formData.append("from_name", data.fullName);
       formData.append("email", data.email);
-      formData.append("subject", `New inquiry: ${data.serviceInterest}`);
-      formData.append("message", `Service Interest: ${data.serviceInterest}\n\n${data.message}`);
+      formData.append("service_interest", data.serviceInterest);
+      formData.append("message", data.message);
 
       const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         body: formData,
       });
-
-      const result = await response.json();
-      console.log("Web3Forms response:", result);
 
       if (response.ok) {
         toast({
@@ -56,15 +53,13 @@ export default function ContactSection() {
         });
         form.reset();
       } else {
-        console.error("Web3Forms error:", result);
         toast({
           title: "Error",
-          description: result.message || "Failed to send message. Please try again.",
+          description: "Failed to send message. Please try again.",
           variant: "destructive",
         });
       }
     } catch (error) {
-      console.error("Contact form error:", error);
       toast({
         title: "Error",
         description: "Failed to send message. Please try again.",
@@ -171,7 +166,7 @@ export default function ContactSection() {
                       <FormLabel className="uppercase text-xs tracking-wider">Message</FormLabel>
                       <FormControl>
                         <Textarea 
-                          placeholder="Tell us about your interests..." 
+                          placeholder="If submitting an inquiry for a Custom Cheatsheet include your Date of Birth, Place of Birth, and Time of Birth... Otherwise tell us how we can help you" 
                           {...field} 
                           rows={5}
                           className="border-2 focus-visible:border-primary resize-none"
