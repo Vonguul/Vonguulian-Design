@@ -46,7 +46,7 @@ export default function ProductCard({ icon: Icon, title, description, price, pur
           {price}
         </p>
       </CardContent>
-      <CardFooter className="-mb-2.5">
+      <CardFooter>
         {isInternalLink ? (
           <Link href={purchaseLink} className="w-full">
             <Button 

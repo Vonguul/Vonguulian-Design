@@ -50,7 +50,7 @@ export default function HeroSection() {
         >
           Transform your life with our curated digital products and expert consultation services
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap">
+        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center flex-wrap -mt-2.5">
           <Button 
             onClick={() => scrollToSection('products')}
             variant="default"
