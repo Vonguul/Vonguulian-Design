@@ -167,8 +167,18 @@ export default function VonguulFuture() {
                   Explore Our Offerings
                 </Button>
               </Link>
-              <Link href="/#contact">
-                <Button variant="outline" size="lg" data-testid="button-get-in-touch">
+              <Link href="/">
+                <Button 
+                  variant="outline" 
+                  size="lg" 
+                  onClick={() => {
+                    setTimeout(() => {
+                      const element = document.getElementById("contact");
+                      element?.scrollIntoView({ behavior: "smooth" });
+                    }, 100);
+                  }}
+                  data-testid="button-get-in-touch"
+                >
                   Get In Touch
                 </Button>
               </Link>
