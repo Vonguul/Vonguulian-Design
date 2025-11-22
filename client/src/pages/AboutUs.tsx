@@ -165,9 +165,7 @@ export default function AboutUs() {
                 <div className="space-y-6">
                   <div>
                     <h4 className="font-semibold text-primary mb-2">Leadership Council</h4>
-                    <p className="text-muted-foreground">
-                      A strategic decision-making body with representatives from all core divisions: Administration, Education, Health, Technology, and X-Factor initiatives. This council ensures that all aspects of Vonguul operate in alignment with our core mission and values.
-                    </p>
+                    <p className="text-muted-foreground">A strategic decision-making body with representatives from all core divisions: Administration, Education, Health, Technology, and Security initiatives. This council ensures that all aspects of Vonguul operate in alignment with our core mission and values.</p>
                   </div>
                   <div>
                     <h4 className="font-semibold text-primary mb-2">Divisional Teams</h4>
