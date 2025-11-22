@@ -40,7 +40,7 @@ export default function ProductsSection() {
             title="Custom Cheatsheet"
             description="Ideal for individuals who want to focus on their own personal development *Purchase before Blueprint Consultation"
             price="$80"
-            purchaseLink="#"
+            purchaseLink="#contact"
           />
         </div>
       </div>

@@ -13,10 +13,14 @@ interface ProductCardProps {
 
 export default function ProductCard({ icon: Icon, title, description, price, purchaseLink = "#" }: ProductCardProps) {
   const isInternalLink = purchaseLink?.startsWith("/");
+  const isHashLink = purchaseLink?.startsWith("#");
 
   const handlePurchaseClick = () => {
     console.log(`Purchase clicked for ${title}`);
-    if (purchaseLink !== "#" && !isInternalLink) {
+    if (isHashLink) {
+      const element = document.querySelector(purchaseLink);
+      element?.scrollIntoView({ behavior: "smooth" });
+    } else if (purchaseLink !== "#" && !isInternalLink) {
       window.open(purchaseLink, '_blank');
     }
   };
@@ -60,7 +64,7 @@ export default function ProductCard({ icon: Icon, title, description, price, pur
             variant="secondary"
             data-testid={`button-purchase-${title.toLowerCase().replace(/\s+/g, '-')}`}
           >
-            Purchase Now
+            {isHashLink ? "Get Started" : "Purchase Now"}
           </Button>
         )}
       </CardFooter>
