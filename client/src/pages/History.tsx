@@ -18,16 +18,16 @@ export default function History() {
       {/* Content */}
       <div className="py-24 px-4 bg-white dark:bg-black">
         <div className="max-w-4xl mx-auto space-y-16">
-          {/* X-Factor */}
+          {/* Historical Foundations */}
           <section data-testid="section-history-xfactor">
-            <h2 className="font-serif text-3xl font-bold mb-6 text-primary">X-Factor</h2>
+            <h2 className="font-serif text-3xl font-bold mb-6 text-primary">Historical Foundations</h2>
             <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
               <p>
                 Maybe except for the tech section, many of the concepts and ideas that Vonguul promotes have been attempted before, and the question becomes what is Vonguul doing different? What is the secret sauce that we bring to the table?
               </p>
 
               <p>
-                Respect to our predecessors, our X-Factor comes from the abundant history we have of their accolades, their victories and challenges faced. With that history we can learn from what worked, what didn't work, and how we can go further this time. From Malcolm X and Martin Luther King Jr to Huey P Newton and Bobby Seale. We are talking about civil rights movements, self defense initiatives, and community outreach programs. We are talking about equipping ourselves with the adequate amount of knowledge needed, to justify the necessary amount of action we will be required to apply.
+                Respect to our predecessors, our historical foundations come from the abundant history we have of their accolades, their victories and challenges faced. With that history we can learn from what worked, what didn't work, and how we can go further this time. From Malcolm X and Martin Luther King Jr to Huey P Newton and Bobby Seale. We are talking about civil rights movements, self defense initiatives, and community outreach programs. We are talking about equipping ourselves with the adequate amount of knowledge needed, to justify the necessary amount of action we will be required to apply.
               </p>
 
               <p>
@@ -35,13 +35,13 @@ export default function History() {
               </p>
 
               <p>
-                We have had the blueprint for a while, and all we need is the right plan to navigate the obstacles we will face. I can't in good conscious, give all the details of what our X-Factor is, but what I can do is share a bit of history that, though we won't reenact, we have drawn inspiration from.
+                We have had the blueprint for a while, and all we need is the right plan to navigate the obstacles we will face. I can't in good conscious, give all the details of our strategic approach, but what I can do is share a bit of history that, though we won't reenact, we have drawn inspiration from.
               </p>
             </div>
 
             {/* Black Panther Party */}
             <div className="mt-8">
-              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">X-Factor – History – Black Panther Party</h3>
+              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">Historical Foundations – Black Panther Party</h3>
               
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
                 <h4 className="font-bold text-primary mb-4">Foundation & Context</h4>
@@ -154,7 +154,7 @@ export default function History() {
 
             {/* Martin Luther King Jr */}
             <div className="mt-8">
-              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">X-Factor – History – Martin Luther King Jr.</h3>
+              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">Historical Foundations – Martin Luther King Jr.</h3>
               
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8">
                 <div className="space-y-6 text-muted-foreground">
@@ -190,7 +190,7 @@ export default function History() {
 
             {/* Malcolm X */}
             <div className="mt-8">
-              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">X-Factor – History – Malcolm X</h3>
+              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">Historical Foundations – Malcolm X</h3>
               
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
                 <h4 className="font-bold text-primary mb-4">Core Philosophy: Black Nationalism and Self-Defense "By Any Means Necessary"</h4>
@@ -227,7 +227,7 @@ export default function History() {
 
             {/* MLK vs Malcolm X Comparison */}
             <div className="mt-8">
-              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">X-Factor – History – MLK Jr vs Malcolm X</h3>
+              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">Historical Foundations – MLK Jr vs Malcolm X</h3>
               
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8 overflow-x-auto">
                 <table className="w-full text-muted-foreground text-sm">
@@ -289,7 +289,7 @@ export default function History() {
 
             {/* The Venus Project */}
             <div className="mt-8">
-              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">X-Factor – History – The Venus Project</h3>
+              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">Historical Foundations – The Venus Project</h3>
               
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
                 <h4 className="font-bold text-primary mb-4">What is The Venus Project?</h4>
@@ -336,7 +336,7 @@ export default function History() {
 
             {/* Black Wallstreet */}
             <div className="mt-8">
-              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">X-Factor – History – Black Wallstreet</h3>
+              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">Historical Foundations – Black Wallstreet</h3>
               
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
                 <h4 className="font-bold text-primary mb-4">The Rise: A Self-Sufficient African American Community</h4>
@@ -397,7 +397,7 @@ export default function History() {
 
             {/* Gaddafi */}
             <div className="mt-8">
-              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">X-Factor – History – Gaddafi</h3>
+              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">Historical Foundations – Gaddafi</h3>
               
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
                 <h4 className="font-bold text-primary mb-4">Rise to Power</h4>
@@ -494,8 +494,6 @@ export default function History() {
                 </div>
               </div>
             </div>
-
-            
           </section>
         </div>
       </div>
