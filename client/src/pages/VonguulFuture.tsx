@@ -1,23 +1,50 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, ChevronUp, Home } from "lucide-react";
 import { useEffect } from "react";
+import { useNavigation } from "@/hooks/useNavigation";
 
 export default function VonguulFuture() {
+  const { goBack, scrollToTop } = useNavigation();
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
       {/* Header */}
-      <div className="bg-black dark:bg-black py-12 px-4">
+      <div className="bg-black dark:bg-black py-12 px-4 sticky top-0 z-40">
         <div className="max-w-4xl mx-auto">
-          <Link href="/about">
-            <Button variant="ghost" className="mb-6 text-white hover:bg-white/10" data-testid="button-back-about">
+          <div className="flex gap-2 mb-6">
+            <Button 
+              variant="ghost" 
+              className="text-white hover:bg-white/10" 
+              onClick={goBack}
+              data-testid="button-back-history"
+            >
               <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to About
+              Back
             </Button>
-          </Link>
+            <Link href="/">
+              <Button 
+                variant="ghost" 
+                className="text-white hover:bg-white/10"
+                data-testid="button-go-home"
+              >
+                <Home className="w-4 h-4 mr-2" />
+                Home
+              </Button>
+            </Link>
+            <Button 
+              variant="ghost" 
+              className="text-white hover:bg-white/10"
+              onClick={scrollToTop}
+              data-testid="button-scroll-top"
+            >
+              <ChevronUp className="w-4 h-4 mr-2" />
+              Top
+            </Button>
+          </div>
           <h1 className="font-serif text-5xl md:text-6xl font-bold text-white mb-4" data-testid="text-page-title">Stare Into The Abyss</h1>
           <p className="text-xl text-muted-foreground">Actionable Options & The Future Steps to Come</p>
         </div>
