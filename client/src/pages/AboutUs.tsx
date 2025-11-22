@@ -236,7 +236,7 @@ export default function AboutUs() {
             </div>
           </section>
 
-          {/* Historical Reference & Future Ambition */}
+          {/* Historical Reference & Today's Date & Future Ambition */}
           <div className="flex justify-center gap-4 pt-12 mt-12 border-t border-black/10 dark:border-white/10">
             <Link href="/history">
               <Button 
@@ -246,6 +246,16 @@ export default function AboutUs() {
                 data-testid="button-historical-reference"
               >
                 Historical Reference
+              </Button>
+            </Link>
+            <Link href="/">
+              <Button 
+                variant="outline"
+                size="lg"
+                className="rounded-full px-8"
+                data-testid="button-todays-date"
+              >
+                Today's Date
               </Button>
             </Link>
             <Link href="/future">
