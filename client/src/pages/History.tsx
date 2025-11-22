@@ -394,6 +394,152 @@ export default function History() {
                 </div>
               </div>
             </div>
+
+            {/* Gaddafi */}
+            <div className="mt-8">
+              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">X-Factor – History – Gaddafi</h3>
+              
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
+                <h4 className="font-bold text-primary mb-4">Rise to Power</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    Gaddafi was born in 1942 near Sirte, Libya, to a Bedouin family. He was a fervent Arab nationalist and admired Egyptian President Gamal Abdel Nasser. While a young army officer, he formed the Free Officers Movement, a secret group of revolutionaries dedicated to overthrowing the pro-Western monarchy of King Idris I.
+                  </p>
+                  <p>
+                    On September 1, 1969, Gaddafi and his men launched a nearly bloodless coup while the king was abroad for medical treatment. He was just 27 years old. The coup was popular, as many Libyans felt the monarchy had benefited from the nation's oil wealth while leaving the general population poor.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
+                <h4 className="font-bold text-primary mb-4">The "Jamahiriya" and The Green Book</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    Gaddafi rejected traditional systems of democracy and monarchy. Instead, he created his own unique political system outlined in his three-volume collection, The Green Book.
+                  </p>
+                  <ul className="list-disc list-inside space-y-2 mt-3">
+                    <li><strong>Jamahiriya:</strong> In 1977, he declared Libya a "Jamahiriya," which translates to "state of the masses." In theory, this was a direct democracy governed by local people's councils. It was an autocracy where all power was concentrated in Gaddafi's hands. He held no official title, styling himself as a "Brotherly Leader and Guide of the Revolution."</li>
+                    <li><strong>The Green Book:</strong> This book was his political manifesto, critiquing Western democracy and communism while proposing his "Third Universal Theory." It was mandatory reading in Libyan schools and was the basis for the country's laws, though its ideas were often bizarre and impractical.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
+                <h4 className="font-bold text-primary mb-4">42 Years of Paradox: Gaddafi's Rule</h4>
+                <div className="space-y-6 text-muted-foreground">
+                  <div>
+                    <h5 className="font-semibold text-primary mb-3">The "Positive" Side (as promoted by his regime)</h5>
+                    <ul className="list-disc list-inside space-y-2">
+                      <li><strong>Social Welfare:</strong> Using Libya's vast oil wealth, Gaddafi invested heavily in social programs. He introduced free education and free healthcare, dramatically raising literacy rates and life expectancy.</li>
+                      <li><strong>Infrastructure:</strong> He initiated massive infrastructure projects, the most famous of which is the Great Man-Made River Project, an enormous network of pipes that pumps fossil water from aquifers deep in the desert to coastal cities.</li>
+                      <li><strong>Women's Rights:</strong> Compared to many other Arab nations, Gaddafi promoted women's rights. Women were encouraged to pursue education and join the workforce. He famously employed an all-female contingent of elite bodyguards.</li>
+                      <li><strong>Anti-Imperialism:</strong> He was a staunch opponent of Western influence and colonialism, which earned him respect in some parts of the developing world.</li>
+                    </ul>
+                  </div>
+
+                  <div>
+                    <h5 className="font-semibold text-primary mb-3">The Dark Side (The Dictatorship)</h5>
+                    <ul className="list-disc list-inside space-y-2">
+                      <li><strong>Brutal Repression:</strong> There was no political freedom or freedom of speech. Dissent was crushed mercilessly. Political opponents were tortured, imprisoned, or killed. Public executions were common.</li>
+                      <li><strong>Cult of Personality:</strong> Gaddafi built an immense cult of personality around himself. His portrait was everywhere, and his speeches were broadcast for hours on state television.</li>
+                      <li><strong>State-Sponsored Terrorism:</strong> For years, Libya was designated a state sponsor of terrorism. The most notorious example was the 1988 Lockerbie bombing, where a Pan Am flight was blown up over Scotland, killing 270 people. A Libyan intelligence agent was eventually convicted.</li>
+                      <li><strong>Corruption and Nepotism:</strong> While the country had oil wealth, it was controlled by Gaddafi, his family, and his inner circle, leading to widespread corruption.</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
+                <h4 className="font-bold text-primary mb-4">International Relations: Pariah to Partner and Back</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <p className="font-semibold mb-2">Gaddafi's relationship with the world was volatile.</p>
+                  <ul className="list-disc list-inside space-y-3">
+                    <li><strong>Pariah State (1980s-1990s):</strong> After the Lockerbie bombing and other terrorist acts, Libya faced international sanctions and isolation. In 1986, the U.S. bombed Tripoli and Benghazi to kill Gaddafi, which failed.</li>
+                    <li><strong>Rehabilitation (2000s):</strong> In a dramatic turnaround, Gaddafi sought to end his isolation. He accepted responsibility for Lockerbie, dismantled his weapons of mass destruction programs, and shared intelligence with the West on terrorist groups. Leaders like Tony Blair, Silvio Berlusconi, and Condoleezza Rice visited Libya, and the country was welcomed back into the international community.</li>
+                  </ul>
+                  <div className="bg-primary/10 dark:bg-primary/5 border border-primary rounded-lg p-4 mt-4">
+                    <p className="italic text-sm">
+                      This is very important to take notice of, and to also remember that the victors write the history books, a fundamental flaw in the current approach to history. Even if you surrender, you will still be considered a threat to be removed.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
+                <h4 className="font-bold text-primary mb-4">The Fall</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    In February 2011, inspired by the Arab Spring uprisings in Tunisia and Egypt, protests broke out in Libya. Gaddafi's response was swift and brutal, vowing to hunt down the protesters "door to door" and "show no mercy."
+                  </p>
+                  <p>
+                    This triggered a full-blown civil war. The United Nations authorized a no-fly zone to protect civilians, which was enforced by a NATO-led coalition. The intervention quickly expanded to active air support for the rebel forces.
+                  </p>
+                  <p>
+                    After months of fierce fighting, rebel forces captured the capital, Tripoli, in August 2011. On October 20, 2011, Gaddafi was captured, brutally beaten, and killed by rebels in his hometown of Sirte. His final moments were filmed on a cell phone and broadcast globally.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8">
+                <h4 className="font-bold text-primary mb-4">Legacy and the Aftermath</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    Gaddafi left behind a deeply divided country with no functioning political institutions. His removal created a power vacuum that Libya has never recovered from. The country has been in a state of near-constant civil war, plagued by rival governments, Islamist militias, and human trafficking.
+                  </p>
+                  <p className="font-semibold mb-2">His legacy is intensely debated:</p>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>To his supporters, he was a revolutionary hero who stood up to the West and lifted Libya out of poverty.</li>
+                    <li>To his detractors, he was a cruel, eccentric tyrant who murdered his own people and ruled through fear.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* X-Factor Summary */}
+            <div className="mt-8">
+              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">X-Factor – Summary</h3>
+              
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 space-y-6">
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    Vonguul's X-Factor isn't intended to be surmised as just history. For those who know me and how I operate, know that I am especially skilled at reverse engineering information. With such a large database of different ideas, experiences, and outcomes, creating a system that works for us isn't a fantasy story. This is not a dream, this is not a myth, we may not be able to present ourselves to our full potential today, but with consistent focused effort towards an effective goal we can exceed the expectations of our potential.
+                  </p>
+                  <p>
+                    No more begging, no more scamming, no more losing a winnable battle, no more thinking that big bro loves you, no more hiding the fact that the world we live in is ugly, no more expecting that the government can be trusted.
+                  </p>
+                  <p className="font-bold text-primary italic">
+                    God said this is disgusting and somebody has to clean it up.
+                  </p>
+                </div>
+
+                <div className="border-t border-black/10 dark:border-white/10 pt-6">
+                  <h4 className="font-bold text-primary mb-4">Actionable Next Steps</h4>
+                  <p className="text-sm mb-6">Begin your journey with our organization through these strategic pathways to exponential growth</p>
+                  
+                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div className="bg-primary/5 rounded-lg p-4">
+                      <h5 className="font-bold text-primary mb-3">Purchase Services</h5>
+                      <ul className="list-disc list-inside space-y-2 text-sm">
+                        <li>Explore our service catalog</li>
+                        <li>Select the options that align with your goals</li>
+                        <li>Complete any necessary forms</li>
+                        <li>Schedule your personalized growth consultation (if needed)</li>
+                      </ul>
+                    </div>
+
+                    <div className="bg-primary/5 rounded-lg p-4">
+                      <h5 className="font-bold text-primary mb-3">Join Community</h5>
+                      <ul className="list-disc list-inside space-y-2 text-sm">
+                        <li>Attend an introductory session to experience our approach</li>
+                        <li>Connect with us via Patreon or Discord for updates</li>
+                        <li>Participate in projects that showcase value</li>
+                        <li>Contribute to our commitment with a donation</li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </section>
         </div>
       </div>
