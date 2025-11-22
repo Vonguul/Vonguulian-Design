@@ -133,7 +133,7 @@ export default function VonguulFuture() {
               The future of Vonguul is built by those who choose to participate today. Whether you're looking to learn, grow, or become part of something greater, there's a place for you in our organized nation.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/">
+              <Link href="/catalog">
                 <Button variant="default" size="lg" data-testid="button-explore-offerings">
                   Explore Our Offerings
                 </Button>
