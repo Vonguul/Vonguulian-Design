@@ -21,9 +21,21 @@ export default function HeroSection() {
         <img 
           src={logo} 
           alt="Vonguulian" 
-          className="w-64 md:w-80 mx-auto mb-8 opacity-95"
+          className="w-64 md:w-80 mx-auto mb-6 opacity-95"
           data-testid="img-logo"
         />
+        <div className="mb-8">
+          <Link href="/about">
+            <Button 
+              variant="outline"
+              size="lg"
+              className="rounded-full px-8 border-2 border-primary text-primary bg-black/30 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground"
+              data-testid="button-dive-deeper"
+            >
+              Dive Deeper
+            </Button>
+          </Link>
+        </div>
         <h1 
           className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
           data-testid="text-hero-title"
@@ -55,16 +67,6 @@ export default function HeroSection() {
           >
             Book Consultation
           </Button>
-          <Link href="/about">
-            <Button 
-              variant="outline"
-              size="lg"
-              className="rounded-full px-8 border-2 border-primary text-primary bg-black/30 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground"
-              data-testid="button-dive-deeper"
-            >
-              Dive Deeper
-            </Button>
-          </Link>
         </div>
       </div>
     </section>
