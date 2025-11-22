@@ -9,6 +9,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { insertContactMessageSchema } from "@shared/schema";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
+import { useMutation } from "@tanstack/react-query";
+import { apiRequest } from "@/lib/queryClient";
 
 const contactFormSchema = insertContactMessageSchema.extend({
   email: z.string().email("Please enter a valid email address"),
@@ -29,34 +31,28 @@ export default function ContactSection() {
     },
   });
 
-  const onSubmit = async (data: ContactFormData) => {
-    try {
-      const formData = new FormData();
-      formData.append("access_key", "f4efa05c-c1b4-43b8-8b36-1e98fda8b9c3");
-      formData.append("fullName", data.fullName);
-      formData.append("email", data.email);
-      formData.append("serviceInterest", data.serviceInterest);
-      formData.append("message", data.message);
-
-      const response = await fetch("https://api.web3forms.com/submit", {
-        method: "POST",
-        body: formData,
+  const contactMutation = useMutation({
+    mutationFn: async (data: ContactFormData) => {
+      return apiRequest("POST", "/api/contact", data);
+    },
+    onSuccess: () => {
+      toast({
+        title: "Message sent!",
+        description: "We'll get back to you as soon as possible.",
       });
-
-      if (response.ok) {
-        toast({
-          title: "Message sent!",
-          description: "We'll get back to you as soon as possible.",
-        });
-        form.reset();
-      }
-    } catch (error) {
+      form.reset();
+    },
+    onError: () => {
       toast({
         title: "Error",
         description: "Failed to send message. Please try again.",
         variant: "destructive",
       });
-    }
+    },
+  });
+
+  const onSubmit = (data: ContactFormData) => {
+    contactMutation.mutate(data);
   };
 
   return (
@@ -171,9 +167,10 @@ export default function ContactSection() {
                   type="submit" 
                   className="w-full rounded-full"
                   size="lg"
-                  disabled={false}
+                  disabled={contactMutation.isPending}
                   data-testid="button-send-message"
-                >Submit
+                >
+                  {contactMutation.isPending ? "Sending..." : "Send Message"}
                 </Button>
               </form>
             </Form>
