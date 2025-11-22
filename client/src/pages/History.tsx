@@ -192,11 +192,206 @@ export default function History() {
             <div className="mt-8">
               <h3 className="font-serif text-2xl font-bold mb-6 text-primary">X-Factor – History – Malcolm X</h3>
               
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
+                <h4 className="font-bold text-primary mb-4">Core Philosophy: Black Nationalism and Self-Defense "By Any Means Necessary"</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>As the national spokesman for the Nation of Islam (NOI) for most of his public career, Malcolm advocated for Black political, economic, and social independence.</li>
+                    <li>He was deeply critical of King's nonviolent approach, arguing that Black people had the right and responsibility to defend themselves "by any means necessary" against violent white aggression. He called it "intelligence" to protect oneself.</li>
+                    <li>He preached Black pride, self-reliance, and was unafraid to identify the root of America's racial problem as systemic and institutional.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
+                <h4 className="font-bold text-primary mb-4">Ultimate Goal: Separation and Independence (Early Years)</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>Initially, Malcolm and the NOI did not seek integration. They believed it was impossible and undesirable. Instead, they advocated for a separate Black nation or state in America.</li>
+                    <li>He viewed white people as a collective enemy and was highly skeptical of their ability to ever grant true freedom and equality to Black people.</li>
+                  </ul>
+                </div>
+              </div>
+
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8">
-                <h4 className="font-bold text-primary mb-3">Core Philosophy: Black Nationalism and Self-Defense "By Any Means Necessary"</h4>
-                <p className="text-muted-foreground">
-                  Malcolm X represented a fundamentally different approach to Black liberation, emphasizing self-reliance, pride in Black identity, and the right to self-defense without apology.
-                </p>
+                <h4 className="font-bold text-primary mb-4">Key Organizations & Events</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <ul className="list-disc list-inside space-y-2">
+                    <li><strong>Nation of Islam (NOI):</strong> Where he rose to prominence.</li>
+                    <li><strong>"The Ballot or the Bullet" Speech (1964):</strong> A powerful speech arguing for Black political empowerment and self-defense.</li>
+                    <li><strong>Autobiography of Malcolm X:</strong> A seminal book that detailed his life and evolving philosophy.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* MLK vs Malcolm X Comparison */}
+            <div className="mt-8">
+              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">X-Factor – History – MLK Jr vs Malcolm X</h3>
+              
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8 overflow-x-auto">
+                <table className="w-full text-muted-foreground text-sm">
+                  <thead>
+                    <tr className="border-b border-black/10 dark:border-white/10">
+                      <th className="text-left py-3 px-2 font-bold text-primary">Feature</th>
+                      <th className="text-left py-3 px-2 font-bold text-primary">Martin Luther King Jr.</th>
+                      <th className="text-left py-3 px-2 font-bold text-primary">Malcolm X</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr className="border-b border-black/10 dark:border-white/10">
+                      <td className="py-3 px-2 font-semibold">Philosophy</td>
+                      <td className="py-3 px-2">Nonviolent Civil Disobedience</td>
+                      <td className="py-3 px-2">Self-Defense "By Any Means Necessary"</td>
+                    </tr>
+                    <tr className="border-b border-black/10 dark:border-white/10">
+                      <td className="py-3 px-2 font-semibold">Goal</td>
+                      <td className="py-3 px-2">Integration into a multiracial society</td>
+                      <td className="py-3 px-2">Black Nationalism, Separation (initially)</td>
+                    </tr>
+                    <tr className="border-b border-black/10 dark:border-white/10">
+                      <td className="py-3 px-2 font-semibold">View of Whites</td>
+                      <td className="py-3 px-2">Saw potential for allies and change</td>
+                      <td className="py-3 px-2">Viewed as the historical oppressor</td>
+                    </tr>
+                    <tr className="border-b border-black/10 dark:border-white/10">
+                      <td className="py-3 px-2 font-semibold">Religious Influence</td>
+                      <td className="py-3 px-2">Protestant Christianity</td>
+                      <td className="py-3 px-2">Nation of Islam (later Sunni Islam)</td>
+                    </tr>
+                    <tr>
+                      <td className="py-3 px-2 font-semibold">Primary Base</td>
+                      <td className="py-3 px-2">The Black church and the rural South</td>
+                      <td className="py-3 px-2">Urban youth and Northern ghettos</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
+                <h4 className="font-bold text-primary mb-4">Malcolm X's Transformation</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    After leaving the Nation of Islam in 1964, Malcolm made the Hajj pilgrimage to Mecca. There, he saw Muslims of all colors—white, Black, brown—praying and living together as equals. This experience shattered his belief that all white people were inherently evil. He returned to America with a new, more inclusive outlook. He began to speak of international human rights and expressed a willingness to work with other civil rights leaders, including Dr. King. He was no longer strictly a separatist but a revolutionary humanist.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8">
+                <h4 className="font-bold text-primary mb-4">Martin Luther King Jr.'s Radicalization</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    In his final years, King also became more radical. He saw that passing laws wasn't enough. He began to connect racism with economic inequality and launched the Poor People's Campaign, a multiracial coalition to fight poverty. He also became one of the most prominent opponents of the Vietnam War, understanding that militarism abroad was linked to violence and poverty at home. He was moving from a focus on civil rights to a broader critique of the entire American system.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* The Venus Project */}
+            <div className="mt-8">
+              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">X-Factor – History – The Venus Project</h3>
+              
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
+                <h4 className="font-bold text-primary mb-4">What is The Venus Project?</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    The Venus Project is an organization founded by Jacque Fresco (1916-2017), a self-taught industrial designer, social engineer, and futurist. It operates as a research and educational center located in Venus, Florida.
+                  </p>
+                  <p>
+                    At its core, The Venus Project advocates for a Resource-Based Economy (RBE). This is the central pillar of its philosophy.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
+                <h4 className="font-bold text-primary mb-4">The Core Concept: A Resource-Based Economy (RBE)</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    An RBE is a system where all goods and services are available to everyone without the use of money, credit, barter, or any form of debt or servitude. Instead of being driven by profit, the economy is managed by the automated monitoring of the planet's resources.
+                  </p>
+                  <p className="font-semibold mb-2">Key features of an RBE include:</p>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li><strong>No Money or Property:</strong> Money, credit, and the concept of private property (as we know it) are eliminated. Instead, the world's resources are declared the common heritage of all people.</li>
+                    <li><strong>Automation and Cybernation:</strong> The majority of labor, including mundane and dangerous jobs, is automated. This frees humanity from repetitive toil and allows for a higher standard of living for everyone.</li>
+                    <li><strong>Scientific Management of Resources:</strong> A centralized, AI-driven system would survey the planet's resources (minerals, water, energy, etc.) and manage their use in the most sustainable and efficient way possible. Decisions are not made by politicians or corporations, but by scientific data and the carrying capacity of the Earth.</li>
+                    <li><strong>Focus on Needs, Not Wants:</strong> The system's primary goal is to meet the needs of every human being—clean air, water, food, housing, healthcare, and education—while preserving the environment.</li>
+                  </ul>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8">
+                <h4 className="font-bold text-primary mb-4">What Would a Venus Project Society Look Like?</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    Fresco and his team spent decades designing detailed models and blueprints of what this future would look like.
+                  </p>
+                  <ul className="list-disc list-inside space-y-3">
+                    <li><strong>Circular Cities:</strong> The vision involves building entirely new, self-sufficient cities designed in a circular pattern. This layout minimizes waste and transportation needs. The cities would be divided into different zones: Central Dome (for social, cultural, and educational activities), Agricultural Belt (for hydroponic and aeroponic food production), Residential Zone (housing integrated with parks and natural landscapes), and Energy Belt (using clean, renewable sources like solar, wind, and geothermal power).</li>
+                    <li><strong>Transportation:</strong> Fully automated, electric vehicles and high-speed maglev trains would provide seamless, integrated public transportation, eliminating the need for private cars.</li>
+                    <li><strong>Daily Life:</strong> With automation handling production and resource management, people would be free to pursue their interests—science, art, education, exploration, and social relationships. The emphasis would shift from "jobs" and "careers" to lifelong learning and contribution.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            {/* Black Wallstreet */}
+            <div className="mt-8">
+              <h3 className="font-serif text-2xl font-bold mb-6 text-primary">X-Factor – History – Black Wallstreet</h3>
+              
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
+                <h4 className="font-bold text-primary mb-4">The Rise: A Self-Sufficient African American Community</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    In the early 20th century, Tulsa's Greenwood District was a thriving, self-sufficient African American community. Following the oil boom in Oklahoma, the city was booming, and segregation laws forced Black residents to create their own economic ecosystem. This segregation, born of oppression, ironically became the foundation for Black prosperity.
+                  </p>
+                  <p className="font-semibold mb-2">What made it so successful?</p>
+                  <ul className="list-disc list-inside space-y-3">
+                    <li><strong>Self-Reliance:</strong> The community had its own everything. Black dollars were spent at Black-owned businesses and circulated within the community dozens of times before leaving.</li>
+                    <li><strong>Entrepreneurial Spirit:</strong> The district was home to over 300 Black-owned businesses, including: Financial Institutions (two Black-owned banks, including the nation's largest, the Dollar Savings Bank), Retail (grocery stores, clothing shops, jewelry stores, and funeral homes), Services (law offices, doctor's offices, a modern hospital, and a library), Media (two newspapers, including the Tulsa Star), and Entertainment (hotels, theaters, and a famous jazz scene).</li>
+                    <li><strong>Education and Wealth:</strong> The community had a high rate of Black homeownership and a strong school system. It was a place of immense Black pride, intellectual achievement, and wealth. The famous educator Booker T. Washington visited and reportedly called it the "Negro Wall Street of America."</li>
+                  </ul>
+                  <p className="mt-4">
+                    Greenwood was a testament to what was possible in a deeply segregated nation. It was a safe, prosperous, and vibrant community where Black families could build a life of dignity and success.
+                  </p>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8 mb-8">
+                <h4 className="font-bold text-primary mb-4">The Fall: The Tulsa Race Massacre (31 Hours of Terror)</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    On May 31 and June 1, 1921, the entire community was decimated in one of the worst acts of racial violence in American history.
+                  </p>
+                  <p className="font-semibold mb-2">The Catalyst:</p>
+                  <p>
+                    The violence was sparked by a rumor. A young Black man named Dick Rowland tripped and fell in an elevator, accidentally brushing against the white elevator operator, Sarah Page. A clerk who witnessed the fall misconstrued the event as an assault. The next day, the Tulsa Tribune ran a sensational, inflammatory front-page story titled "Nab Negro for Attacking Girl in an Elevator."
+                  </p>
+                  <p className="font-semibold mb-2 mt-4">The Escalation:</p>
+                  <ol className="list-decimal list-inside space-y-2">
+                    <li><strong>Confrontation at the Courthouse:</strong> An angry white mob gathered outside the courthouse, intent on lynching Rowland. A group of Black men from Greenwood, many of whom were World War I veterans, went to the courthouse armed and offered to help the sheriff protect Rowland.</li>
+                    <li><strong>The Shot Heard 'Round the Courthouse:</strong> In the chaos that evening, a white man tried to disarm a Black veteran. A shot was fired, and the mob descended on the outnumbered Black men, chasing them back toward Greenwood.</li>
+                    <li><strong>The Invasion:</strong> The white mob, now numbering in the thousands and deputized by city officials, swarmed into the Greenwood District. They were given weapons and ammunition, looting homes and businesses, setting them on fire one by one.</li>
+                    <li><strong>Aerial Attack:</strong> In a horrifying and unprecedented act, private planes were used to drop turpentine bombs and firebombs from the sky, making the Tulsa Race Massacre the first and only time American citizens have been aerially bombed on U.S. soil by their fellow citizens.</li>
+                    <li><strong>Systematic Murder:</strong> People were shot in their homes, in the streets, and as they tried to flee. The violence was not random; it was a coordinated, systematic destruction of an entire community.</li>
+                  </ol>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8">
+                <h4 className="font-bold text-primary mb-4">The Aftermath and Legacy</h4>
+                <div className="space-y-4 text-muted-foreground">
+                  <p className="font-semibold mb-2">The Cover-Up:</p>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li><strong>The Cost:</strong> The official death toll at the time was 36 (10 white and 26 Black). Modern historians estimate the true number is between 100 and 300 people, with the vast majority of victims being Black.</li>
+                    <li><strong>Economic Devastation:</strong> Over 35 square blocks were destroyed. More than 1,250 homes were burned, leaving nearly 9,000 people homeless. Over 200 businesses were destroyed, and the economic loss would be worth over $30 million today (over $400 million adjusted for inflation).</li>
+                    <li><strong>Systematic Erasure:</strong> In the days that followed, no white person was ever prosecuted for the violence. Instead, city officials blamed the Black community. For decades, the massacre was systematically erased from history books and public conversation. Survivors were terrorized into silence.</li>
+                  </ul>
+                  <p className="font-semibold mb-2 mt-4">Modern Efforts:</p>
+                  <ul className="list-disc list-inside space-y-2">
+                    <li>In 1997, the Tulsa Race Riot Commission was formed to investigate the massacre. Their final report confirmed the city's complicity and recommended reparations for survivors and their descendants.</li>
+                    <li>Greenwood Rising: A state-of-the-art history center was built in 2021 on the centennial of the massacre to tell the story of Greenwood's rise, fall, and resilience.</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </section>
