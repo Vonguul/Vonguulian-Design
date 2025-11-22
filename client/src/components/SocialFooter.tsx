@@ -9,10 +9,10 @@ interface SocialLink {
 
 export default function SocialFooter() {
   const socialLinks: SocialLink[] = [
-    { icon: Youtube, href: "#", label: "YouTube" },
-    { icon: Instagram, href: "#", label: "Instagram" },
-    { icon: Twitter, href: "#", label: "Twitter" },
-    { icon: SiTiktok, href: "#", label: "TikTok" },
+    { icon: Youtube, href: "https://www.youtube.com/@offbarvonguul", label: "YouTube" },
+    { icon: Instagram, href: "https://www.instagram.com/offbar1/", label: "Instagram" },
+    { icon: Twitter, href: "https://x.com/OffBar1", label: "Twitter" },
+    { icon: SiTiktok, href: "http://tiktok.com/@offbahrvonguul", label: "TikTok" },
     { icon: Mail, href: "#", label: "Email" },
   ];
 
