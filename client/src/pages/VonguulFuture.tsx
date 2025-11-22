@@ -41,7 +41,6 @@ export default function VonguulFuture() {
                   <li>Access Online Video Courses at your own pace</li>
                   <li>Explore Human Design information through our Cheatsheets</li>
                 </ul>
-                <p className="text-muted-foreground mt-4 text-sm">Entry Level: Rank 36.9 (Level 1 of 12) - Open to all who resonate with the Vonguulian Code of Conduct</p>
               </div>
 
               {/* Level 2 */}
