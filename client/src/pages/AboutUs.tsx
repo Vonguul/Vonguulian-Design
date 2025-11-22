@@ -161,27 +161,33 @@ export default function AboutUs() {
               <p className="text-lg text-muted-foreground mb-8">
                 Our governance structure is built on accountability, transparency, and the protection of our members. Explore the details of how we operate, or dive deeper into our actionable options and future vision.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/future">
+              <div className="flex flex-col sm:flex-row gap-4 w-full">
+                <Link href="/future" className="flex-1">
                   <Button 
                     variant="default" 
                     size="lg"
+                    className="w-full"
                     data-testid="button-stare-abyss"
                   >
                     Stare Into The Abyss
                   </Button>
                 </Link>
-                <Button 
-                  variant="outline" 
-                  size="lg"
+                <button 
                   onClick={() => {
                     const element = document.getElementById("admin-details");
                     element?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  data-testid="button-learn-more-admin"
+                  className="flex-1"
                 >
-                  Learn More
-                </Button>
+                  <Button 
+                    variant="outline" 
+                    size="lg"
+                    className="w-full"
+                    data-testid="button-learn-more-admin"
+                  >
+                    Learn More
+                  </Button>
+                </button>
               </div>
             </div>
 
