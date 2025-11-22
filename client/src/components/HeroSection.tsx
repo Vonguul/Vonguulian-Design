@@ -18,23 +18,25 @@ export default function HeroSection() {
       <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/60 to-black/80" />
       
       <div className="max-w-4xl mx-auto text-center relative z-10">
-        <img 
-          src={logo} 
-          alt="Vonguulian" 
-          className="w-64 md:w-80 mx-auto mb-6 opacity-95"
-          data-testid="img-logo"
-        />
-        <div className="mb-8">
-          <Link href="/about">
-            <Button 
-              variant="outline"
-              size="lg"
-              className="rounded-full px-8 border-2 border-primary text-primary bg-black/30 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground"
-              data-testid="button-dive-deeper"
-            >
-              Dive Deeper
-            </Button>
-          </Link>
+        <div className="relative inline-block mx-auto mb-6">
+          <img 
+            src={logo} 
+            alt="Vonguulian" 
+            className="w-64 md:w-80 mx-auto opacity-95"
+            data-testid="img-logo"
+          />
+          <div className="absolute inset-0 flex items-center justify-center">
+            <Link href="/about">
+              <Button 
+                variant="outline"
+                size="lg"
+                className="rounded-full px-8 border-2 border-primary text-primary bg-black/30 backdrop-blur-sm hover:bg-primary hover:text-primary-foreground"
+                data-testid="button-dive-deeper"
+              >
+                Dive Deeper
+              </Button>
+            </Link>
+          </div>
         </div>
         <h1 
           className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6"
