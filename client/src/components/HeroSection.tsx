@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import heroImage from "@assets/Human Design Image_1763816146354.jpg";
+import heroImage from "@assets/gemini-2.5-flash-image_Create_a_visually_pleasing_picture_to_be_used_as_a_backdrop_for_a_website_that_c-0_1763840509780.jpg";
 import logo from "@assets/Vonguulian Elite LogoClean_1763815831683.png";
 
 export default function HeroSection() {
