@@ -6,7 +6,7 @@ export default function ConsultationSection() {
     <section id="consultation" className="py-24 px-4 bg-secondary dark:bg-secondary">
       <div className="max-w-6xl mx-auto">
         <h2 
-          className="font-serif text-4xl md:text-5xl font-bold text-center mb-4"
+          className="font-serif text-4xl md:text-5xl font-bold text-center mb-4 text-[#ffc534]"
           data-testid="text-consultation-title"
         >
           Consultation Services
