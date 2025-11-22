@@ -122,6 +122,117 @@ export default function AboutUs() {
               </p>
             </div>
           </section>
+
+          {/* Administration Deep Dive & Future Vision */}
+          <section data-testid="section-administration-detail" className="border-t border-black/10 dark:border-white/10 pt-12">
+            <div className="mb-8">
+              <h2 className="font-serif text-3xl font-bold mb-6 text-primary">Vonguulian Administration</h2>
+              <p className="text-lg text-muted-foreground mb-8">
+                Our governance structure is built on accountability, transparency, and the protection of our members. Explore the details of how we operate, or dive deeper into our actionable options and future vision.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Link href="/future">
+                  <Button 
+                    variant="default" 
+                    size="lg"
+                    data-testid="button-stare-abyss"
+                  >
+                    Stare Into The Abyss
+                  </Button>
+                </Link>
+                <Button 
+                  variant="outline" 
+                  size="lg"
+                  onClick={() => {
+                    const element = document.getElementById("admin-details");
+                    element?.scrollIntoView({ behavior: "smooth" });
+                  }}
+                  data-testid="button-learn-more-admin"
+                >
+                  Learn More
+                </Button>
+              </div>
+            </div>
+
+            {/* Organizational Structure */}
+            <div id="admin-details" className="space-y-8">
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8">
+                <h3 className="font-serif text-2xl font-bold mb-6 text-primary">Organizational Structure</h3>
+                <div className="space-y-6">
+                  <div>
+                    <h4 className="font-semibold text-primary mb-2">Leadership Council</h4>
+                    <p className="text-muted-foreground">
+                      A strategic decision-making body with representatives from all core divisions: Administration, Education, Health, Technology, and X-Factor initiatives. This council ensures that all aspects of Vonguul operate in alignment with our core mission and values.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-primary mb-2">Divisional Teams</h4>
+                    <p className="text-muted-foreground">
+                      Specialized groups focused on their respective pillars. Each division is empowered to innovate and execute within their domain while maintaining connection to the broader Vonguulian mission.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-primary mb-2">Member Communities</h4>
+                    <p className="text-muted-foreground">
+                      Regional and interest-based groups that foster collaboration, support, and mutual prosperity. These communities are the heart of Vonguul, creating spaces where members can grow together.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              {/* Checks & Balances */}
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8">
+                <h3 className="font-serif text-2xl font-bold mb-6 text-primary">Checks & Balances</h3>
+                <p className="text-muted-foreground mb-4">
+                  We maintain a rigorous framework to ensure accountability, member protection, and continuous improvement:
+                </p>
+                <ul className="space-y-3 text-muted-foreground list-disc list-inside">
+                  <li><strong>Governance Framework:</strong> Clear accountability measures with defined roles and responsibilities at every level</li>
+                  <li><strong>Performance Metrics:</strong> Regular tracking of organizational and member growth to ensure we're advancing toward our vision</li>
+                  <li><strong>Feedback Systems:</strong> Continuous improvement mechanisms and member satisfaction surveys to refine our approach</li>
+                  <li><strong>Member Protection Protocols:</strong> Safeguards ensuring the safety, well-being, and rights of all Vonguulians</li>
+                  <li><strong>Financial Transparency:</strong> Regular audits and open reporting on how our "mines" (businesses) are performing and how proceeds are distributed</li>
+                </ul>
+              </div>
+
+              {/* Membership Levels & Contribution */}
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8">
+                <h3 className="font-serif text-2xl font-bold mb-6 text-primary">Membership Ranks & Progression</h3>
+                <p className="text-muted-foreground mb-4">
+                  Your journey in Vonguul is determined by your commitment and contribution:
+                </p>
+                <div className="space-y-4 text-muted-foreground">
+                  <div className="border-l-4 border-primary pl-4">
+                    <p className="font-semibold">Rank 36.9 (Level 1 of 12)</p>
+                    <p className="text-sm">Entry level for all new Vonguulians. Access to foundational learning resources and community. You are tested on character and mind before joining.</p>
+                  </div>
+                  <div className="border-l-4 border-primary pl-4">
+                    <p className="font-semibold">Levels 2-12</p>
+                    <p className="text-sm">Progression through contribution and impact. Each level reflects deeper involvement in our mission and greater access to opportunities and resources within Vonguul.</p>
+                  </div>
+                  <p className="text-sm italic mt-4">
+                    Advancement is earned through meaningful contribution—whether through business support, education initiatives, community leadership, or other forms of participation aligned with your strengths and interests.
+                  </p>
+                </div>
+              </div>
+
+              {/* The Core Plan */}
+              <div className="bg-primary/10 dark:bg-primary/5 border border-primary rounded-lg p-8">
+                <h3 className="font-serif text-2xl font-bold mb-6 text-primary">The Sustainable Model</h3>
+                <div className="space-y-4 text-muted-foreground">
+                  <p>
+                    <strong>The Core Plan:</strong> We own profitable businesses (our "mines") and distribute proceeds amongst our organized nation. This creates a sustainable economic engine that funds our educational initiatives, community support, and long-term vision.
+                  </p>
+                  <p>
+                    <strong>Longevity & Sustainability:</strong> Beyond the core business model, we invest in systems that ensure Vonguul thrives for generations. This includes education, technology infrastructure, health initiatives, and governance structures built to adapt and endure.
+                  </p>
+                  <p className="text-sm italic">
+                    This requires sacrifice. Most won't want to be first, but most won't mind being second—when they see the vision working firsthand as a beneficiary.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
     </div>
