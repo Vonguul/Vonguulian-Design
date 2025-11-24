@@ -51,7 +51,7 @@ export default function NewsletterSection() {
         Stay Connected
       </h3>
       <p className="text-muted-foreground mb-6" data-testid="text-newsletter-description">
-        Subscribe to our newsletter for educational content about Human Design, updates on Vonguulian philosophy, and occasional product announcements. We respect your inbox and send monthly or as needed.
+        Keeping you connected to everything Vonguul-related. Updates, News, Educational Updates, and even Special Offers can be found in the newsletter. It isn't released on a set schedule so you don't have to worry about being spammed. The only automation is the welcome letter, other than that, every email received will be meaningful and worth your valuable time.
       </p>
       <form onSubmit={handleSubmit} className="flex flex-col sm:flex-row gap-3" data-testid="form-newsletter">
         <Input
