@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import BottomNavigation from "@/components/BottomNavigation";
+import NewsletterSection from "@/components/NewsletterSection";
 
 export default function AboutUs() {
   return (
@@ -229,6 +230,9 @@ export default function AboutUs() {
                   </p>
                 </div>
               </div>
+
+              {/* Newsletter Section */}
+              <NewsletterSection />
             </div>
           </section>
 
