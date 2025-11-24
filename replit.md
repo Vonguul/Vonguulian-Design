@@ -22,6 +22,12 @@ Preferred communication style: Simple, everyday language.
 - **Rich article cards**: Each article displays title, excerpt, read time, tags, and category badge for easy browsing and filtering.
 - **Call-to-action integration**: Direct link to consultation booking from the Resources section to encourage user engagement.
 - **Fully responsive design**: Resources page optimized for desktop and mobile with proper grid layout and navigation.
+- **Hidden discovery link**: Resources page accessible via "guidance" link in ConsultationSection.tsx (line 22) - maintains organic exploration philosophy.
+
+### Navigation & Interaction Updates
+- **Removed Resources from header**: Resources link removed from main navigation to encourage organic discovery through easter eggs.
+- **Added hover indication**: Navigation buttons now display `hover-elevate` effect on hover to provide visual feedback.
+- **Invisible link pattern**: "Guidance" text in consultation section is underlined and links to /resources, maintaining minimalist design while providing discovery path.
 
 ### Technical Implementation
 - Header uses wouter Link component with proper `asChild` prop for navigation
@@ -29,6 +35,7 @@ Preferred communication style: Simple, everyday language.
 - All components properly structured to avoid nested interactive elements
 - Media page remains hidden as intended - easter egg discovery maintained
 - Resources page integrated into main routing with dedicated `/resources` path
+- ConsultationSection uses Link component for "guidance" text with underline and hover color transition
 
 ## System Architecture
 

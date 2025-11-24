@@ -1,5 +1,6 @@
 import ServiceCard from "./ServiceCard";
 import { Lightbulb, Target } from "lucide-react";
+import { Link } from "wouter";
 
 export default function ConsultationSection() {
   return (
@@ -15,7 +16,7 @@ export default function ConsultationSection() {
           className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto"
           data-testid="text-consultation-subtitle"
         >
-          Expert guidance tailored to your unique journey
+          Expert <Link href="/resources" className="underline hover:text-foreground transition-colors" data-testid="link-guidance-resources">guidance</Link> tailored to your unique journey
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           <ServiceCard

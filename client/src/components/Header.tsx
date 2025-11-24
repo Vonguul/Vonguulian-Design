@@ -7,7 +7,6 @@ export default function Header() {
   const navLinks = [
     { label: "Home", href: "/" },
     { label: "Products", href: "/basic-cheatsheets" },
-    { label: "Resources", href: "/resources" },
     { label: "Consultation", href: "/about" },
     { label: "Future", href: "/future" },
     { label: "History", href: "/history" },
@@ -31,7 +30,7 @@ export default function Header() {
               key={link.href}
               variant={isActive(link.href) ? "default" : "ghost"}
               size="sm"
-              className="rounded-full"
+              className="rounded-full hover-elevate"
               asChild
               data-testid={`button-nav-${link.label.toLowerCase()}`}
             >
