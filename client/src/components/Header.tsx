@@ -18,9 +18,7 @@ export default function Header() {
     <header className="sticky top-0 z-40 bg-black dark:bg-black border-b border-primary/20">
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         {/* Logo */}
-        <Link href="/" className="font-serif text-xl font-bold text-primary hover:text-primary/80 transition-colors" data-testid="link-home-header">
-          Vonguulian
-        </Link>
+        <Link href="/" className="font-serif text-xl font-bold text-primary hover:text-primary/80 transition-colors" data-testid="link-home-header">Vonguul</Link>
 
         {/* Navigation */}
         <nav className="hidden md:flex gap-1" data-testid="nav-header-menu">
