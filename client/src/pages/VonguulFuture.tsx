@@ -1,7 +1,10 @@
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { Link } from "wouter";
 import BottomNavigation from "@/components/BottomNavigation";
-import { Zap, Glasses, Hand, Headphones } from "lucide-react";
+import flyingCarImage from "@assets/Flying-Cars-2048x1152_1763951984849.jpg";
+import arGlassesImage from "@assets/futuristic-augmented-reality-glasses-displaying-information_14117-845384_1763952213677.jpg";
+import techGlovesImage from "@assets/pair-black-blue-futuristic-gloves-with-glowing-blue-lights-gloves-are-made-metal-material-have-sleek-design_1186216-20918_1763952329228.jpg";
+import boneConductionImage from "@assets/1000_F_762536846_fOBW8xLsehNOqpSBNSssYLu07grXjdOD_1763952459922.jpg";
 
 export default function VonguulFuture() {
   usePageMeta({
@@ -86,8 +89,13 @@ export default function VonguulFuture() {
             <div className="space-y-6">
               {/* Hover Cars */}
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg overflow-hidden">
-                <div className="relative w-full h-64 md:h-80 bg-gradient-to-br from-primary/20 to-primary/5 dark:from-primary/10 dark:to-primary/5 flex items-center justify-center" data-testid="img-hover-car">
-                  <Zap className="w-24 h-24 text-primary opacity-30" />
+                <div className="relative w-full h-64 md:h-80">
+                  <img 
+                    src={flyingCarImage} 
+                    alt="Futuristic hover car concept with glowing blue propulsion systems"
+                    className="w-full h-full object-cover"
+                    data-testid="img-hover-car"
+                  />
                 </div>
                 <div className="p-8">
                   <h3 className="font-bold text-primary mb-4 text-lg">Hover Cars</h3>
@@ -104,8 +112,13 @@ export default function VonguulFuture() {
 
               {/* Smart Glasses */}
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg overflow-hidden">
-                <div className="relative w-full h-64 md:h-80 bg-gradient-to-br from-primary/20 to-primary/5 dark:from-primary/10 dark:to-primary/5 flex items-center justify-center" data-testid="img-ar-glasses">
-                  <Glasses className="w-24 h-24 text-primary opacity-30" />
+                <div className="relative w-full h-64 md:h-80">
+                  <img 
+                    src={arGlassesImage} 
+                    alt="Futuristic augmented reality glasses displaying digital information interface"
+                    className="w-full h-full object-cover"
+                    data-testid="img-ar-glasses"
+                  />
                 </div>
                 <div className="p-8">
                   <h3 className="font-bold text-primary mb-4 text-lg">Smart Glasses</h3>
@@ -122,8 +135,13 @@ export default function VonguulFuture() {
 
               {/* Tech Gloves */}
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg overflow-hidden">
-                <div className="relative w-full h-64 md:h-80 bg-gradient-to-br from-primary/20 to-primary/5 dark:from-primary/10 dark:to-primary/5 flex items-center justify-center" data-testid="img-tech-gloves">
-                  <Hand className="w-24 h-24 text-primary opacity-30" />
+                <div className="relative w-full h-64 md:h-80">
+                  <img 
+                    src={techGlovesImage} 
+                    alt="Futuristic tech gloves with glowing blue lights and sleek metal design"
+                    className="w-full h-full object-cover"
+                    data-testid="img-tech-gloves"
+                  />
                 </div>
                 <div className="p-8">
                   <h3 className="font-bold text-primary mb-4 text-lg">Tech Gloves</h3>
@@ -140,8 +158,13 @@ export default function VonguulFuture() {
 
               {/* Bone Conduction Tech */}
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg overflow-hidden">
-                <div className="relative w-full h-64 md:h-80 bg-gradient-to-br from-primary/20 to-primary/5 dark:from-primary/10 dark:to-primary/5 flex items-center justify-center" data-testid="img-bone-conduction">
-                  <Headphones className="w-24 h-24 text-primary opacity-30" />
+                <div className="relative w-full h-64 md:h-80">
+                  <img 
+                    src={boneConductionImage} 
+                    alt="Medical visualization of skeletal system and bone structure for conduction technology applications"
+                    className="w-full h-full object-cover"
+                    data-testid="img-bone-conduction"
+                  />
                 </div>
                 <div className="p-8">
                   <h3 className="font-bold text-primary mb-4 text-lg">Bone Conduction Technology</h3>

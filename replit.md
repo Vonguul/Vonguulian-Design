@@ -8,46 +8,34 @@ Vonguulian Design is a premium digital marketplace and consultation platform foc
 
 Preferred communication style: Simple, everyday language.
 
-## Recent Improvements (Nov 24, 2025 - Final Optimization Pass)
+## Recent Improvements (Nov 24, 2025)
 
-### Performance Optimization
-- **Implemented lazy loading for secondary pages**: All pages except Home (BasicCheatsheets, AboutUs, VonguulFuture, Catalog, History, Health, Music, Resources, ArticleDetail, NotFound) now use React.lazy() with Suspense
-- **Added loading indicator**: Smooth spinner appears while pages load for better UX
-- **Expected improvement**: 30-50% faster initial page load time by deferring secondary page bundles
+### Navigation & UX Enhancements
+- **Added persistent Header navigation**: Created `Header.tsx` component displaying main navigation links (Home, Products, Resources, Consultation, Future, History, Health) with active link highlighting. Media page remains intentionally hidden and only accessible via easter egg link on Future page.
+- **Improved mobile navigation**: Simplified mobile menu shows only Home and Products links to reduce visual clutter on smaller screens.
+- **Removed jarring auto-scroll behavior**: Eliminated `window.scrollTo(0, 0)` from all pages (BasicCheatsheets, Music, AboutUs, History, Health) to provide smoother back-button navigation experience. Users no longer experience jarring jumps when transitioning between pages.
+- **Fixed bottom navigation mobile positioning**: Adjusted bottom floating action buttons with better padding on mobile (bottom-4 right-4) and reduced z-index (40 instead of 50) to prevent overlap with content and header.
 
-### SEO Optimization
-- **Enhanced meta tag system**: Extended usePageMeta hook with support for Open Graph and Twitter Card tags
-- **Added canonical URLs**: Each page sets og:url for proper URL attribution
-- **Created sitemap.xml**: All pages and article URLs indexed for search engines with appropriate priorities
-- **Created robots.txt**: Guides search engines to crawl public content and avoid API routes
-- **Implemented JSON-LD schemas**: 
-  - Organization schema on home page for brand recognition in search results
-  - Article schema on article detail pages for rich snippets
-- **Enhanced social sharing**: Twitter Cards and Open Graph tags ensure beautiful previews when sharing on social platforms
-- **Expected improvement**: Better Google rankings and 2x improved social media appearance
+### Resources/Blog Section
+- **Created Resources page**: New dedicated section for Human Design educational content with 8 featured articles/guides covering topics like types, strategies, profiles, authority, and relationships.
+- **Category-based organization**: Articles organized by categories (Introduction, Types & Strategies, Advanced Concepts, Energy & Aura, Decision-Making, Relationships, Practical Tips) with category filtering interface.
+- **Rich article cards**: Each article displays title, excerpt, read time, tags, and category badge for easy browsing and filtering.
+- **Call-to-action integration**: Direct link to consultation booking from the Resources section to encourage user engagement.
+- **Fully responsive design**: Resources page optimized for desktop and mobile with proper grid layout and navigation.
+- **Hidden discovery link**: Resources page accessible via "guidance" link in ConsultationSection.tsx (line 22) - maintains organic exploration philosophy.
 
-### Newsletter Infrastructure
-- **Created Vercel serverless function** (`api/subscribe.ts`): Secure server-side newsletter subscription endpoint
-- **API key security**: BUTTONDOWN_API_KEY remains server-side only, never exposed to browser
-- **Removed Express route**: Cleaned up backend routes to minimize attack surface
-- **Ready for production**: Function scales automatically with Vercel infrastructure
-
-### Asset Import Cleanup
-- **Removed missing image imports**: Fixed build failures by removing broken asset references
-- **Replaced with CSS/icon solutions**:
-  - Hero section: Removed missing hero image, replaced with gradient background + animated blob overlay
-  - Hero logo: Replaced missing PNG with minimalist text-based logo (Vonguulian text + circle icon)
-  - Products section: Removed decorative background image
-  - VonguulFuture page: Replaced 4 missing tech images with icon-based placeholders (Zap, Glasses, Hand, Headphones)
-  - Music page: Replaced missing banner with gradient section + Music icon
+### Navigation & Interaction Updates
+- **Removed Resources from header**: Resources link removed from main navigation to encourage organic discovery through easter eggs.
+- **Added hover indication**: Navigation buttons now display `hover-elevate` effect on hover to provide visual feedback.
+- **Invisible link pattern**: "Guidance" text in consultation section is underlined and links to /resources, maintaining minimalist design while providing discovery path.
 
 ### Technical Implementation
-- Navigation & UX: Header navigation persistent with active link highlighting
-- Resources/Blog: 8 featured articles with category filtering
-- Mobile optimization: Simplified navigation, proper spacing, reduced z-index conflicts
-- Lazy loading: Dynamic imports with Suspense boundaries
-- Meta tags: Comprehensive SEO coverage with dynamic updates
-- Serverless API: Production-ready Vercel function for newsletters
+- Header uses wouter Link component with proper `asChild` prop for navigation
+- Navigation shows active state using dynamic variant prop on buttons
+- All components properly structured to avoid nested interactive elements
+- Media page remains hidden as intended - easter egg discovery maintained
+- Resources page integrated into main routing with dedicated `/resources` path
+- ConsultationSection uses Link component for "guidance" text with underline and hover color transition
 
 ## System Architecture
 
@@ -55,55 +43,57 @@ Preferred communication style: Simple, everyday language.
 
 **Framework**: React 18 with TypeScript, using Vite as the build tool and development server.
 
-**Routing**: Client-side routing implemented with Wouter, a lightweight React router. Secondary pages use lazy loading with React.Suspense for improved initial load time. Routes include Home, BasicCheatsheets, AboutUs, VonguulFuture, Catalog, History, Health, Music, Resources, and ArticleDetail.
+**Routing**: Client-side routing implemented with Wouter, a lightweight React router. The application follows a simple page-based architecture with routes for Home, BasicCheatsheets, AboutUs, VonguulFuture, Catalog, History, Health, Music, and a NotFound fallback.
 
-**UI Component Library**: Shadcn UI (New York style variant) with Radix UI primitives for accessible, unstyled components. The component system uses CSS variables for theming and supports both light and dark modes, with black/gold luxury aesthetic.
+**UI Component Library**: Shadcn UI (New York style variant) with Radix UI primitives for accessible, unstyled components. The component system uses CSS variables for theming and supports both light and dark modes, though the primary design emphasizes a black/gold luxury aesthetic.
 
-**Styling Strategy**: Tailwind CSS with custom configuration. Design system implements luxury color palette (black primary, gold accents) with custom spacing and typography hierarchy.
+**Styling Strategy**: Tailwind CSS with custom configuration extending the default theme. Design system implements a luxury color palette (black primary, gold accents) with custom spacing, typography hierarchy (Playfair Display for headings, Inter for body text), and shadow/elevation utilities.
 
-**State Management**: TanStack Query (React Query) for server state management. Form state handled through React Hook Form with Zod validation schemas.
+**State Management**: TanStack Query (React Query) for server state management with custom query client configuration. Form state handled through React Hook Form with Zod validation schemas.
 
-**Performance Features**: 
-- Lazy loading for secondary pages with Suspense boundaries
-- SEO meta tag management with usePageMeta hook
-- JSON-LD structured data for search engines
-- Optimized initial bundle size
+**Design System**: Component-based architecture with reusable UI primitives (Button, Card, Form, Input, etc.) following the shadcn/ui pattern. Custom components for domain-specific features (ProductCard, ServiceCard, HeroSection, etc.).
 
 ### Backend Architecture
 
-**Server Framework**: Express.js with TypeScript running on Node.js.
+**Server Framework**: Express.js with TypeScript running on Node.js. The architecture separates development and production server configurations.
 
-**Development Mode**: Uses Vite middleware mode with HMR for rapid development.
+**Development Mode**: Uses Vite middleware mode with HMR (Hot Module Replacement) for rapid development. Includes Replit-specific plugins for runtime error overlay, cartographer, and dev banner.
 
-**Production Mode**: Serves static files from `dist/public` with SPA fallback routing.
+**Production Mode**: Serves pre-built static files from the `dist/public` directory with SPA fallback routing (all routes serve index.html for client-side routing).
 
-**API Routes**: Minimal backend focused on file serving (article markdown files).
+**API Design**: Minimal backend with placeholder route registration. The current implementation uses a simple in-memory storage pattern, suggesting future database integration.
 
-**Serverless Functions**: 
-- Vercel function at `api/subscribe.ts` handles secure newsletter subscriptions
-- Server-side API key management prevents credential exposure
+**Request Processing**: Express middleware configured for JSON parsing with raw body capture (for webhook verification scenarios). Custom logging middleware tracks request paths, durations, and response codes.
 
 ### Data Storage Solutions
 
-**ORM**: Drizzle ORM configured for PostgreSQL dialect.
+**ORM**: Drizzle ORM configured for PostgreSQL dialect, though not fully implemented in the current codebase.
 
-**Database Configuration**: Drizzle Kit configured with schema in `shared/schema.ts` and Neon serverless PostgreSQL support.
+**Database Configuration**: Drizzle Kit configured to output migrations to `./migrations` directory with schema defined in `shared/schema.ts`. Database connection via `DATABASE_URL` environment variable, expecting Neon serverless PostgreSQL.
 
-**External Services**:
-- Web3Forms API for contact form submissions
-- Buttondown API for newsletter subscriptions (server-side only via Vercel function)
-- Gumroad for digital product sales
-- SoundCloud for music playlist embeds
+**Schema Design**: Zod-based validation schemas in `shared/schema.ts` for type-safe data validation. Currently implements contact form validation schema (fullName, email, serviceInterest, message).
 
-**Asset Management**: Static assets stored in `attached_assets/articles` directory (only markdown articles remain after cleanup).
+**Session Management**: Connect-pg-simple package included for PostgreSQL-based session storage, though session implementation not yet active.
 
-**Deployment Platform**: Configured for Vercel with automatic builds on git push.
+**Current State**: The application currently has database tooling configured but no active database tables or queries implemented. The schema file contains only validation schemas, not database table definitions.
 
-### Deployment Checklist
+### External Dependencies
 
-For Vercel deployment, ensure:
-1. ✅ Build configuration in `vercel.json` 
-2. ⚠️ **Add `BUTTONDOWN_API_KEY` to Vercel environment variables** (Production environment)
-3. ✅ All asset imports cleaned up (build no longer fails)
-4. ✅ SEO meta tags and sitemap configured
-5. ✅ Static files serve correctly with SPA fallback
+**Email Service**: Web3Forms API integration for contact form submissions (API key: d85adb9d-78ef-4f4b-8793-ddc0c1634515). Form submissions sent via POST to `https://api.web3forms.com/submit`.
+
+**Database Provider**: Configured for Neon serverless PostgreSQL (`@neondatabase/serverless` package), though connection not actively used.
+
+**Social Media Integration**: Direct external links to social platforms (YouTube, Instagram, Twitter/X, TikTok) for brand presence. No OAuth or social login implemented.
+
+**Third-Party Services**: 
+- VitalChek integration (https://www.vitalchek.com/) for birth certificate/vital records access
+- Gumroad links for digital product sales (https://vonguulian.gumroad.com/)
+- YouTube embed for music playlist playback
+
+**Asset Management**: Static assets stored in `attached_assets` directory, including images, logos, and content markdown files. Vite configured with alias `@assets` for asset imports.
+
+**Font Services**: Google Fonts CDN for typography (Inter and Cormorant Garamond font families).
+
+**Deployment Platform**: Configured for Vercel deployment with custom build command and SPA routing configuration in `vercel.json`.
+
+**Development Tools**: Replit-specific Vite plugins for enhanced development experience in Replit environment (runtime error modal, cartographer, dev banner).
