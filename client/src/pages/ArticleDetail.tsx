@@ -3,6 +3,7 @@ import { useRoute } from "wouter";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { setJsonLd, getArticleSchema } from "@/lib/jsonld";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft, Clock, ArrowUp, Share2, Mail } from "lucide-react";
@@ -24,7 +25,16 @@ export default function ArticleDetail() {
   usePageMeta({
     title: article ? `${article.title} - Vonguulian Design` : "Article - Vonguulian Design",
     description: article ? article.excerpt : "Read articles about Human Design",
+    ogUrl: article ? `https://vonguulian.com/resources/${article.slug}` : undefined,
+    ogImage: "https://vonguulian.com/favicon.jpg",
   });
+
+  // Set JSON-LD schema for article
+  useEffect(() => {
+    if (article) {
+      setJsonLd(getArticleSchema(article.title, article.excerpt, article.publishedDate, article.author));
+    }
+  }, [article]);
   
   // Get related articles (same category, different article)
   const relatedArticles = article 

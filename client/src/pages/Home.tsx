@@ -1,4 +1,6 @@
+import { useEffect } from "react";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { setJsonLd, getOrganizationSchema } from "@/lib/jsonld";
 import HeroSection from "@/components/HeroSection";
 import ProductsSection from "@/components/ProductsSection";
 import ConsultationSection from "@/components/ConsultationSection";
@@ -11,7 +13,13 @@ export default function Home() {
   usePageMeta({
     title: "Vonguulian Design - Premium Digital Products & Consultation Services",
     description: "Transform your life with curated Human Design digital products and expert consultation services. Discover personalized cheatsheets and alignment coaching to unlock your potential.",
+    ogUrl: "https://vonguulian.com",
+    ogImage: "https://vonguulian.com/favicon.jpg",
   });
+
+  useEffect(() => {
+    setJsonLd(getOrganizationSchema());
+  }, []);
 
   return (
     <div className="min-h-screen">

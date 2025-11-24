@@ -5,6 +5,12 @@ interface PageMetaOptions {
   description: string;
   ogTitle?: string;
   ogDescription?: string;
+  ogImage?: string;
+  ogUrl?: string;
+  twitterCard?: string;
+  twitterTitle?: string;
+  twitterDescription?: string;
+  twitterImage?: string;
 }
 
 export function usePageMeta({
@@ -12,6 +18,12 @@ export function usePageMeta({
   description,
   ogTitle,
   ogDescription,
+  ogImage,
+  ogUrl,
+  twitterCard = "summary_large_image",
+  twitterTitle,
+  twitterDescription,
+  twitterImage,
 }: PageMetaOptions) {
   useEffect(() => {
     // Update document title
@@ -23,16 +35,40 @@ export function usePageMeta({
       descriptionMeta.setAttribute("content", description);
     }
 
-    // Update OG title
-    const ogTitleMeta = document.querySelector('meta[property="og:title"]');
-    if (ogTitleMeta) {
-      ogTitleMeta.setAttribute("content", ogTitle || title);
-    }
+    // Update OG tags
+    setMetaProperty("og:title", ogTitle || title);
+    setMetaProperty("og:description", ogDescription || description);
+    if (ogImage) setMetaProperty("og:image", ogImage);
+    if (ogUrl) setMetaProperty("og:url", ogUrl);
 
-    // Update OG description
-    const ogDescriptionMeta = document.querySelector('meta[property="og:description"]');
-    if (ogDescriptionMeta) {
-      ogDescriptionMeta.setAttribute("content", ogDescription || description);
-    }
-  }, [title, description, ogTitle, ogDescription]);
+    // Update Twitter Card tags
+    setMetaMeta("twitter:card", twitterCard);
+    setMetaMeta("twitter:title", twitterTitle || ogTitle || title);
+    setMetaMeta("twitter:description", twitterDescription || ogDescription || description);
+    if (twitterImage) setMetaMeta("twitter:image", twitterImage);
+  }, [title, description, ogTitle, ogDescription, ogImage, ogUrl, twitterCard, twitterTitle, twitterDescription, twitterImage]);
+}
+
+function setMetaProperty(property: string, content: string) {
+  const meta = document.querySelector(`meta[property="${property}"]`);
+  if (meta) {
+    meta.setAttribute("content", content);
+  } else {
+    const newMeta = document.createElement("meta");
+    newMeta.setAttribute("property", property);
+    newMeta.setAttribute("content", content);
+    document.head.appendChild(newMeta);
+  }
+}
+
+function setMetaMeta(name: string, content: string) {
+  const meta = document.querySelector(`meta[name="${name}"]`);
+  if (meta) {
+    meta.setAttribute("content", content);
+  } else {
+    const newMeta = document.createElement("meta");
+    newMeta.setAttribute("name", name);
+    newMeta.setAttribute("content", content);
+    document.head.appendChild(newMeta);
+  }
 }
