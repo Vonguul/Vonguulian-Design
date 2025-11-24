@@ -21,7 +21,7 @@ export const articles = [
     tags: ["Types", "Strategy", "Decision-Making"],
     filePath: "/articles/four-types.md",
     publishedDate: "November 5, 2024",
-    author: "Vonguul Design",
+    author: "Offbahr Vonguul",
   },
   {
     id: 3,
@@ -33,7 +33,7 @@ export const articles = [
     tags: ["Profiles", "Purpose", "Identity"],
     filePath: "/articles/profiles.md",
     publishedDate: "November 8, 2024",
-    author: "Vonguul Design",
+    author: "Offbahr Vonguul",
   },
   {
     id: 4,
@@ -45,7 +45,7 @@ export const articles = [
     tags: ["Aura", "Energy", "Relationships"],
     filePath: "/articles/aura-type.md",
     publishedDate: "November 12, 2024",
-    author: "Vonguul Design",
+    author: "Offbahr Vonguul",
   },
   {
     id: 5,
@@ -57,7 +57,7 @@ export const articles = [
     tags: ["Authority", "Decisions", "Alignment"],
     filePath: "/articles/authority.md",
     publishedDate: "November 15, 2024",
-    author: "Vonguul Design",
+    author: "Offbahr Vonguul",
   },
   {
     id: 6,
@@ -69,7 +69,7 @@ export const articles = [
     tags: ["Centers", "Channels", "Gates", "Energy"],
     filePath: "/articles/centers-channels.md",
     publishedDate: "November 18, 2024",
-    author: "Vonguul Design",
+    author: "Offbahr Vonguul",
   },
   {
     id: 7,
@@ -81,7 +81,7 @@ export const articles = [
     tags: ["Relationships", "Compatibility", "Communication"],
     filePath: "/articles/relationships.md",
     publishedDate: "November 20, 2024",
-    author: "Vonguul Design",
+    author: "Offbahr Vonguul",
   },
   {
     id: 8,
@@ -93,7 +93,7 @@ export const articles = [
     tags: ["Practical", "Application", "Lifestyle"],
     filePath: "/articles/living-your-design.md",
     publishedDate: "November 22, 2024",
-    author: "Vonguul Design",
+    author: "Offbahr Vonguul",
   },
 ];
 
