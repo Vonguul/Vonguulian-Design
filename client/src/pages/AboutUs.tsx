@@ -122,7 +122,7 @@ export default function AboutUs() {
                 If you resonate with our Code of Conduct and vision, we invite you to explore what it means to be part of something greater than yourself—a community dedicated to true progress and mutual prosperity.
               </p>
               <p className="text-sm text-muted-foreground pt-4">
-                Want to deepen your understanding? Explore our <Link href="/resources" className="text-primary hover:underline" data-testid="link-resources-hint">collection of Human Design resources</Link> for practical guidance.
+                Want to deepen your understanding? Explore our <Link href="/resources" className="text-primary hover:underline" data-testid="link-resources-hint">resources</Link> for practical guidance.
               </p>
             </div>
           </section>
