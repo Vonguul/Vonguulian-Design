@@ -8,7 +8,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Article endpoint
   app.get("/api/articles/:slug", (req, res) => {
-    const filePath = path.join(process.cwd(), "public", "articles", `${req.params.slug}.md`);
+    const filePath = path.join(process.cwd(), "attached_assets", "articles", `${req.params.slug}.md`);
     
     fs.readFile(filePath, "utf-8", (err, data) => {
       if (err) {
