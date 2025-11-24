@@ -30,7 +30,7 @@ export default function Header() {
               key={link.href}
               variant={isActive(link.href) ? "default" : "ghost"}
               size="sm"
-              className="rounded-full hover-elevate"
+              className={`rounded-full hover-elevate transition-colors ${!isActive(link.href) ? "hover:bg-primary hover:text-primary-foreground" : ""}`}
               asChild
               data-testid={`button-nav-${link.label.toLowerCase()}`}
             >
