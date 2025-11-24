@@ -134,32 +134,6 @@ export default function AboutUs() {
               <p className="text-lg text-muted-foreground mb-8">
                 Our governance structure is built on accountability, transparency, and the protection of our members. Explore the details of how we operate, or dive deeper into our actionable options and future vision.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4 w-full">
-                <Link href="/future" className="flex-1">
-                  <Button 
-                    variant="default" 
-                    size="lg"
-                    className="w-full"
-                    data-testid="button-stare-abyss"
-                  >
-                    Stare Into The Abyss
-                  </Button>
-                </Link>
-                <div className="flex-1">
-                  <Button 
-                    variant="outline" 
-                    size="lg"
-                    className="w-full"
-                    data-testid="button-learn-more-admin"
-                    onClick={() => {
-                      const element = document.getElementById("admin-details");
-                      element?.scrollIntoView({ behavior: "smooth" });
-                    }}
-                  >
-                    Learn More
-                  </Button>
-                </div>
-              </div>
             </div>
 
             {/* Organizational Structure */}
@@ -243,39 +217,6 @@ export default function AboutUs() {
             </div>
           </section>
 
-          {/* Historical Reference & Today's Date & Future Ambition */}
-          <div className="flex justify-center gap-4 pt-12 mt-12 border-t border-black/10 dark:border-white/10">
-            <Link href="/history">
-              <Button 
-                variant="outline"
-                size="lg"
-                className="rounded-full px-8"
-                data-testid="button-historical-reference"
-              >
-                Historical Reference
-              </Button>
-            </Link>
-            <Link href="/health">
-              <Button 
-                variant="outline"
-                size="lg"
-                className="rounded-full px-8"
-                data-testid="button-todays-date"
-              >
-                Today's Date
-              </Button>
-            </Link>
-            <Link href="/future">
-              <Button 
-                variant="outline"
-                size="lg"
-                className="rounded-full px-8"
-                data-testid="button-future-ambition"
-              >
-                Future Ambition
-              </Button>
-            </Link>
-          </div>
         </div>
       </div>
       <BottomNavigation />
