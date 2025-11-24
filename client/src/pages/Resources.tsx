@@ -3,6 +3,7 @@ import { usePageMeta } from "@/hooks/usePageMeta";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import BottomNavigation from "@/components/BottomNavigation";
+import NewsletterSection from "@/components/NewsletterSection";
 import { Link } from "wouter";
 import { articles, categories, getArticlesByCategory } from "@shared/articles";
 
@@ -100,6 +101,11 @@ export default function Resources() {
                 </CardContent>
               </Card>
             ))}
+          </div>
+
+          {/* Newsletter Section */}
+          <div className="mt-16">
+            <NewsletterSection />
           </div>
 
           {/* Call-to-action */}
