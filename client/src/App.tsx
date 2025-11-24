@@ -13,6 +13,7 @@ import History from "@/pages/History";
 import Health from "@/pages/Health";
 import Music from "@/pages/Music";
 import Resources from "@/pages/Resources";
+import ArticleDetail from "@/pages/ArticleDetail";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -27,6 +28,7 @@ function Router() {
       <Route path="/health" component={Health} />
       <Route path="/music" component={Music} />
       <Route path="/resources" component={Resources} />
+      <Route path="/resources/:slug" component={ArticleDetail} />
       <Route component={NotFound} />
     </Switch>
   );

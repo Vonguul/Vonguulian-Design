@@ -1,85 +1,14 @@
+import { useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import BottomNavigation from "@/components/BottomNavigation";
 import { Link } from "wouter";
+import { articles, categories, getArticlesByCategory } from "@shared/articles";
 
 export default function Resources() {
-  const resources = [
-    {
-      id: 1,
-      title: "Understanding Your Human Design Type",
-      category: "Introduction",
-      excerpt: "Learn the foundational concepts of Human Design and how your type shapes your life strategy.",
-      readTime: "8 min read",
-      tags: ["Types", "Foundations", "Beginner"],
-      link: "/resources/understanding-types",
-    },
-    {
-      id: 2,
-      title: "The Four Types: Manifestor, Generator, MG, Projector, Reflector",
-      category: "Types & Strategies",
-      excerpt: "Deep dive into each Human Design type and discover your unique strategy for decision-making.",
-      readTime: "12 min read",
-      tags: ["Types", "Strategy", "Decision-Making"],
-      link: "/resources/four-types",
-    },
-    {
-      id: 3,
-      title: "Profiles: The Specific Role You Play in Life",
-      category: "Advanced Concepts",
-      excerpt: "Explore the 12 profiles in Human Design and understand your specific life role and purpose.",
-      readTime: "10 min read",
-      tags: ["Profiles", "Purpose", "Identity"],
-      link: "/resources/profiles",
-    },
-    {
-      id: 4,
-      title: "Your Aura Type & Its Impact on Your Life",
-      category: "Energy & Aura",
-      excerpt: "Understand how your aura type influences your energy, relationships, and interactions with others.",
-      readTime: "7 min read",
-      tags: ["Aura", "Energy", "Relationships"],
-      link: "/resources/aura-type",
-    },
-    {
-      id: 5,
-      title: "Authority in Human Design: Making Aligned Decisions",
-      category: "Decision-Making",
-      excerpt: "Learn about your inner authority and how to make decisions that align with your true nature.",
-      readTime: "9 min read",
-      tags: ["Authority", "Decisions", "Alignment"],
-      link: "/resources/authority",
-    },
-    {
-      id: 6,
-      title: "Centers, Channels & Gates: The Energy Body Explained",
-      category: "Advanced Concepts",
-      excerpt: "Decode the intricate system of centers, channels, and gates that define your energetic blueprint.",
-      readTime: "15 min read",
-      tags: ["Centers", "Channels", "Gates", "Energy"],
-      link: "/resources/centers-channels",
-    },
-    {
-      id: 7,
-      title: "Relationships Through Human Design",
-      category: "Relationships",
-      excerpt: "Discover how Human Design can improve your relationships by understanding compatibility and communication.",
-      readTime: "11 min read",
-      tags: ["Relationships", "Compatibility", "Communication"],
-      link: "/resources/relationships",
-    },
-    {
-      id: 8,
-      title: "Living Your Design: Practical Application",
-      category: "Practical Tips",
-      excerpt: "Practical strategies for integrating your Human Design knowledge into daily life and decision-making.",
-      readTime: "10 min read",
-      tags: ["Practical", "Application", "Lifestyle"],
-      link: "/resources/living-your-design",
-    },
-  ];
+  const [selectedCategory, setSelectedCategory] = useState("All");
 
-  const categories = ["All", "Introduction", "Types & Strategies", "Advanced Concepts", "Energy & Aura", "Decision-Making", "Relationships", "Practical Tips"];
+  const filteredArticles = getArticlesByCategory(selectedCategory);
 
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
@@ -105,10 +34,11 @@ export default function Resources() {
               {categories.map((category) => (
                 <Button
                   key={category}
-                  variant={category === "All" ? "default" : "outline"}
+                  variant={selectedCategory === category ? "default" : "outline"}
                   size="sm"
                   className="rounded-full"
                   data-testid={`button-category-${category.toLowerCase()}`}
+                  onClick={() => setSelectedCategory(category)}
                 >
                   {category}
                 </Button>
@@ -118,7 +48,7 @@ export default function Resources() {
 
           {/* Articles Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6" data-testid="resources-grid">
-            {resources.map((resource) => (
+            {filteredArticles.map((resource) => (
               <Card
                 key={resource.id}
                 className="bg-white dark:bg-card border border-black/10 dark:border-white/10 hover-elevate transition-all flex flex-col"
@@ -153,9 +83,11 @@ export default function Resources() {
                     <span className="text-sm text-muted-foreground" data-testid={`text-readtime-${resource.id}`}>
                       {resource.readTime}
                     </span>
-                    <Button size="sm" className="rounded-full" data-testid={`button-read-${resource.id}`}>
-                      <Link href={resource.link}>Read More</Link>
-                    </Button>
+                    <Link href={`/resources/${resource.slug}`}>
+                      <Button size="sm" className="rounded-full" data-testid={`button-read-${resource.id}`}>
+                        Read More
+                      </Button>
+                    </Link>
                   </div>
                 </CardContent>
               </Card>
