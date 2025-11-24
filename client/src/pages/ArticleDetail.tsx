@@ -26,7 +26,7 @@ export default function ArticleDetail() {
     const fetchMarkdown = async () => {
       try {
         setLoading(true);
-        const response = await fetch(article.filePath);
+        const response = await fetch(`/api/articles/${article.slug}`);
         if (!response.ok) {
           throw new Error("Failed to load article");
         }
