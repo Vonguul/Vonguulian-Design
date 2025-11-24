@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { ChevronUp, ArrowLeft } from "lucide-react";
+import { ChevronUp, ArrowLeft, Home } from "lucide-react";
+import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { useNavigation } from "@/hooks/useNavigation";
 
@@ -43,6 +44,18 @@ export default function BottomNavigation() {
         aria-label="Go back"
       >
         <ArrowLeft className="w-5 h-5" />
+      </Button>
+      <Button
+        size="icon"
+        variant="default"
+        className="rounded-full"
+        asChild
+        data-testid="button-home-floating"
+        aria-label="Go to home page"
+      >
+        <Link href="/">
+          <Home className="w-5 h-5" />
+        </Link>
       </Button>
       <Button
         size="icon"
