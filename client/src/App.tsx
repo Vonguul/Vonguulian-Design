@@ -10,6 +10,7 @@ import VonguulFuture from "@/pages/VonguulFuture";
 import Catalog from "@/pages/Catalog";
 import History from "@/pages/History";
 import Health from "@/pages/Health";
+import Music from "@/pages/Music";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -22,6 +23,7 @@ function Router() {
       <Route path="/catalog" component={Catalog} />
       <Route path="/history" component={History} />
       <Route path="/health" component={Health} />
+      <Route path="/music" component={Music} />
       <Route component={NotFound} />
     </Switch>
   );

@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "wouter";
 import BottomNavigation from "@/components/BottomNavigation";
 import flyingCarImage from "@assets/Flying-Cars-2048x1152_1763951984849.jpg";
 import arGlassesImage from "@assets/futuristic-augmented-reality-glasses-displaying-information_14117-845384_1763952213677.jpg";
@@ -203,7 +204,7 @@ export default function VonguulFuture() {
                   Instead of going against the natural way of doing things, we take an approach that considers the whole. We acknowledge the differences and the importance of each side while trying to create harmony from the opposing forces. We aim to move with confidence.
                 </p>
                 <p className="text-muted-foreground italic mt-4 text-sm">
-                  "And those who were seen dancing were thought to be insane by those who could not hear the music."
+                  "And those who were seen dancing were thought to be insane by those who could not hear the <Link href="/music" className="text-current no-underline hover:text-primary transition-colors" aria-label="Visit Vonguul Music page" data-testid="link-music">music</Link>."
                 </p>
               </div>
             </div>
