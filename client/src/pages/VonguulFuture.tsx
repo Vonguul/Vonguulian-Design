@@ -2,6 +2,7 @@ import { useEffect } from "react";
 import BottomNavigation from "@/components/BottomNavigation";
 import flyingCarImage from "@assets/Flying-Cars-2048x1152_1763951984849.jpg";
 import arGlassesImage from "@assets/futuristic-augmented-reality-glasses-displaying-information_14117-845384_1763952213677.jpg";
+import techGlovesImage from "@assets/pair-black-blue-futuristic-gloves-with-glowing-blue-lights-gloves-are-made-metal-material-have-sleek-design_1186216-20918_1763952329228.jpg";
 
 export default function VonguulFuture() {
   useEffect(() => {
@@ -130,15 +131,25 @@ export default function VonguulFuture() {
               </div>
 
               {/* Tech Gloves */}
-              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8">
-                <h3 className="font-bold text-primary mb-4 text-lg">Tech Gloves</h3>
-                <div className="space-y-3 text-muted-foreground">
-                  <p>
-                    It most likely will not look like traditional gloves and is intended to only be worn on one hand with minimal to no obstruction. Initial prototypes will use mini electromagnetic fields created by completing a circuit to simulate inputs.
-                  </p>
-                  <p>
-                    This would be a supplemental product in a family of products. Will be used with Smart Glasses as a user input device.
-                  </p>
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg overflow-hidden">
+                <div className="relative w-full h-64 md:h-80">
+                  <img 
+                    src={techGlovesImage} 
+                    alt="Futuristic tech gloves with glowing blue lights and sleek metal design"
+                    className="w-full h-full object-cover"
+                    data-testid="img-tech-gloves"
+                  />
+                </div>
+                <div className="p-8">
+                  <h3 className="font-bold text-primary mb-4 text-lg">Tech Gloves</h3>
+                  <div className="space-y-3 text-muted-foreground">
+                    <p>
+                      It most likely will not look like traditional gloves and is intended to only be worn on one hand with minimal to no obstruction. Initial prototypes will use mini electromagnetic fields created by completing a circuit to simulate inputs.
+                    </p>
+                    <p>
+                      This would be a supplemental product in a family of products. Will be used with Smart Glasses as a user input device.
+                    </p>
+                  </div>
                 </div>
               </div>
 
