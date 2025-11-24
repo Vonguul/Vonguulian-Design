@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import BottomNavigation from "@/components/BottomNavigation";
+import flyingCarImage from "@assets/Flying-Cars-2048x1152_1763951984849.jpg";
 
 export default function VonguulFuture() {
   useEffect(() => {
@@ -82,15 +83,25 @@ export default function VonguulFuture() {
             <h2 className="font-serif text-3xl font-bold mb-6 text-primary">Technology Projects in Development</h2>
             <div className="space-y-6">
               {/* Hover Cars */}
-              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8">
-                <h3 className="font-bold text-primary mb-4 text-lg">Hover Cars</h3>
-                <div className="space-y-3 text-muted-foreground">
-                  <p>
-                    More like a personal hover vehicle, flying cars aren't really that hard to make. It is the security that is a main concern. We can fix the problem of navigation and operation issues but fixing the problem of human and mechanical consistency errors is another challenge altogether.
-                  </p>
-                  <p>
-                    Ultimately this is one of the projects we would make public for obvious reasons, but it wouldn't be made capable of actual flight. It would just have unusual controls that people will quickly get used to.
-                  </p>
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg overflow-hidden">
+                <div className="relative w-full h-64 md:h-80">
+                  <img 
+                    src={flyingCarImage} 
+                    alt="Futuristic hover car concept with glowing blue propulsion systems"
+                    className="w-full h-full object-cover"
+                    data-testid="img-hover-car"
+                  />
+                </div>
+                <div className="p-8">
+                  <h3 className="font-bold text-primary mb-4 text-lg">Hover Cars</h3>
+                  <div className="space-y-3 text-muted-foreground">
+                    <p>
+                      More like a personal hover vehicle, flying cars aren't really that hard to make. It is the security that is a main concern. We can fix the problem of navigation and operation issues but fixing the problem of human and mechanical consistency errors is another challenge altogether.
+                    </p>
+                    <p>
+                      Ultimately this is one of the projects we would make public for obvious reasons, but it wouldn't be made capable of actual flight. It would just have unusual controls that people will quickly get used to.
+                    </p>
+                  </div>
                 </div>
               </div>
 
