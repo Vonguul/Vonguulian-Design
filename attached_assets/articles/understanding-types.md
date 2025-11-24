@@ -1,31 +1,47 @@
 # Understanding Your Human Design Type
 
-## The Foundation of Human Design
+## What Is Your Type?
 
-Human Design is a system that decodes your personal operating manual. At its core lies your Type—the fundamental way you're designed to interact with the world and make decisions.
+Your Human Design Type is the most fundamental aspect of your chart. It represents your energetic signature—how you're designed to move through the world, interact with others, and generate life force. Your Type answers one essential question: **How are you meant to operate?**
 
-Your Type is one of five categories: Manifestor, Generator, Manifesting Generator, Projector, or Reflector. This isn't about personality; it's about the energetic mechanics that define how you naturally operate.
+In Human Design, there are five Types, and each carries a distinct energetic frequency. Understanding your Type is the foundation for all other aspects of your design, including your Strategy, Authority, and Role in life.
 
-## The Five Types Explained
+## The Role of Type
 
-### Your Unique Blueprint
+Your Type defines:
 
-Each type carries specific qualities:
-- **Energy dynamics**: How you naturally generate or attract energy
-- **Decision-making authority**: Your unique way of making aligned choices
-- **Life strategy**: The optimal approach for how you move through life
-- **Role in society**: How you're designed to contribute to collective energy
+- **Your energetic signature**: The way your energy naturally broadcasts
+- **Your Strategy for engaging with life**: Your most efficient way of moving through decisions and opportunities
+- **Your life purpose framework**: How you're designed to contribute to the collective
+- **Your most reliable pathway to ease**: Operating according to Type creates flow and reduces resistance
 
-## Why Type Matters
+## The Five Types at a Glance
 
-Understanding your Type is the first step to living in alignment. When you operate according to your design, you experience:
-- Greater ease and flow in decision-making
-- Increased vitality and life force
-- More authentic relationships and interactions
-- A sense of purpose and rightness in your life direction
+### Manifestor (8% of population)
+The initiator and catalyst. Manifestors carry an independent, closed aura and are designed to set things in motion.
 
-## The Foundation for Everything Else
+### Generator (37% of population)
+The builder and doer. Generators possess sustainable, powerful energy and are designed for work that satisfies them.
 
-Your Type forms the foundation upon which all other elements of your chart—your Authority, Strategy, Profile, and Centers—build their meaning. Without understanding your Type, the rest of your chart cannot be fully utilized.
+### Manifesting Generator (10% of population)
+The multi-tasker and innovator. MGs combine Manifestor initiation with Generator responsiveness, creating a faster, more versatile energy.
 
-In the sections ahead, we'll explore each type in depth, discovering not just what you are, but how to be what you are authentically and fully.
+### Projector (20% of population)
+The guide and strategist. Projectors see systems and patterns, and are designed to be invited into roles that value their wisdom.
+
+### Reflector (1% of population)
+The evaluator and mirror. Reflectors sample their environment and serve as indicators of collective health and alignment.
+
+## Why Type Matters More Than You Think
+
+Many people live their entire lives working against their Type. A Projector pushing themselves like a Generator experiences constant exhaustion. A Manifestor waiting passively for opportunities misses the point of their design. This misalignment creates frustration, burnout, and the persistent feeling that something is "wrong" with them.
+
+When you understand and honor your Type, everything shifts. Decisions become easier. Energy increases. Relationships improve. Life begins to feel like it's flowing with you rather than against you.
+
+## Your Type Is Not Your Personality
+
+This is critical: Type is not personality, not your appearance, and not your behavior patterns. Two people with the same Type can express completely differently based on their Profile, Centers, and Life Circumstances. Type is purely about energetic mechanics—how energy moves through and around you.
+
+## The Next Steps
+
+Now that you understand what Type is and why it matters, the real work begins: **operating according to your Type's Strategy**. This is where the transformation happens. Your Strategy is the practical application of your Type—the daily decisions and actions that align you with how you're actually designed to operate.
