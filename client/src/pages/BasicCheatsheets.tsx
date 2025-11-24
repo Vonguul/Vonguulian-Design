@@ -1,8 +1,13 @@
+import { usePageMeta } from "@/hooks/usePageMeta";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import BottomNavigation from "@/components/BottomNavigation";
 
 export default function BasicCheatsheets() {
+  usePageMeta({
+    title: "Human Design Cheatsheets - Vonguulian Design",
+    description: "Purchase premium Human Design cheatsheets including Type, Profile, Authority, and Aura guides. Comprehensive digital products to unlock your unique design.",
+  });
   const cheatsheets = [
     { id: 1, title: "Foundational Human Design Cheatsheet", url: "https://vonguulian.gumroad.com/l/HumDesCS" },
     { id: 2, title: "Manifestor Cheatsheet", url: "https://vonguulian.gumroad.com/l/ManiCS" },

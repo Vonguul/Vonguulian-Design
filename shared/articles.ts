@@ -8,6 +8,8 @@ export const articles = [
     readTime: "8 min read",
     tags: ["Types", "Foundations", "Beginner"],
     filePath: "/articles/understanding-types.md",
+    publishedDate: "November 1, 2024",
+    author: "Vonguul Design",
   },
   {
     id: 2,
@@ -18,6 +20,8 @@ export const articles = [
     readTime: "12 min read",
     tags: ["Types", "Strategy", "Decision-Making"],
     filePath: "/articles/four-types.md",
+    publishedDate: "November 5, 2024",
+    author: "Vonguul Design",
   },
   {
     id: 3,
@@ -28,6 +32,8 @@ export const articles = [
     readTime: "10 min read",
     tags: ["Profiles", "Purpose", "Identity"],
     filePath: "/articles/profiles.md",
+    publishedDate: "November 8, 2024",
+    author: "Vonguul Design",
   },
   {
     id: 4,
@@ -38,6 +44,8 @@ export const articles = [
     readTime: "7 min read",
     tags: ["Aura", "Energy", "Relationships"],
     filePath: "/articles/aura-type.md",
+    publishedDate: "November 12, 2024",
+    author: "Vonguul Design",
   },
   {
     id: 5,
@@ -48,6 +56,8 @@ export const articles = [
     readTime: "9 min read",
     tags: ["Authority", "Decisions", "Alignment"],
     filePath: "/articles/authority.md",
+    publishedDate: "November 15, 2024",
+    author: "Vonguul Design",
   },
   {
     id: 6,
@@ -58,6 +68,8 @@ export const articles = [
     readTime: "15 min read",
     tags: ["Centers", "Channels", "Gates", "Energy"],
     filePath: "/articles/centers-channels.md",
+    publishedDate: "November 18, 2024",
+    author: "Vonguul Design",
   },
   {
     id: 7,
@@ -68,6 +80,8 @@ export const articles = [
     readTime: "11 min read",
     tags: ["Relationships", "Compatibility", "Communication"],
     filePath: "/articles/relationships.md",
+    publishedDate: "November 20, 2024",
+    author: "Vonguul Design",
   },
   {
     id: 8,
@@ -78,6 +92,8 @@ export const articles = [
     readTime: "10 min read",
     tags: ["Practical", "Application", "Lifestyle"],
     filePath: "/articles/living-your-design.md",
+    publishedDate: "November 22, 2024",
+    author: "Vonguul Design",
   },
 ];
 

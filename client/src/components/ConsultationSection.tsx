@@ -16,7 +16,7 @@ export default function ConsultationSection() {
           className="text-center text-muted-foreground mb-16 max-w-2xl mx-auto"
           data-testid="text-consultation-subtitle"
         >
-          Expert <Link href="/resources" className="text-muted-foreground hover:text-muted-foreground" data-testid="link-guidance-resources">guidance</Link> tailored to your unique journey
+          Expert <Link href="/resources" className="text-muted-foreground hover:text-primary transition-colors" data-testid="link-guidance-resources">guidance</Link> tailored to your unique journey
         </p>
         <div className="grid md:grid-cols-2 gap-8">
           <ServiceCard

@@ -1,9 +1,15 @@
+import { usePageMeta } from "@/hooks/usePageMeta";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import BottomNavigation from "@/components/BottomNavigation";
 import NewsletterSection from "@/components/NewsletterSection";
 
 export default function AboutUs() {
+  usePageMeta({
+    title: "About Vonguul - Philosophy, Mission & Code of Conduct",
+    description: "Learn about the Vonguulian Organized Nation, our mission to progress, and how to become a Vonguulian member. Discover our core values and leadership structure.",
+  });
+
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
       {/* Header */}
@@ -114,6 +120,9 @@ export default function AboutUs() {
               </p>
               <p>
                 If you resonate with our Code of Conduct and vision, we invite you to explore what it means to be part of something greater than yourself—a community dedicated to true progress and mutual prosperity.
+              </p>
+              <p className="text-sm text-muted-foreground pt-4">
+                Want to deepen your understanding? Explore our <Link href="/resources" className="text-primary hover:underline" data-testid="link-resources-hint">collection of Human Design resources</Link> for practical guidance.
               </p>
             </div>
           </section>

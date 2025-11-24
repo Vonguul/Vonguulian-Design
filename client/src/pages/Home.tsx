@@ -1,3 +1,4 @@
+import { usePageMeta } from "@/hooks/usePageMeta";
 import HeroSection from "@/components/HeroSection";
 import ProductsSection from "@/components/ProductsSection";
 import ConsultationSection from "@/components/ConsultationSection";
@@ -7,6 +8,11 @@ import SocialFooter from "@/components/SocialFooter";
 import BottomNavigation from "@/components/BottomNavigation";
 
 export default function Home() {
+  usePageMeta({
+    title: "Vonguulian Design - Premium Digital Products & Consultation Services",
+    description: "Transform your life with curated Human Design digital products and expert consultation services. Discover personalized cheatsheets and alignment coaching to unlock your potential.",
+  });
+
   return (
     <div className="min-h-screen">
       <HeroSection />

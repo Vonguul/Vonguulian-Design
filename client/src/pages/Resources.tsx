@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { usePageMeta } from "@/hooks/usePageMeta";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import BottomNavigation from "@/components/BottomNavigation";
@@ -6,6 +7,11 @@ import { Link } from "wouter";
 import { articles, categories, getArticlesByCategory } from "@shared/articles";
 
 export default function Resources() {
+  usePageMeta({
+    title: "Human Design Resources & Articles - Vonguulian Design",
+    description: "Explore our collection of Human Design articles and guides covering types, strategies, authority, and practical applications. Learn how to live your design.",
+  });
+
   const [selectedCategory, setSelectedCategory] = useState("All");
 
   const filteredArticles = getArticlesByCategory(selectedCategory);
@@ -78,13 +84,15 @@ export default function Resources() {
                     ))}
                   </div>
 
-                  {/* Read Time & CTA */}
-                  <div className="flex items-center justify-between pt-4 border-t border-black/10 dark:border-white/10">
-                    <span className="text-sm text-muted-foreground" data-testid={`text-readtime-${resource.id}`}>
-                      {resource.readTime}
-                    </span>
+                  {/* Metadata & CTA */}
+                  <div className="space-y-3 pt-4 border-t border-black/10 dark:border-white/10">
+                    <div className="flex flex-wrap gap-3 text-xs text-muted-foreground" data-testid={`metadata-${resource.id}`}>
+                      <span data-testid={`text-author-${resource.id}`}>{resource.author}</span>
+                      <span data-testid={`text-date-${resource.id}`}>{resource.publishedDate}</span>
+                      <span data-testid={`text-readtime-${resource.id}`}>{resource.readTime}</span>
+                    </div>
                     <Link href={`/resources/${resource.slug}`}>
-                      <Button size="sm" className="rounded-full" data-testid={`button-read-${resource.id}`}>
+                      <Button size="sm" className="rounded-full w-full" data-testid={`button-read-${resource.id}`}>
                         Read More
                       </Button>
                     </Link>

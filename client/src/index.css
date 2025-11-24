@@ -2,6 +2,41 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Accessibility */
+@layer components {
+  /* Skip to content link */
+  .skip-link {
+    @apply absolute left-0 top-0 -translate-y-full bg-primary text-primary-foreground px-4 py-2 rounded-b focus:translate-y-0 z-50 transition-transform;
+  }
+
+  /* Focus indicator for keyboard navigation */
+  @layer base {
+    :focus-visible {
+      @apply outline-offset-2 outline-2 outline-primary;
+    }
+
+    /* Remove default focus for mouse users */
+    :focus:not(:focus-visible) {
+      @apply outline-none;
+    }
+  }
+
+  /* Reading progress bar */
+  .reading-progress {
+    @apply fixed top-0 left-0 h-1 bg-primary z-50;
+  }
+
+  /* Smooth scroll behavior */
+  html {
+    scroll-behavior: smooth;
+  }
+
+  /* Loading skeleton */
+  .skeleton {
+    @apply bg-black/10 dark:bg-white/10 rounded animate-pulse;
+  }
+}
+
 /* LIGHT MODE */
 :root {
   --button-outline: rgba(0,0,0, .10);

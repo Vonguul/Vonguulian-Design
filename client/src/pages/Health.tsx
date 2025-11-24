@@ -1,6 +1,11 @@
+import { usePageMeta } from "@/hooks/usePageMeta";
 import BottomNavigation from "@/components/BottomNavigation";
 
 export default function Health() {
+  usePageMeta({
+    title: "The Crisis of Survival - Health & Wellness - Vonguulian Design",
+    description: "Discover Vonguul's holistic approach to health, wellness, and survival. Learn about mind-body connection, life balance, and environmental alignment.",
+  });
 
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">

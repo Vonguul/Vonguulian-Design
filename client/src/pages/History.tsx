@@ -1,6 +1,11 @@
+import { usePageMeta } from "@/hooks/usePageMeta";
 import BottomNavigation from "@/components/BottomNavigation";
 
 export default function History() {
+  usePageMeta({
+    title: "History in the Making - Vonguulian Design",
+    description: "Explore the historical foundations of Vonguul, drawing inspiration from civil rights movements and strategic activism. Understand our approach to progress and social change.",
+  });
 
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
