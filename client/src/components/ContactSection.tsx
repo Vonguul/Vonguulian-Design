@@ -10,7 +10,6 @@ import { insertContactMessageSchema } from "@shared/schema";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
 import { useState, useEffect } from "react";
-import { useLocation } from "wouter";
 
 const contactFormSchema = insertContactMessageSchema.extend({
   email: z.string().email("Please enter a valid email address"),
@@ -21,7 +20,6 @@ type ContactFormData = z.infer<typeof contactFormSchema>;
 export default function ContactSection() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [location] = useLocation();
 
   const serviceTemplates: Record<string, { service: string; template: string }> = {
     blueprint: {
@@ -35,7 +33,8 @@ export default function ContactSection() {
   };
 
   const getServiceFromUrl = () => {
-    const searchParams = new URLSearchParams(location.split("?")[1]);
+    const hash = window.location.hash;
+    const searchParams = new URLSearchParams(hash.split("?")[1]);
     return searchParams.get("service");
   };
 
@@ -55,11 +54,19 @@ export default function ContactSection() {
   });
 
   useEffect(() => {
-    if (template) {
-      form.setValue("serviceInterest", template.service);
-      form.setValue("message", template.template);
-    }
-  }, [selectedService, template, form]);
+    const handleHashChange = () => {
+      const service = getServiceFromUrl();
+      if (service && service in serviceTemplates) {
+        const tmpl = serviceTemplates[service as keyof typeof serviceTemplates];
+        form.setValue("serviceInterest", tmpl.service);
+        form.setValue("message", tmpl.template);
+      }
+    };
+
+    handleHashChange();
+    window.addEventListener("hashchange", handleHashChange);
+    return () => window.removeEventListener("hashchange", handleHashChange);
+  }, [form]);
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);

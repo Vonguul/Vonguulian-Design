@@ -15,7 +15,14 @@ export default function ServiceCard({ icon: Icon, title, description, price, boo
   const handleBookingClick = () => {
     console.log(`Booking clicked for ${title}`);
     if (bookingLink !== "#") {
-      window.open(bookingLink, '_blank');
+      window.location.hash = bookingLink.replace("#", "");
+      // Scroll to contact section
+      setTimeout(() => {
+        const contactSection = document.getElementById("contact");
+        if (contactSection) {
+          contactSection.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 0);
     }
   };
 
