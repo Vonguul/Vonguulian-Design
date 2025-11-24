@@ -43,8 +43,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          email: email,
-          tags: ["website-subscriber"],
+          email_address: email,
         }),
       });
 
