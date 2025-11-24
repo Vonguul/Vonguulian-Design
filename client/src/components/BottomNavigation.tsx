@@ -30,7 +30,7 @@ export default function BottomNavigation() {
 
   return (
     <div
-      className={`fixed bottom-8 right-8 flex gap-2 transition-opacity duration-300 z-50 ${
+      className={`fixed bottom-4 right-4 md:bottom-8 md:right-8 flex gap-2 transition-opacity duration-300 z-40 ${
         isVisible ? "opacity-100" : "opacity-0 pointer-events-none"
       }`}
       data-testid="nav-bottom-navigation"

@@ -1,10 +1,6 @@
-import { useEffect } from "react";
 import BottomNavigation from "@/components/BottomNavigation";
 
 export default function Health() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">

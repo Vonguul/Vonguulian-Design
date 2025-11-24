@@ -1,12 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { useEffect } from "react";
 import BottomNavigation from "@/components/BottomNavigation";
 
 export default function BasicCheatsheets() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
   const cheatsheets = [
     { id: 1, title: "Foundational Human Design Cheatsheet", url: "https://vonguulian.gumroad.com/l/HumDesCS" },
     { id: 2, title: "Manifestor Cheatsheet", url: "https://vonguulian.gumroad.com/l/ManiCS" },

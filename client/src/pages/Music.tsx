@@ -1,12 +1,8 @@
-import { useEffect } from "react";
 import BottomNavigation from "@/components/BottomNavigation";
 import { Card, CardContent } from "@/components/ui/card";
 import musicBanner from "@assets/YTChannel Vonguul Music Banner_1763952834791.png";
 
 export default function Music() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   return (
     <div className="min-h-screen bg-white dark:bg-black text-black dark:text-white">
