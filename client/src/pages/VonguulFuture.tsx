@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import BottomNavigation from "@/components/BottomNavigation";
 import flyingCarImage from "@assets/Flying-Cars-2048x1152_1763951984849.jpg";
+import arGlassesImage from "@assets/futuristic-augmented-reality-glasses-displaying-information_14117-845384_1763952213677.jpg";
 
 export default function VonguulFuture() {
   useEffect(() => {
@@ -106,15 +107,25 @@ export default function VonguulFuture() {
               </div>
 
               {/* Smart Glasses */}
-              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8">
-                <h3 className="font-bold text-primary mb-4 text-lg">Smart Glasses</h3>
-                <div className="space-y-3 text-muted-foreground">
-                  <p>
-                    Another piece of tech that is already in production outside of Vonguul would be smart glasses. Ranging from AR to VR. Vonguulian Tech variants will mostly focus on Augmented Reality, at least initially. We would prefer your waking life to be optimized before introducing another near unconscious life experience.
-                  </p>
-                  <p>
-                    Vonguulian variants would include navigation assistance, quick view analysis with prompt. To be coupled with a special Tech Glove.
-                  </p>
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg overflow-hidden">
+                <div className="relative w-full h-64 md:h-80">
+                  <img 
+                    src={arGlassesImage} 
+                    alt="Futuristic augmented reality glasses displaying digital information interface"
+                    className="w-full h-full object-cover"
+                    data-testid="img-ar-glasses"
+                  />
+                </div>
+                <div className="p-8">
+                  <h3 className="font-bold text-primary mb-4 text-lg">Smart Glasses</h3>
+                  <div className="space-y-3 text-muted-foreground">
+                    <p>
+                      Another piece of tech that is already in production outside of Vonguul would be smart glasses. Ranging from AR to VR. Vonguulian Tech variants will mostly focus on Augmented Reality, at least initially. We would prefer your waking life to be optimized before introducing another near unconscious life experience.
+                    </p>
+                    <p>
+                      Vonguulian variants would include navigation assistance, quick view analysis with prompt. To be coupled with a special Tech Glove.
+                    </p>
+                  </div>
                 </div>
               </div>
 
