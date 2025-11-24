@@ -13,7 +13,7 @@ export default function SocialFooter() {
     { icon: Instagram, href: "https://www.instagram.com/offbar1/", label: "Instagram" },
     { icon: Twitter, href: "https://x.com/OffBar1", label: "Twitter" },
     { icon: SiTiktok, href: "http://tiktok.com/@offbahrvonguul", label: "TikTok" },
-    { icon: Mail, href: "#", label: "Email" },
+    { icon: Mail, href: "mailto:offbahr@vonguul.com", label: "Email" },
   ];
 
   const handleSocialClick = (label: string, href: string) => {
