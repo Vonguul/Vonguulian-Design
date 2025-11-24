@@ -3,6 +3,7 @@ import BottomNavigation from "@/components/BottomNavigation";
 import flyingCarImage from "@assets/Flying-Cars-2048x1152_1763951984849.jpg";
 import arGlassesImage from "@assets/futuristic-augmented-reality-glasses-displaying-information_14117-845384_1763952213677.jpg";
 import techGlovesImage from "@assets/pair-black-blue-futuristic-gloves-with-glowing-blue-lights-gloves-are-made-metal-material-have-sleek-design_1186216-20918_1763952329228.jpg";
+import boneConductionImage from "@assets/1000_F_762536846_fOBW8xLsehNOqpSBNSssYLu07grXjdOD_1763952459922.jpg";
 
 export default function VonguulFuture() {
   useEffect(() => {
@@ -154,12 +155,22 @@ export default function VonguulFuture() {
               </div>
 
               {/* Bone Conduction Tech */}
-              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8">
-                <h3 className="font-bold text-primary mb-4 text-lg">Bone Conduction Technology</h3>
-                <div className="space-y-3 text-muted-foreground">
-                  <p>
-                    Bone conduction technology is currently used primarily for music and headphones, but we believe there is a wider array of applications for this technology. We are exploring innovative uses beyond current consumer applications.
-                  </p>
+              <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg overflow-hidden">
+                <div className="relative w-full h-64 md:h-80">
+                  <img 
+                    src={boneConductionImage} 
+                    alt="Medical visualization of skeletal system and bone structure for conduction technology applications"
+                    className="w-full h-full object-cover"
+                    data-testid="img-bone-conduction"
+                  />
+                </div>
+                <div className="p-8">
+                  <h3 className="font-bold text-primary mb-4 text-lg">Bone Conduction Technology</h3>
+                  <div className="space-y-3 text-muted-foreground">
+                    <p>
+                      Bone conduction technology is currently used primarily for music and headphones, but we believe there is a wider array of applications for this technology. We are exploring innovative uses beyond current consumer applications.
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
