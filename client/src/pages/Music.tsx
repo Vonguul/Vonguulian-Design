@@ -1,6 +1,6 @@
 import BottomNavigation from "@/components/BottomNavigation";
 import { Card, CardContent } from "@/components/ui/card";
-import musicBanner from "@assets/YTChannel Vonguul Music Banner_1763952834791.png";
+import { Music as MusicIcon } from "lucide-react";
 
 export default function Music() {
 
@@ -38,13 +38,12 @@ export default function Music() {
 
           {/* Banner Section */}
           <section>
-            <div className="rounded-lg overflow-hidden border border-black/10 dark:border-white/10">
-              <img 
-                src={musicBanner} 
-                alt="Vonguulian Media - featuring artistic visualization with golden headphones and sacred geometry"
-                className="w-full h-auto"
-                data-testid="img-music-banner"
-              />
+            <div className="rounded-lg overflow-hidden border border-black/10 dark:border-white/10 bg-gradient-to-br from-primary/20 to-primary/5 dark:from-primary/10 dark:to-primary/5 p-16 flex items-center justify-center" data-testid="img-music-banner">
+              <div className="text-center">
+                <MusicIcon className="w-24 h-24 mx-auto mb-4 text-primary opacity-30" />
+                <h3 className="text-2xl font-serif font-bold text-primary">Vonguulian Media</h3>
+                <p className="text-sm text-muted-foreground mt-2">Artistic soundscapes and media experiences</p>
+              </div>
             </div>
           </section>
 

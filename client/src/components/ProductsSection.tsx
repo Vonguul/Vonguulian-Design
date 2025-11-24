@@ -1,19 +1,9 @@
 import ProductCard from "./ProductCard";
 import { FileText, Palette } from "lucide-react";
-import symbolsImage from "@assets/Vonguulian-Keys_1763815859892.png";
 
 export default function ProductsSection() {
   return (
     <section id="products" className="py-24 px-4 bg-white dark:bg-black relative">
-      <div className="absolute top-12 right-8 opacity-10 hidden lg:block">
-        <img 
-          src={symbolsImage} 
-          alt="" 
-          className="w-32 h-32 object-contain"
-          aria-hidden="true"
-        />
-      </div>
-      
       <div className="max-w-6xl mx-auto relative z-10">
         <h2 
           className="font-serif text-4xl md:text-5xl font-bold text-center mb-4"
