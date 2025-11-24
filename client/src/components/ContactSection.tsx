@@ -151,6 +151,7 @@ export default function ContactSection() {
                           <SelectItem value="digital-products" data-testid="option-digital-products">Digital Products</SelectItem>
                           <SelectItem value="consultation-services" data-testid="option-consultation">Consultation Services</SelectItem>
                           <SelectItem value="both" data-testid="option-both">Both</SelectItem>
+                          <SelectItem value="other" data-testid="option-other">Other</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
