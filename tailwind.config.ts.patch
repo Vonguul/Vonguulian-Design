@@ -1,0 +1,2 @@
+We're fixing PostCSS warning - ensure tailwind.config.ts has proper content configuration (already does)
+Update next turn if PostCSS warning still appears in build

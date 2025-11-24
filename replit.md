@@ -10,32 +10,45 @@ Preferred communication style: Simple, everyday language.
 
 ## Recent Improvements (Nov 24, 2025)
 
+### Vercel Serverless Functions & Backend Optimization
+- **Created Vercel serverless functions**: Implemented `/api/subscribe.ts` as a Vercel Edge Function to handle newsletter subscriptions securely without exposing API keys to the browser.
+- **Updated routing configuration**: Modified `vercel.json` to properly route `/api/*` requests to serverless functions while maintaining SPA routing for all other paths.
+- **Installed @vercel/node**: Added package for Vercel serverless function type definitions.
+- **Newsletter security improved**: API key (`BUTTONDOWN_API_KEY`) now only stored on Vercel server-side environment, never exposed client-side.
+
+### SEO & Search Engine Optimization
+- **Comprehensive meta tags**: Updated `index.html` with Open Graph tags, canonical URLs, preconnect directives, and font optimization for improved social sharing and search visibility.
+- **Structured data (JSON-LD)**: Added organization schema to index.html and implemented article-level structured data in ArticleDetail component for rich search results.
+- **Sitemap & Robots.txt**: Created `sitemap.xml` with priority levels for all main pages and `robots.txt` for search engine crawling guidance.
+- **Dynamic article meta tags**: Articles now update Open Graph tags (og:title, og:description, og:url) based on article content for proper social media previews.
+- **Utilities for SEO**: Created `lib/structuredData.ts` with reusable schema templates for organization, articles, and services.
+
+### Performance & Accessibility Improvements
+- **Lazy loading on images**: Added `loading="lazy"` attribute to logo and decorative images to defer offscreen image loading.
+- **Enhanced image alt text**: Improved descriptive alt text for all images (e.g., "Vonguulian Design Logo" instead of just "Vonguulian").
+- **Decorative image accessibility**: Added `aria-hidden="true"` to purely decorative images and proper test IDs for accessibility testing.
+- **Resource hints**: Added preconnect and dns-prefetch directives in HTML head for faster third-party API connections (Google Fonts, Buttondown, Web3Forms).
+
 ### Navigation & UX Enhancements
 - **Added persistent Header navigation**: Created `Header.tsx` component displaying main navigation links (Home, Products, Resources, Consultation, Future, History, Health) with active link highlighting. Media page remains intentionally hidden and only accessible via easter egg link on Future page.
 - **Improved mobile navigation**: Simplified mobile menu shows only Home and Products links to reduce visual clutter on smaller screens.
-- **Removed jarring auto-scroll behavior**: Eliminated `window.scrollTo(0, 0)` from all pages (BasicCheatsheets, Music, AboutUs, History, Health) to provide smoother back-button navigation experience. Users no longer experience jarring jumps when transitioning between pages.
-- **Fixed bottom navigation mobile positioning**: Adjusted bottom floating action buttons with better padding on mobile (bottom-4 right-4) and reduced z-index (40 instead of 50) to prevent overlap with content and header.
+- **Removed jarring auto-scroll behavior**: Eliminated `window.scrollTo(0, 0)` from all pages to provide smoother back-button navigation experience.
+- **Fixed bottom navigation mobile positioning**: Adjusted bottom floating action buttons with better padding and z-index management.
 
 ### Resources/Blog Section
-- **Created Resources page**: New dedicated section for Human Design educational content with 8 featured articles/guides covering topics like types, strategies, profiles, authority, and relationships.
-- **Category-based organization**: Articles organized by categories (Introduction, Types & Strategies, Advanced Concepts, Energy & Aura, Decision-Making, Relationships, Practical Tips) with category filtering interface.
-- **Rich article cards**: Each article displays title, excerpt, read time, tags, and category badge for easy browsing and filtering.
-- **Call-to-action integration**: Direct link to consultation booking from the Resources section to encourage user engagement.
-- **Fully responsive design**: Resources page optimized for desktop and mobile with proper grid layout and navigation.
-- **Hidden discovery link**: Resources page accessible via "guidance" link in ConsultationSection.tsx (line 22) - maintains organic exploration philosophy.
-
-### Navigation & Interaction Updates
-- **Removed Resources from header**: Resources link removed from main navigation to encourage organic discovery through easter eggs.
-- **Added hover indication**: Navigation buttons now display `hover-elevate` effect on hover to provide visual feedback.
-- **Invisible link pattern**: "Guidance" text in consultation section is underlined and links to /resources, maintaining minimalist design while providing discovery path.
+- **Created Resources page**: New dedicated section for Human Design educational content with 8 featured articles covering types, strategies, profiles, authority, and relationships.
+- **Category-based organization**: Articles organized by categories with filtering interface.
+- **Rich article cards**: Each article displays title, excerpt, read time, tags, and category badge.
+- **Call-to-action integration**: Direct links to consultation booking from Resources section.
+- **Fully responsive design**: Optimized for desktop and mobile.
+- **Hidden discovery link**: Resources accessible via "guidance" link in ConsultationSection.
 
 ### Technical Implementation
-- Header uses wouter Link component with proper `asChild` prop for navigation
-- Navigation shows active state using dynamic variant prop on buttons
-- All components properly structured to avoid nested interactive elements
-- Media page remains hidden as intended - easter egg discovery maintained
-- Resources page integrated into main routing with dedicated `/resources` path
-- ConsultationSection uses Link component for "guidance" text with underline and hover color transition
+- Articles served as static files from `/client/public/articles/` for Vercel compatibility
+- Dynamic article loading via `fetch('/articles/:slug.md')` from frontend
+- Link component with proper `asChild` prop for navigation
+- ConsultationSection uses Link for "guidance" text with underline and hover color
+- All routes properly configured for client-side routing on Vercel
 
 ## System Architecture
 
@@ -43,57 +56,65 @@ Preferred communication style: Simple, everyday language.
 
 **Framework**: React 18 with TypeScript, using Vite as the build tool and development server.
 
-**Routing**: Client-side routing implemented with Wouter, a lightweight React router. The application follows a simple page-based architecture with routes for Home, BasicCheatsheets, AboutUs, VonguulFuture, Catalog, History, Health, Music, and a NotFound fallback.
+**Routing**: Client-side routing implemented with Wouter, a lightweight React router. The application follows a simple page-based architecture with routes for Home, BasicCheatsheets, AboutUs, VonguulFuture, Catalog, History, Health, Music, Resources, and ArticleDetail.
 
-**UI Component Library**: Shadcn UI (New York style variant) with Radix UI primitives for accessible, unstyled components. The component system uses CSS variables for theming and supports both light and dark modes, though the primary design emphasizes a black/gold luxury aesthetic.
+**UI Component Library**: Shadcn UI (New York style variant) with Radix UI primitives for accessible, unstyled components. The component system uses CSS variables for theming and supports both light and dark modes.
 
-**Styling Strategy**: Tailwind CSS with custom configuration extending the default theme. Design system implements a luxury color palette (black primary, gold accents) with custom spacing, typography hierarchy (Playfair Display for headings, Inter for body text), and shadow/elevation utilities.
+**Styling Strategy**: Tailwind CSS with custom configuration. Design system implements a luxury color palette (black primary, gold accents) with custom spacing, typography (Playfair Display for headings, Inter for body text), and shadow/elevation utilities.
 
-**State Management**: TanStack Query (React Query) for server state management with custom query client configuration. Form state handled through React Hook Form with Zod validation schemas.
+**State Management**: TanStack Query (React Query) for server state management. Form state handled through React Hook Form with Zod validation schemas.
 
-**Design System**: Component-based architecture with reusable UI primitives (Button, Card, Form, Input, etc.) following the shadcn/ui pattern. Custom components for domain-specific features (ProductCard, ServiceCard, HeroSection, etc.).
+**Design System**: Component-based architecture with reusable UI primitives (Button, Card, Form, Input, etc.) following the shadcn/ui pattern.
+
+**SEO & Performance**: 
+- Dynamic meta tag management in components
+- Structured data (JSON-LD) for search engines
+- Lazy loading on images
+- Resource hints for third-party APIs
+- Sitemap and robots.txt for search indexing
 
 ### Backend Architecture
 
-**Server Framework**: Express.js with TypeScript running on Node.js. The architecture separates development and production server configurations.
+**Production Deployment**: Vercel serverless functions for backend APIs. Static site generation for all frontend assets.
 
-**Development Mode**: Uses Vite middleware mode with HMR (Hot Module Replacement) for rapid development. Includes Replit-specific plugins for runtime error overlay, cartographer, and dev banner.
+**Development Mode**: Express.js with TypeScript, Vite middleware mode with HMR. Includes Replit-specific plugins.
 
-**Production Mode**: Serves pre-built static files from the `dist/public` directory with SPA fallback routing (all routes serve index.html for client-side routing).
+**Production Mode**: Vercel handles routing with rewrites for `/api/*` to serverless functions and SPA fallback for all other routes.
 
-**API Design**: Minimal backend with placeholder route registration. The current implementation uses a simple in-memory storage pattern, suggesting future database integration.
-
-**Request Processing**: Express middleware configured for JSON parsing with raw body capture (for webhook verification scenarios). Custom logging middleware tracks request paths, durations, and response codes.
+**API Endpoints**:
+- `POST /api/subscribe` - Newsletter subscription (Vercel serverless function)
+- `/articles/:slug.md` - Article markdown files (static files served from `/public/articles/`)
 
 ### Data Storage Solutions
 
-**ORM**: Drizzle ORM configured for PostgreSQL dialect, though not fully implemented in the current codebase.
+**Newsletter Integration**: Buttondown API for email list management. API key stored securely in Vercel environment variables.
 
-**Database Configuration**: Drizzle Kit configured to output migrations to `./migrations` directory with schema defined in `shared/schema.ts`. Database connection via `DATABASE_URL` environment variable, expecting Neon serverless PostgreSQL.
+**Form Submissions**: Web3Forms API for contact form processing. API key is client-side (acceptable for Web3Forms usage pattern).
 
-**Schema Design**: Zod-based validation schemas in `shared/schema.ts` for type-safe data validation. Currently implements contact form validation schema (fullName, email, serviceInterest, message).
-
-**Session Management**: Connect-pg-simple package included for PostgreSQL-based session storage, though session implementation not yet active.
-
-**Current State**: The application currently has database tooling configured but no active database tables or queries implemented. The schema file contains only validation schemas, not database table definitions.
+**Article Storage**: Markdown files stored in `client/public/articles/` for static serving on Vercel. Article metadata managed in `shared/articles.ts`.
 
 ### External Dependencies
 
-**Email Service**: Web3Forms API integration for contact form submissions (API key: d85adb9d-78ef-4f4b-8793-ddc0c1634515). Form submissions sent via POST to `https://api.web3forms.com/submit`.
+**Email Services**: 
+- Buttondown API for newsletter subscriptions (key stored in Vercel secrets)
+- Web3Forms for contact form handling
 
-**Database Provider**: Configured for Neon serverless PostgreSQL (`@neondatabase/serverless` package), though connection not actively used.
-
-**Social Media Integration**: Direct external links to social platforms (YouTube, Instagram, Twitter/X, TikTok) for brand presence. No OAuth or social login implemented.
+**Social Media Integration**: Direct external links to YouTube, Instagram, Twitter/X, TikTok.
 
 **Third-Party Services**: 
-- VitalChek integration (https://www.vitalchek.com/) for birth certificate/vital records access
-- Gumroad links for digital product sales (https://vonguulian.gumroad.com/)
-- YouTube embed for music playlist playback
+- Gumroad for digital product sales (cheatsheets)
+- YouTube embeds for music playlist
 
-**Asset Management**: Static assets stored in `attached_assets` directory, including images, logos, and content markdown files. Vite configured with alias `@assets` for asset imports.
+**Asset Management**: Static assets in `attached_assets` directory with Vite alias `@assets`.
 
-**Font Services**: Google Fonts CDN for typography (Inter and Cormorant Garamond font families).
+**Deployment Platform**: Vercel for frontend and serverless API functions. Automatic deployment from GitHub.
 
-**Deployment Platform**: Configured for Vercel deployment with custom build command and SPA routing configuration in `vercel.json`.
+**Development Tools**: Replit-specific Vite plugins for enhanced development experience.
 
-**Development Tools**: Replit-specific Vite plugins for enhanced development experience in Replit environment (runtime error modal, cartographer, dev banner).
+## Deployment Notes
+
+- **Vercel Configuration**: `vercel.json` configured with rewrites for proper API routing and SPA fallback
+- **Build Command**: `npm run build` generates static files in `dist/public` and serverless functions
+- **Environment Variables**: `BUTTONDOWN_API_KEY` stored in Vercel production environment only (not exposed to browser)
+- **Static File Serving**: Article markdown files and sitemap served directly from public directory
+- **Automatic Redeployment**: GitHub integration enables automatic Vercel deployment on pushes to main branch

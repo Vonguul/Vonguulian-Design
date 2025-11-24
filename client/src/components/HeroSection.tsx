@@ -20,8 +20,9 @@ export default function HeroSection() {
         <div className="relative inline-block mx-auto mb-6">
           <img 
             src={logo} 
-            alt="Vonguulian" 
+            alt="Vonguulian Design Logo" 
             className="w-64 md:w-80 mx-auto opacity-95"
+            loading="lazy"
             data-testid="img-logo"
           />
           <div className="absolute inset-x-0 top-1/2 translate-y-[35px] flex justify-center">

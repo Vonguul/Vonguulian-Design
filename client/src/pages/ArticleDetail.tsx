@@ -93,6 +93,25 @@ export default function ArticleDetail() {
     }
   };
 
+  // Update meta tags for article
+  useEffect(() => {
+    if (article) {
+      const ogMeta = (property: string, content: string) => {
+        let meta = document.querySelector(`meta[property="${property}"]`);
+        if (!meta) {
+          meta = document.createElement("meta");
+          meta.setAttribute("property", property);
+          document.head.appendChild(meta);
+        }
+        meta.setAttribute("content", content);
+      };
+
+      ogMeta("og:title", article.title);
+      ogMeta("og:description", article.excerpt);
+      ogMeta("og:url", `https://vonguulian.com/resources/${article.slug}`);
+    }
+  }, [article]);
+
   if (!match) return null;
 
   if (!article) {

@@ -10,7 +10,9 @@ export default function ProductsSection() {
           src={symbolsImage} 
           alt="" 
           className="w-32 h-32 object-contain"
+          loading="lazy"
           aria-hidden="true"
+          data-testid="img-decorative-symbols"
         />
       </div>
       
