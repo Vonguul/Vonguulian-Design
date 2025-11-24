@@ -11,16 +11,24 @@ Preferred communication style: Simple, everyday language.
 ## Recent Improvements (Nov 24, 2025)
 
 ### Navigation & UX Enhancements
-- **Added persistent Header navigation**: Created `Header.tsx` component displaying main navigation links (Home, Products, Consultation, Future, History, Health) with active link highlighting. Media page remains intentionally hidden and only accessible via easter egg link on Future page.
+- **Added persistent Header navigation**: Created `Header.tsx` component displaying main navigation links (Home, Products, Resources, Consultation, Future, History, Health) with active link highlighting. Media page remains intentionally hidden and only accessible via easter egg link on Future page.
 - **Improved mobile navigation**: Simplified mobile menu shows only Home and Products links to reduce visual clutter on smaller screens.
 - **Removed jarring auto-scroll behavior**: Eliminated `window.scrollTo(0, 0)` from all pages (BasicCheatsheets, Music, AboutUs, History, Health) to provide smoother back-button navigation experience. Users no longer experience jarring jumps when transitioning between pages.
 - **Fixed bottom navigation mobile positioning**: Adjusted bottom floating action buttons with better padding on mobile (bottom-4 right-4) and reduced z-index (40 instead of 50) to prevent overlap with content and header.
+
+### Resources/Blog Section
+- **Created Resources page**: New dedicated section for Human Design educational content with 8 featured articles/guides covering topics like types, strategies, profiles, authority, and relationships.
+- **Category-based organization**: Articles organized by categories (Introduction, Types & Strategies, Advanced Concepts, Energy & Aura, Decision-Making, Relationships, Practical Tips) with category filtering interface.
+- **Rich article cards**: Each article displays title, excerpt, read time, tags, and category badge for easy browsing and filtering.
+- **Call-to-action integration**: Direct link to consultation booking from the Resources section to encourage user engagement.
+- **Fully responsive design**: Resources page optimized for desktop and mobile with proper grid layout and navigation.
 
 ### Technical Implementation
 - Header uses wouter Link component with proper `asChild` prop for navigation
 - Navigation shows active state using dynamic variant prop on buttons
 - All components properly structured to avoid nested interactive elements
 - Media page remains hidden as intended - easter egg discovery maintained
+- Resources page integrated into main routing with dedicated `/resources` path
 
 ## System Architecture
 
