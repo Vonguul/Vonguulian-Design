@@ -272,7 +272,7 @@ export default function ArticleDetail() {
               <p className="text-black/70 dark:text-white/70 mb-6">
                 Get a personalized Human Design reading through our consultation services.
               </p>
-              <Link href="/#consultation">
+              <Link href="/#contact">
                 <Button variant="default" data-testid="button-consultation-cta">
                   Book a Consultation
                 </Button>
