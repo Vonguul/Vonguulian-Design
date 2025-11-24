@@ -9,7 +9,7 @@ export const articles = [
     tags: ["Types", "Foundations", "Beginner"],
     filePath: "/articles/understanding-types.md",
     publishedDate: "November 1, 2024",
-    author: "Vonguul Design",
+    author: "Offbahr Vonguul",
   },
   {
     id: 2,
