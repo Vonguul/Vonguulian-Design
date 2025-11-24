@@ -9,7 +9,8 @@ import { zodResolver } from "@hookform/resolvers/zod";
 import { insertContactMessageSchema } from "@shared/schema";
 import { z } from "zod";
 import { useToast } from "@/hooks/use-toast";
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import { useLocation } from "wouter";
 
 const contactFormSchema = insertContactMessageSchema.extend({
   email: z.string().email("Please enter a valid email address"),
@@ -20,16 +21,45 @@ type ContactFormData = z.infer<typeof contactFormSchema>;
 export default function ContactSection() {
   const { toast } = useToast();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [location] = useLocation();
+
+  const serviceTemplates: Record<string, { service: string; template: string }> = {
+    blueprint: {
+      service: "consultation-services",
+      template: "I'm interested in booking a Blueprint Consultation ($225). This session will provide insight into details of my chart, clarity on alignment of understanding, and answers to any questions I have about my details."
+    },
+    alignment: {
+      service: "consultation-services",
+      template: "I'm interested in booking Alignment Coaching ($997). This is a 5-session coaching program focusing on 3 aspects of life: Career, Purpose, and Relationships. I'm ready to work on my design alignment."
+    }
+  };
+
+  const getServiceFromUrl = () => {
+    const searchParams = new URLSearchParams(location.split("?")[1]);
+    return searchParams.get("service");
+  };
+
+  const selectedService = getServiceFromUrl();
+  const template = selectedService && selectedService in serviceTemplates 
+    ? serviceTemplates[selectedService as keyof typeof serviceTemplates]
+    : null;
   
   const form = useForm<ContactFormData>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
       fullName: "",
       email: "",
-      serviceInterest: "",
-      message: "",
+      serviceInterest: template?.service || "",
+      message: template?.template || "",
     },
   });
+
+  useEffect(() => {
+    if (template) {
+      form.setValue("serviceInterest", template.service);
+      form.setValue("message", template.template);
+    }
+  }, [selectedService, template, form]);
 
   const onSubmit = async (data: ContactFormData) => {
     setIsSubmitting(true);
