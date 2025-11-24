@@ -145,22 +145,20 @@ export default function AboutUs() {
                     Stare Into The Abyss
                   </Button>
                 </Link>
-                <button 
-                  onClick={() => {
-                    const element = document.getElementById("admin-details");
-                    element?.scrollIntoView({ behavior: "smooth" });
-                  }}
-                  className="flex-1"
-                >
+                <div className="flex-1">
                   <Button 
                     variant="outline" 
                     size="lg"
                     className="w-full"
                     data-testid="button-learn-more-admin"
+                    onClick={() => {
+                      const element = document.getElementById("admin-details");
+                      element?.scrollIntoView({ behavior: "smooth" });
+                    }}
                   >
                     Learn More
                   </Button>
-                </button>
+                </div>
               </div>
             </div>
 
