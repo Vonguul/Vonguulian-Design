@@ -21,7 +21,6 @@ export default function Education() {
           </p>
         </div>
       </div>
-
       {/* Content */}
       <div className="py-24 px-4 bg-white dark:bg-black">
         <div className="max-w-4xl mx-auto space-y-12">
@@ -157,9 +156,7 @@ export default function Education() {
           <section data-testid="section-sample" className="border-t border-black/10 dark:border-white/10 pt-12">
             <div className="bg-primary/10 dark:bg-primary/5 border border-primary rounded-lg p-8">
               <h2 className="font-serif text-3xl font-bold mb-4 text-primary">Experience Our Full Approach</h2>
-              <p className="text-lg text-muted-foreground mb-6">
-                Ready to dive deeper into Vonguulian Education? Download our comprehensive sample that showcases our complete educational methodology, including detailed lessons, foundational concepts, and practical applications across multiple subjects.
-              </p>
+              <p className="text-lg text-muted-foreground mb-6">Ready to dive deeper into Vonguulian Education? Download our comprehensive sample that showcases our complete educational methodology, including detailed lessons, foundational concepts, and practical applications across one subjects.</p>
               <a href="https://vonguulian.gumroad.com/l/freesample" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg"
