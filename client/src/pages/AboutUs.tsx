@@ -76,7 +76,9 @@ export default function AboutUs() {
             <h2 className="font-serif text-3xl font-bold mb-6 text-primary">Our Core Pillars</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-6">
-                <h3 className="font-serif text-2xl font-bold mb-3 text-primary">Education</h3>
+                <Link href="/education">
+                  <h3 className="font-serif text-2xl font-bold mb-3 text-primary cursor-pointer hover:opacity-80 transition-opacity" data-testid="link-education">Education</h3>
+                </Link>
                 <p className="text-muted-foreground">We teach fundamentals before applications, empowering individuals with knowledge unrestricted by conventional limitations.</p>
               </div>
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-6">
