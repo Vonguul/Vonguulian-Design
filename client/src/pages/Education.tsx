@@ -1,4 +1,5 @@
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { Button } from "@/components/ui/button";
 import BottomNavigation from "@/components/BottomNavigation";
 
 export default function Education() {
@@ -149,6 +150,25 @@ export default function Education() {
               <p className="italic text-center text-primary mt-6">
                 This logical approach continues through all mathematical operations, ensuring students understand not just "how" but "why" mathematics works.
               </p>
+            </div>
+          </section>
+
+          {/* Full Sample Section */}
+          <section data-testid="section-sample" className="border-t border-black/10 dark:border-white/10 pt-12">
+            <div className="bg-primary/10 dark:bg-primary/5 border border-primary rounded-lg p-8">
+              <h2 className="font-serif text-3xl font-bold mb-4 text-primary">Experience Our Full Approach</h2>
+              <p className="text-lg text-muted-foreground mb-6">
+                Ready to dive deeper into Vonguulian Education? Download our comprehensive sample that showcases our complete educational methodology, including detailed lessons, foundational concepts, and practical applications across multiple subjects.
+              </p>
+              <a href="https://vonguulian.gumroad.com/l/freesample" target="_blank" rel="noopener noreferrer">
+                <Button 
+                  size="lg"
+                  className="rounded-full px-8"
+                  data-testid="button-download-sample"
+                >
+                  Download Full Sample
+                </Button>
+              </a>
             </div>
           </section>
 
