@@ -15,6 +15,7 @@ export default function BasicCheatsheets() {
     { id: 4, title: "Manifesting Generator Cheatsheet", url: "https://vonguulian.gumroad.com/l/MGCS" },
     { id: 5, title: "Projector Cheatsheet", url: "https://vonguulian.gumroad.com/l/ProCS" },
     { id: 6, title: "Reflector Cheatsheet", url: "https://vonguulian.gumroad.com/l/RefCS" },
+    { id: 7, title: "Complete Cheatsheets Bundle", url: "https://vonguulian.gumroad.com/l/bundle" },
   ];
 
   return (
