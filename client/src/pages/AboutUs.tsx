@@ -1,10 +1,12 @@
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useScrollMemory } from "@/hooks/useScrollMemory";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import BottomNavigation from "@/components/BottomNavigation";
 import NewsletterSection from "@/components/NewsletterSection";
 
 export default function AboutUs() {
+  useScrollMemory();
   usePageMeta({
     title: "About Vonguul - Philosophy, Mission & Code of Conduct",
     description: "Learn about the Vonguulian Organized Nation, our mission to progress, and how to become a Vonguulian member. Discover our core values and leadership structure.",

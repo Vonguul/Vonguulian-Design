@@ -3,13 +3,12 @@ import { Link } from "wouter";
 import { ExternalLink, Star } from "lucide-react";
 import { Youtube, Instagram, Twitter, Mail } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
-import { useEffect } from "react";
+import { useScrollMemory } from "@/hooks/useScrollMemory";
 import BottomNavigation from "@/components/BottomNavigation";
 
 export default function Catalog() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
+  useScrollMemory();
+  
   const socialLinks = [
     { icon: Youtube, href: "https://www.youtube.com/@offbarvonguul", label: "YouTube" },
     { icon: Instagram, href: "https://www.instagram.com/offbar1/", label: "Instagram" },

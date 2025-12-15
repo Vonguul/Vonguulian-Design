@@ -1,7 +1,9 @@
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useScrollMemory } from "@/hooks/useScrollMemory";
 import BottomNavigation from "@/components/BottomNavigation";
 
 export default function History() {
+  useScrollMemory();
   usePageMeta({
     title: "History in the Making - Vonguulian Design",
     description: "Explore the historical foundations of Vonguul, drawing inspiration from civil rights movements and strategic activism. Understand our approach to progress and social change.",

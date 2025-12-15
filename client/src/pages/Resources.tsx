@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useScrollMemory } from "@/hooks/useScrollMemory";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import BottomNavigation from "@/components/BottomNavigation";
@@ -8,6 +9,7 @@ import { Link } from "wouter";
 import { articles, categories, getArticlesByCategory } from "@shared/articles";
 
 export default function Resources() {
+  useScrollMemory();
   usePageMeta({
     title: "Human Design Resources & Articles - Vonguulian Design",
     description: "Explore our collection of Human Design articles and guides covering types, strategies, authority, and practical applications. Learn how to live your design.",

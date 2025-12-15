@@ -3,6 +3,7 @@ import { useRoute } from "wouter";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useScrollMemory } from "@/hooks/useScrollMemory";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowLeft, Clock, ArrowUp, Share2, Mail } from "lucide-react";
@@ -10,6 +11,7 @@ import BottomNavigation from "@/components/BottomNavigation";
 import { getArticleBySlug, articles } from "@shared/articles";
 
 export default function ArticleDetail() {
+  useScrollMemory();
   const [match, params] = useRoute("/resources/:slug");
   const [content, setContent] = useState<string>("");
   const [loading, setLoading] = useState(true);

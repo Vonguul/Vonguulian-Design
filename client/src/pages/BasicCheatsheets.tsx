@@ -1,9 +1,11 @@
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useScrollMemory } from "@/hooks/useScrollMemory";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import BottomNavigation from "@/components/BottomNavigation";
 
 export default function BasicCheatsheets() {
+  useScrollMemory();
   usePageMeta({
     title: "Human Design Cheatsheets - Vonguulian Design",
     description: "Purchase premium Human Design cheatsheets including Type, Profile, Authority, and Aura guides. Comprehensive digital products to unlock your unique design.",

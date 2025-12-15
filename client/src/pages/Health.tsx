@@ -1,7 +1,9 @@
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useScrollMemory } from "@/hooks/useScrollMemory";
 import BottomNavigation from "@/components/BottomNavigation";
 
 export default function Health() {
+  useScrollMemory();
   usePageMeta({
     title: "The Crisis of Survival - Health & Wellness - Vonguulian Design",
     description: "Discover Vonguul's holistic approach to health, wellness, and survival. Learn about mind-body connection, life balance, and environmental alignment.",

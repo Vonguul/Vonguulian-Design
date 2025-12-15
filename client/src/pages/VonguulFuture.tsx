@@ -1,4 +1,5 @@
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useScrollMemory } from "@/hooks/useScrollMemory";
 import { Link } from "wouter";
 import BottomNavigation from "@/components/BottomNavigation";
 import flyingCarImage from "@assets/Flying-Cars-2048x1152_1763951984849.jpg";
@@ -7,6 +8,7 @@ import techGlovesImage from "@assets/pair-black-blue-futuristic-gloves-with-glow
 import boneConductionImage from "@assets/1000_F_762536846_fOBW8xLsehNOqpSBNSssYLu07grXjdOD_1763952459922.jpg";
 
 export default function VonguulFuture() {
+  useScrollMemory();
   usePageMeta({
     title: "Aspects of Innovation - Future Vision - Vonguulian Design",
     description: "Explore Vonguul's vision for technology, innovation, and the future. Discover exclusive innovations and how we're shaping progress for the next generation.",

@@ -1,8 +1,10 @@
 import { usePageMeta } from "@/hooks/usePageMeta";
+import { useScrollMemory } from "@/hooks/useScrollMemory";
 import { Button } from "@/components/ui/button";
 import BottomNavigation from "@/components/BottomNavigation";
 
 export default function Education() {
+  useScrollMemory();
   usePageMeta({
     title: "Vonguulian Education System - Learn Our Approach",
     description: "Discover Vonguulian's approach to education: fundamentals before applications, both physical and metaphysical knowledge, and empowerment through understanding.",
