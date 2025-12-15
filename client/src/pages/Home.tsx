@@ -1,6 +1,7 @@
 import { usePageMeta } from "@/hooks/usePageMeta";
 import { useScrollMemory } from "@/hooks/useScrollMemory";
 import HeroSection from "@/components/HeroSection";
+import MovementSubscriptionSection from "@/components/MovementSubscriptionSection";
 import ProductsSection from "@/components/ProductsSection";
 import ConsultationSection from "@/components/ConsultationSection";
 import ContactSection from "@/components/ContactSection";
@@ -18,6 +19,7 @@ export default function Home() {
   return (
     <div className="min-h-screen">
       <HeroSection />
+      <MovementSubscriptionSection />
       <ProductsSection />
       <ConsultationSection />
       <ContactSection />
