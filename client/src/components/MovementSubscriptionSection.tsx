@@ -56,9 +56,9 @@ export default function MovementSubscriptionSection() {
 
         <div className="bg-primary/5 border border-primary/20 rounded-lg p-6 mb-8">
           <p className="text-muted-foreground mb-4">
-            <strong className="text-primary">Flagship Benefit:</strong> All subscribers gain early access to our 
+            <strong className="text-primary">Benefit:</strong> All subscribers gain early access to our 
             Human Design App currently in development. Be among the first to experience tools designed 
-            for your personal alignment.
+            for your personal alignment. Names of tiers will vary but the essence of the tiers will remain, while reflecting different commitment levels.
           </p>
         </div>
 
