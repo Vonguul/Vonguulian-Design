@@ -1,0 +1,69 @@
+# Vonguulian Design
+
+> A premium digital marketplace and consultation platform focused on Human Design services and the Vonguulian philosophy.
+
+## About
+
+Vonguulian Design is the official platform of the Vonguulian Organized Nation. We provide educational resources, digital products, and consultation services to help individuals understand themselves through Human Design and align with their authentic nature.
+
+## Products
+
+### Human Design Cheatsheets
+Digital reference guides available on Gumroad:
+- Foundational Human Design Cheatsheet
+- Manifestor Cheatsheet
+- Generator Cheatsheet
+- Manifesting Generator Cheatsheet
+- Projector Cheatsheet
+- Reflector Cheatsheet
+- Complete Cheatsheets Bundle
+
+### Consultation Services
+- Blueprint Consultation ($225): 90-minute session for personalized Human Design analysis
+- Alignment Coaching ($997): Comprehensive coaching program for living in alignment with your design
+
+## Educational Content
+
+### Resources Section
+Articles about Human Design including:
+- Understanding the 5 Types
+- Strategy and Authority
+- Profile Lines
+- Relationships and Human Design
+
+### Vonguulian Education System
+Our approach to education focuses on fundamentals before applications, teaching both physical and metaphysical knowledge.
+
+## Core Pages
+
+- / - Home page with overview of products and services
+- /basic-cheatsheets - Digital product catalog
+- /about - About Vonguulian, mission, and Code of Conduct
+- /resources - Educational blog articles
+- /education - Vonguulian Education System
+- /future - Future vision and initiatives
+- /history - Historical context
+- /health - Health and wellness focus
+
+## Contact
+
+For inquiries, use the contact form on the home page. Newsletter subscription available for updates.
+
+## Philosophy
+
+The Vonguulian Code of Conduct:
+- Code LI 0: In all things look for the Polarity
+- Code LI 1: Do not impose yourself onto others, without their Consent
+- Code LI 2: We do not Hope, We do not Pray, We Plan
+- Code LI 3: We do not Fear, what we do not Understand
+- Code LI 4: It is our Responsibility to Abstain from Ignorance
+- Code LI 5: Right and Wrong are Subjective terms that Require Definition to be Determined
+- Code LI 6: Plan to succeed in your endeavors, Always
+- Code LI 7: Don't Assume, Research
+- Code LI 8: Knowledge breeds Confidence and Confidence generates Power
+- Code LI 9: Know your own Strengths and Weaknesses
+
+## External Links
+
+- Products: vonguulian.gumroad.com
+- Social: YouTube, Instagram, Twitter/X, TikTok
