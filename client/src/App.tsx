@@ -15,6 +15,7 @@ import Music from "@/pages/Music";
 import Resources from "@/pages/Resources";
 import ArticleDetail from "@/pages/ArticleDetail";
 import Education from "@/pages/Education";
+import Privacy from "@/pages/privacy";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -31,6 +32,7 @@ function Router() {
       <Route path="/resources" component={Resources} />
       <Route path="/resources/:slug" component={ArticleDetail} />
       <Route path="/education" component={Education} />
+      <Route path="/privacy" component={Privacy} />
       <Route component={NotFound} />
     </Switch>
   );

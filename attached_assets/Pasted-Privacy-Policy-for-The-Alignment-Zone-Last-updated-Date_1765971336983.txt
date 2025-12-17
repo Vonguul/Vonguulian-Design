@@ -1,0 +1,67 @@
+Privacy Policy for The Alignment Zone
+Last updated: [Date]
+
+[Your Name or Company Name] ("we," "us," or "our") operates the The Alignment Zone mobile application (the "Service").
+
+This page informs you of our policies regarding the collection, use, and disclosure of Personal Information when you use our Service and the choices you have associated with that data.
+
+We use your data to provide and improve the Service. By using the Service, you agree to the collection and use of information in accordance with this policy.
+
+1. Information Collection and Use
+We collect several different types of information for various purposes to provide and improve our Service to you.
+
+Types of Data Collected
+A. Personal Data (Human Design Calculations)
+To function as a Human Design tool, the App requires specific birth details to generate your BodyGraph and "Operative" profile. We ask you to provide:
+
+Date of Birth
+
+Time of Birth
+
+Location of Birth (City/Country)
+
+How we use this: This data is used solely to calculate your astrological positions and Human Design chart. This calculation happens [locally on your device / on our secure server]. We do not sell or share your birth data with third-party advertisers.
+
+B. User-Generated Content (Journal & Flux Node)
+The App allows you to input data related to your daily energy, emotional states, and decision-making ("Journal Entries," "Vibe Node Check-ins," and "Calibration" responses).
+
+How we use this: This data is stored to provide you with historical tracking of your alignment and energy levels.
+
+C. Neural Lens Data (Text Analysis)
+The App includes a feature called "Neural Lens" that allows you to share text or links from other applications (e.g., social media, browsers) to The Alignment Zone for analysis.
+
+How we use this: Data shared via the Neural Lens is processed to provide alignment insights. This data is processed [temporarily for analysis and not permanently stored / stored only on your local device].
+
+D. Usage Data
+We may also collect information that your browser sends whenever you visit our Service or when you access the Service by or through a mobile device ("Usage Data"). This may include information such as your device's Internet Protocol address (e.g. IP address), browser type, browser version, unique device identifiers, and other diagnostic data.
+
+2. Service Providers & AI Processing
+We may employ third-party companies and individuals to facilitate our Service ("Service Providers"), to provide the Service on our behalf, or to assist us in analyzing how our Service is used.
+
+Artificial Intelligence (AI): The Service utilizes Artificial Intelligence technologies to analyze text (Neural Lens) and generate scenarios. Data sent to AI providers is anonymized where possible and is used strictly for generating the requested insights.
+
+Google Play Services: The App uses Google Play Services which may collect information used to identify you for analytics or advertising services provided by Google.
+
+3. Data Storage and Security
+The security of your data is important to us, but remember that no method of transmission over the Internet, or method of electronic storage is 100% secure. While we strive to use commercially acceptable means to protect your Personal Information, we cannot guarantee its absolute security.
+
+Local Storage: Much of the App's core functionality relies on data stored locally on your device. If you delete the App, this data may be permanently lost.
+
+4. Children's Privacy
+Our Service does not address anyone under the age of 13 ("Children").
+
+We do not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian and you are aware that your Children has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.
+
+5. Changes to This Privacy Policy
+We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page.
+
+We will let you know via email and/or a prominent notice on our Service, prior to the change becoming effective and update the "effective date" at the top of this Privacy Policy.
+
+You are advised to review this Privacy Policy periodically for any changes. Changes to this Privacy Policy are effective when they are posted on this page.
+
+6. Contact Us
+If you have any questions about this Privacy Policy, please contact us:
+
+By email: [Your Support Email Address]
+
+By visiting this page on our website: [Your Website Contact URL]
