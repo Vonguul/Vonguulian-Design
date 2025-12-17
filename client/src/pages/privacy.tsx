@@ -28,7 +28,7 @@ export default function Privacy() {
 
             <div className="space-y-8 text-lg leading-relaxed text-muted-foreground">
               <p>
-                Vonguulian Design ("we," "us," or "our") operates The Alignment Zone mobile application (the "Service").
+                Vonguul ("we," "us," or "our") operates The Alignment Zone mobile application (the "Service").
               </p>
               <p>
                 This page informs you of our policies regarding the collection, use, and disclosure of Personal Information when you use our Service and the choices you have associated with that data.
@@ -45,20 +45,20 @@ export default function Privacy() {
 
                 <h4 className="font-semibold text-primary mb-2">A. Personal Data (Human Design Calculations)</h4>
                 <p className="mb-2">
-                  To function as a Human Design tool, the App requires specific birth details to generate your BodyGraph and "Operative" profile. We ask you to provide:
+                  To function as a Human Design tool, the App requires specific birth details to generate your "Operative" profile. We ask you to provide:
                 </p>
                 <ul className="list-disc list-inside mb-4 space-y-1">
                   <li>Date of Birth</li>
                   <li>Time of Birth</li>
-                  <li>Location of Birth (City/Country)</li>
+                  <li>Birth Timezone</li>
                 </ul>
                 <p className="mb-6">
-                  <strong>How we use this:</strong> This data is used solely to calculate your astrological positions and Human Design chart. This calculation happens locally on your device. We do not sell or share your birth data with third-party advertisers.
+                  <strong>How we use this:</strong> This data is used solely to calculate your Human Design details. This calculation happens locally on your device. We do not sell or share your data with third-party advertisers.
                 </p>
 
                 <h4 className="font-semibold text-primary mb-2">B. User-Generated Content (Journal & Flux Node)</h4>
                 <p className="mb-2">
-                  The App allows you to input data related to your daily energy, emotional states, and decision-making ("Journal Entries," "Vibe Node Check-ins," and "Calibration" responses).
+                  The App allows you to input data related to your daily energy, emotional states, and decision-making ("Log Entries," "Node Check-ins," and "Calibration" responses).
                 </p>
                 <p className="mb-6">
                   <strong>How we use this:</strong> This data is stored to provide you with historical tracking of your alignment and energy levels.
@@ -66,10 +66,10 @@ export default function Privacy() {
 
                 <h4 className="font-semibold text-primary mb-2">C. Neural Lens Data (Text Analysis)</h4>
                 <p className="mb-2">
-                  The App includes a feature called "Neural Lens" that allows you to share text or links from other applications (e.g., social media, browsers) to The Alignment Zone for analysis.
+                  The App includes a feature called "Neural Lens" that allows you to share links from YouTube to The Alignment Zone for analysis.
                 </p>
                 <p className="mb-6">
-                  <strong>How we use this:</strong> Data shared via the Neural Lens is processed to provide alignment insights. This data is processed temporarily for analysis and stored only on your local device.
+                  <strong>How we use this:</strong> Data shared via the Neural Lens is processed to save for later use as material for scrutiny. This data is processed temporarily for scrutinization and stored only on your local device.
                 </p>
 
                 <h4 className="font-semibold text-primary mb-2">D. Usage Data</h4>
@@ -84,7 +84,7 @@ export default function Privacy() {
                   We may employ third-party companies and individuals to facilitate our Service ("Service Providers"), to provide the Service on our behalf, or to assist us in analyzing how our Service is used.
                 </p>
                 <p className="mb-4">
-                  <strong>Artificial Intelligence (AI):</strong> The Service utilizes Artificial Intelligence technologies to analyze text (Neural Lens) and generate scenarios. Data sent to AI providers is anonymized where possible and is used strictly for generating the requested insights.
+                  <strong>Artificial Intelligence (AI):</strong> The Service doesn't utilizes Artificial Intelligence technologies to analyze text (Neural Lens) or generate scenarios. If data is ever sent to AI providers, it will be anonymized where possible and used strictly for generating the requested insights.
                 </p>
                 <p>
                   <strong>Google Play Services:</strong> The App uses Google Play Services which may collect information used to identify you for analytics or advertising services provided by Google.
@@ -107,7 +107,7 @@ export default function Privacy() {
                   Our Service does not address anyone under the age of 13 ("Children").
                 </p>
                 <p>
-                  We do not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian and you are aware that your Child has provided us with Personal Data, please contact us. If we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers.
+                  We do not knowingly collect personally identifiable information from anyone under the age of 13. If you are a parent or guardian and you believe that your Child has provided us with Personal Data, please contact us. Though all information shared via our Sevice is stored only on local devices, if we become aware that we have collected Personal Data from children without verification of parental consent, we take steps to remove that information from our servers, and notify affected parties if possible.
                 </p>
               </div>
 
@@ -130,8 +130,8 @@ export default function Privacy() {
                   If you have any questions about this Privacy Policy, please contact us:
                 </p>
                 <ul className="list-disc list-inside mt-2 space-y-1">
-                  <li>By email: <a href="mailto:vonguulian@gmail.com" className="text-primary hover:underline">vonguulian@gmail.com</a></li>
-                  <li>By visiting our website: <a href="https://vonguulian.com" className="text-primary hover:underline">vonguulian.com</a></li>
+                  <li>By email: <a href="mailto:offbahr@vonguul.com" className="text-primary hover:underline">Offbahr@Vonguul.com</a></li>
+                  <li>By visiting our website: <a href="https://vonguul.com" className="text-primary hover:underline">vonguul.com</a></li>
                 </ul>
               </div>
             </div>
