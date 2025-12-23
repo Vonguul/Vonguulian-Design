@@ -24,14 +24,14 @@ export default function ConsultationSection() {
             title="Blueprint Consultation"
             description="This session is for insight, clarity and questions. Insight into details of their chart, clarity on alignment of understanding, and any questions you may have in reference to your details."
             price="$225"
-            bookingLink="#contact?service=blueprint"
+            bookingLink="https://vonguul.gumroad.com/l/oclzi"
           />
           <ServiceCard
             icon={Target}
             title="Alignment Coaching"
             description="This is a 5-session coaching, designed to focus on 3 aspects of life. Career, Purpose, and Relationships."
             price="$997"
-            bookingLink="#contact?service=alignment"
+            bookingLink="https://vonguul.gumroad.com/l/oclzi"
             bulletPoints={[
               "Session 1: Getting to know your goals and decision making",
               "Session 2: Tweaking the Vonguulian Design Blueprint to your preference",
