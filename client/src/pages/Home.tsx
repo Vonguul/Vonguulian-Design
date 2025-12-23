@@ -12,7 +12,7 @@ import BottomNavigation from "@/components/BottomNavigation";
 export default function Home() {
   useScrollMemory();
   usePageMeta({
-    title: "Vonguulian Design - Premium Digital Products & Consultation Services",
+    title: "Vonguul - Community of Progress",
     description: "Transform your life with curated Human Design digital products and expert consultation services. Discover personalized cheatsheets and alignment coaching to unlock your potential.",
   });
 

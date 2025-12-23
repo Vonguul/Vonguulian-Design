@@ -11,18 +11,22 @@ interface ServiceCardProps {
   bulletPoints?: string[];
 }
 
-export default function ServiceCard({ icon: Icon, title, description, price, bookingLink = "#", bulletPoints }: ServiceCardProps) {
+export default function ServiceCard({ icon: Icon, title, description, price, bookingLink = "https://vonguul.gumroad.com/l/oclzi", bulletPoints }: ServiceCardProps) {
   const handleBookingClick = () => {
     console.log(`Booking clicked for ${title}`);
     if (bookingLink !== "#") {
-      window.location.hash = bookingLink.replace("#", "");
-      // Scroll to contact section
-      setTimeout(() => {
-        const contactSection = document.getElementById("contact");
-        if (contactSection) {
-          contactSection.scrollIntoView({ behavior: "smooth" });
-        }
-      }, 0);
+      if (bookingLink.startsWith("http")) {
+        window.open(bookingLink, "_blank");
+      } else {
+        window.location.hash = bookingLink.replace("#", "");
+        // Scroll to contact section
+        setTimeout(() => {
+          const contactSection = document.getElementById("contact");
+          if (contactSection) {
+            contactSection.scrollIntoView({ behavior: "smooth" });
+          }
+        }, 0);
+      }
     }
   };
 
