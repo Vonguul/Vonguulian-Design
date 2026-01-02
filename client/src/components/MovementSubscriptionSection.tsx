@@ -63,7 +63,7 @@ export default function MovementSubscriptionSection() {
         </div>
 
         <a 
-          href="https://vonguulian.gumroad.com/l/lygtv" 
+          href="https://vonguul.gumroad.com/l/lygtv" 
           target="_blank" 
           rel="noopener noreferrer"
         >
