@@ -11,13 +11,13 @@ export default function BasicCheatsheets() {
     description: "Purchase premium Human Design cheatsheets including Type, Profile, Authority, and Aura guides. Comprehensive digital products to unlock your unique design.",
   });
   const cheatsheets = [
-    { id: 1, title: "Foundational Human Design Cheatsheet", url: "https://vonguulian.gumroad.com/l/HumDesCS" },
-    { id: 2, title: "Manifestor Cheatsheet", url: "https://vonguulian.gumroad.com/l/ManiCS" },
-    { id: 3, title: "Generator Cheatsheet", url: "https://vonguulian.gumroad.com/l/GenCS" },
-    { id: 4, title: "Manifesting Generator Cheatsheet", url: "https://vonguulian.gumroad.com/l/MGCS" },
-    { id: 5, title: "Projector Cheatsheet", url: "https://vonguulian.gumroad.com/l/ProCS" },
-    { id: 6, title: "Reflector Cheatsheet", url: "https://vonguulian.gumroad.com/l/RefCS" },
-    { id: 7, title: "Complete Cheatsheets Bundle", url: "https://vonguulian.gumroad.com/l/bundle" },
+    { id: 1, title: "Foundational Human Design Cheatsheet", url: "https://vonguul.gumroad.com/l/HumDesCS" },
+    { id: 2, title: "Manifestor Cheatsheet", url: "https://vonguul.gumroad.com/l/ManiCS" },
+    { id: 3, title: "Generator Cheatsheet", url: "https://vonguul.gumroad.com/l/GenCS" },
+    { id: 4, title: "Manifesting Generator Cheatsheet", url: "https://vonguul.gumroad.com/l/MGCS" },
+    { id: 5, title: "Projector Cheatsheet", url: "https://vonguul.gumroad.com/l/ProCS" },
+    { id: 6, title: "Reflector Cheatsheet", url: "https://vonguul.gumroad.com/l/RefCS" },
+    { id: 7, title: "Complete Cheatsheets Bundle", url: "https://vonguul.gumroad.com/l/bundle" },
   ];
 
   return (
