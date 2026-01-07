@@ -36,7 +36,6 @@ export default function AlignmentZone() {
           </a>
         </div>
       </div>
-
       <div className="py-24 px-4 bg-white dark:bg-black">
         <div className="max-w-4xl mx-auto space-y-12">
           <section data-testid="section-release">
@@ -45,7 +44,7 @@ export default function AlignmentZone() {
               <span className="text-sm font-medium text-primary">Latest Release</span>
             </div>
             
-            <h2 className="font-serif text-3xl font-bold mb-2 text-primary">v1.0.0 - The Genesis Protocol</h2>
+            <h2 className="font-serif text-3xl font-bold mb-2 text-primary">v4.0.0 - Zero Point Activation</h2>
             <p className="text-muted-foreground mb-8">SYSTEM ONLINE.</p>
             
             <div className="space-y-4 text-lg leading-relaxed text-muted-foreground mb-8">
