@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
-import { Heart, Sparkles, Users } from "lucide-react";
+import { Heart, Sparkles, Users, Smartphone } from "lucide-react";
+import { Link } from "wouter";
 
 export default function MovementSubscriptionSection() {
   return (
@@ -62,19 +63,33 @@ export default function MovementSubscriptionSection() {
           </p>
         </div>
 
-        <a 
-          href="https://vonguul.gumroad.com/l/lygtv" 
-          target="_blank" 
-          rel="noopener noreferrer"
-        >
-          <Button 
-            size="lg" 
-            className="rounded-full px-10 py-6 text-lg"
-            data-testid="button-subscribe-movement"
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <a 
+            href="https://vonguul.gumroad.com/l/lygtv" 
+            target="_blank" 
+            rel="noopener noreferrer"
           >
-            Choose Your Tier
-          </Button>
-        </a>
+            <Button 
+              size="lg" 
+              className="rounded-full px-10 py-6 text-lg"
+              data-testid="button-subscribe-movement"
+            >
+              Choose Your Tier
+            </Button>
+          </a>
+          
+          <Link href="/app">
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="rounded-full px-10 py-6 text-lg gap-2"
+              data-testid="button-our-app"
+            >
+              <Smartphone className="w-5 h-5" />
+              Our App
+            </Button>
+          </Link>
+        </div>
         
         <p className="text-sm text-muted-foreground mt-6">
           If you decide to walk with Vonguul, it will be a choice that you made.
