@@ -155,7 +155,7 @@ export default function AlignmentZone() {
             <p className="text-xl text-muted-foreground mb-8">
               Ready to initialize? See you in the Zone, Passenger.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <div className="flex justify-center">
               <a 
                 href="https://vonguul.gumroad.com/l/lygtv" 
                 target="_blank" 
@@ -169,17 +169,6 @@ export default function AlignmentZone() {
                   Choose a Tier
                 </Button>
               </a>
-              <Button 
-                size="lg" 
-                variant="outline"
-                className="rounded-full px-10 py-6 text-lg"
-                data-testid="button-newsletter-scroll"
-                onClick={() => {
-                  document.getElementById("newsletter")?.scrollIntoView({ behavior: "smooth" });
-                }}
-              >
-                Stay Updated
-              </Button>
             </div>
           </section>
 
