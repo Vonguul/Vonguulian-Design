@@ -82,7 +82,7 @@ export default function MovementSubscriptionSection() {
             <Button 
               size="lg" 
               variant="outline"
-              className="rounded-full px-10 py-6 text-lg gap-2"
+              className="rounded-full px-10 py-6 text-lg gap-2 bg-[#24211b] text-[#d9a520]"
               data-testid="button-our-app"
             >
               <Smartphone className="w-5 h-5" />
