@@ -145,7 +145,7 @@ export default function AlignmentZone() {
                 <li><strong>Engine:</strong> Hybrid React/Capacitor Architecture</li>
                 <li><strong>Visuals:</strong> Orbitron/Space Mono typography with void-black OLED optimization</li>
                 <li><strong>Sync:</strong> Local storage persistence with optional Cloud Sync</li>
-                <li><strong>Status:</strong> Deployed. Available Now.</li>
+                <li><strong>Status:</strong> Deployed. Pre-Registration Available Now.</li>
               </ul>
             </div>
           </section>
