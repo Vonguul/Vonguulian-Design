@@ -12,8 +12,8 @@ export default function Zone() {
   });
 
   return (
-    <div className="min-h-screen bg-black flex flex-col">
-      <div className="flex items-center justify-between p-4 border-b border-white/10">
+    <div className="fixed inset-0 bg-black flex flex-col z-50">
+      <div className="flex items-center justify-between p-4 border-b border-white/10 shrink-0">
         <Link href="/">
           <Button 
             variant="ghost" 
@@ -32,7 +32,7 @@ export default function Zone() {
         </a>
       </div>
       
-      <div className="flex-1 w-full h-[calc(100vh-73px)]">
+      <div className="flex-1 w-full overflow-hidden">
         <iframe
           src="https://vonguul.replit.app"
           className="w-full h-full border-0"
