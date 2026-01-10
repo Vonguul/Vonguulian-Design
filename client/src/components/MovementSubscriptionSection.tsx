@@ -98,7 +98,7 @@ export default function MovementSubscriptionSection() {
               data-testid="button-alignment-engine"
             >
               <Zap className="w-5 h-5" />
-              Alignment Engine
+              Alignment Zone
             </Button>
           </Link>
         </div>
