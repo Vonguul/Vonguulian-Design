@@ -94,7 +94,7 @@ export default function MovementSubscriptionSection() {
             <Button 
               size="lg" 
               variant="outline"
-              className="rounded-full px-10 py-6 text-lg gap-2 bg-[#24211b] text-[#d9a520] border-[#d9a520]"
+              className="rounded-full px-10 py-6 text-lg gap-2 bg-[#24211b] border-[#d9a520] text-[#20b7d9]"
               data-testid="button-alignment-engine"
             >
               <Zap className="w-5 h-5" />
