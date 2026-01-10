@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Heart, Sparkles, Users, Smartphone } from "lucide-react";
+import { Heart, Sparkles, Users, Smartphone, Zap } from "lucide-react";
 import { Link } from "wouter";
 
 export default function MovementSubscriptionSection() {
@@ -87,6 +87,18 @@ export default function MovementSubscriptionSection() {
             >
               <Smartphone className="w-5 h-5" />
               Our App
+            </Button>
+          </Link>
+          
+          <Link href="/zone">
+            <Button 
+              size="lg" 
+              variant="outline"
+              className="rounded-full px-10 py-6 text-lg gap-2 bg-[#24211b] text-[#d9a520] border-[#d9a520]"
+              data-testid="button-alignment-engine"
+            >
+              <Zap className="w-5 h-5" />
+              Alignment Engine
             </Button>
           </Link>
         </div>
