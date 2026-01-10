@@ -29,18 +29,10 @@ export default function Zone() {
           target="_blank" 
           rel="noopener noreferrer"
         >
-          <Button 
-            variant="outline" 
-            className="gap-2 bg-[#24211b] text-[#d9a520] border-[#d9a520]"
-            data-testid="button-open-fullscreen"
-          >
-            Open Full Screen
-            <ExternalLink className="w-4 h-4" />
-          </Button>
         </a>
       </div>
       
-      <div className="flex-1 w-full">
+      <div className="flex-1 w-full h-[calc(100vh-73px)]">
         <iframe
           src="https://vonguul.replit.app"
           className="w-full h-full border-0"
