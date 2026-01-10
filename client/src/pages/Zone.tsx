@@ -21,7 +21,7 @@ export default function Zone() {
             data-testid="button-back-home"
           >
             <ArrowLeft className="w-4 h-4" />
-            Back to Vonguulian
+            Back
           </Button>
         </Link>
         <a 
