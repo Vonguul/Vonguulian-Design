@@ -34,7 +34,7 @@ export default function Zone() {
       
       <div className="flex-1 w-full overflow-hidden">
         <iframe
-          src="https://vonguul.replit.app"
+          src="https://alignment-engine.replit.app"
           className="w-full h-full border-0"
           title="The Alignment Engine"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope"
