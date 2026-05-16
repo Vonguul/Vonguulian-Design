@@ -159,7 +159,7 @@ export default function Education() {
             <div className="bg-primary/10 dark:bg-primary/5 border border-primary rounded-lg p-8">
               <h2 className="font-serif text-3xl font-bold mb-4 text-primary">Experience Our Full Approach</h2>
               <p className="text-lg text-muted-foreground mb-6">Ready to dive deeper into Vonguulian Education? Download our comprehensive sample that showcases our educational methodology, and foundational concepts in one subject. So you can imagine what a full curriculum can look like.</p>
-              <a href="https://vonguulian.gumroad.com/l/freesample" target="_blank" rel="noopener noreferrer">
+              <a href="https://vonguul.gumroad.com/l/freesample" target="_blank" rel="noopener noreferrer">
                 <Button 
                   size="lg"
                   className="rounded-full px-8"
