@@ -134,7 +134,7 @@ export default function Trading() {
               </div>
 
               <a
-                href="#"
+                href="https://buy.stripe.com/bJe14m42X7g8cZ35LLbbG00"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="button-join-signals-discord"
@@ -204,7 +204,7 @@ export default function Trading() {
                   Join for Free
                 </Button>
               </a>
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://buy.stripe.com/bJe14m42X7g8cZ35LLbbG00" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
                   variant="outline"
