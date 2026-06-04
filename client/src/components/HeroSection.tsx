@@ -69,6 +69,16 @@ export default function HeroSection() {
           >
             Book Consultation
           </Button>
+          <a href="/trading">
+            <Button
+              variant="outline"
+              size="lg"
+              className="rounded-full px-8 border-2 border-[#d9a520] text-[#d9a520] bg-black/30 backdrop-blur-sm"
+              data-testid="button-v-signals"
+            >
+              V Signals
+            </Button>
+          </a>
         </div>
       </div>
     </section>

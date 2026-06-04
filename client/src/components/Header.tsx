@@ -13,6 +13,7 @@ export default function Header() {
     { label: "Future", href: "/future" },
     { label: "History", href: "/history" },
     { label: "Health", href: "/health" },
+    { label: "V Signals", href: "/trading" },
   ];
 
   const isActive = (href: string) => location === href;
