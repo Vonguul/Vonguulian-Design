@@ -18,6 +18,7 @@ import Education from "@/pages/Education";
 import Privacy from "@/pages/privacy";
 import AlignmentZone from "@/pages/AlignmentZone";
 import Zone from "@/pages/Zone";
+import Trading from "@/pages/Trading";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -37,6 +38,7 @@ function Router() {
       <Route path="/privacy" component={Privacy} />
       <Route path="/app" component={AlignmentZone} />
       <Route path="/zone" component={Zone} />
+      <Route path="/trading" component={Trading} />
       <Route component={NotFound} />
     </Switch>
   );
