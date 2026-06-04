@@ -68,7 +68,7 @@ export default function Trading() {
 
               <div className="bg-[#d9a520]/5 border border-[#d9a520]/20 rounded-lg p-4 mb-6">
                 <p className="text-center text-sm font-semibold text-[#d9a520]">Limited Access</p>
-                <p className="text-center text-xs text-muted-foreground mt-1">Join the community at no cost</p>
+                <p className="text-center text-xs text-muted-foreground mt-1">Ask about how to join the community at no cost</p>
               </div>
 
               <a
