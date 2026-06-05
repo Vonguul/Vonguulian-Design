@@ -2,6 +2,7 @@ import { usePageMeta } from "@/hooks/usePageMeta";
 import { Button } from "@/components/ui/button";
 import { TrendingUp, Users, Zap, Shield, Bell, BookOpen, ExternalLink, Lock } from "lucide-react";
 import NewsletterSection from "@/components/NewsletterSection";
+import winsImg from "@assets/2d3d4ed7-0bf1-4e4d-8792-f6da40898a8d_1780619450929.jpg";
 
 export default function Trading() {
   usePageMeta({
@@ -159,6 +160,22 @@ export default function Trading() {
               Markets, like people, have a design. Learning to read that design is what separates reactive traders from those
               who operate from a place of true strategy.
             </p>
+          </div>
+
+          <div className="mb-16">
+            <h3 className="font-serif text-3xl font-bold text-center mb-4 text-[#d9a520]">Community Wins</h3>
+            <p className="text-center text-muted-foreground mb-8 max-w-xl mx-auto">
+              Real results shared by members of the community. Every trade is different — what matters is having an edge.
+            </p>
+            <div className="flex justify-center">
+              <img
+                src={winsImg}
+                alt="Community trading wins — ROI results and profit screenshots shared by members"
+                className="rounded-lg max-w-sm w-full"
+                loading="lazy"
+                data-testid="img-community-wins"
+              />
+            </div>
           </div>
 
           <div className="mb-16">
