@@ -72,7 +72,7 @@ export default function Trading() {
               </div>
 
               <a
-                href="#"
+                href="https://discord.gg/AV7fuYsZfs"
                 target="_blank"
                 rel="noopener noreferrer"
                 data-testid="button-join-community-discord"
@@ -191,7 +191,7 @@ export default function Trading() {
               Start with the community. Upgrade when you are ready for signals. There is no pressure, only alignment.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <a href="#" target="_blank" rel="noopener noreferrer">
+              <a href="https://discord.gg/AV7fuYsZfs" target="_blank" rel="noopener noreferrer">
                 <Button
                   size="lg"
                   className="rounded-full px-10 gap-2 bg-[#d9a520] text-black"
