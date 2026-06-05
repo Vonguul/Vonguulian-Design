@@ -181,9 +181,7 @@ export default function Trading() {
               <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-6 text-center">
                 <TrendingUp className="w-8 h-8 text-[#d9a520] mx-auto mb-4" />
                 <h4 className="font-semibold text-[#d9a520] mb-2">Consistent Process</h4>
-                <p className="text-sm text-muted-foreground">
-                  We track what we call. Signals are posted with transparency and reviewed with honesty.
-                </p>
+                <p className="text-sm text-muted-foreground">We track what we call. Signals are posted  every week on Sunday with full transparency.</p>
               </div>
             </div>
           </div>
