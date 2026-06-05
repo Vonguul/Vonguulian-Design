@@ -176,6 +176,17 @@ export default function Trading() {
                 data-testid="img-community-wins"
               />
             </div>
+
+            <div className="mt-8 bg-black/5 dark:bg-white/5 border border-black/10 dark:border-white/10 rounded-lg p-6 max-w-2xl mx-auto" data-testid="text-legal-disclaimer">
+              <p className="text-xs font-bold text-muted-foreground uppercase tracking-widest mb-3">Important Legal Disclaimers</p>
+              <div className="space-y-3 text-xs text-muted-foreground leading-relaxed">
+                <p><strong className="text-foreground">PAST PERFORMANCE IS NOT INDICATIVE OF FUTURE RESULTS.</strong> The trading results shown are hypothetical or singular historical performance and do not guarantee, forecast, or indicate future outcomes.</p>
+                <p>The information displayed is for educational and illustrative proof purposes only, and <strong className="text-foreground">IS NOT FINANCIAL, INVESTMENT, OR TRADING ADVICE.</strong> You assume all responsibility for your trading decisions.</p>
+                <p>Trading the financial markets, including Forex and indices, involves <strong className="text-foreground">SIGNIFICANT RISK OF LOSS,</strong> including the potential to lose more than your initial investment. Consult your financial advisor.</p>
+                <p>The strategies, methods, and "edge" discussed and demonstrated are unique to individual users and may not be applicable to all traders. <strong className="text-foreground">EVERYONE TRADES DIFFERENTLY.</strong></p>
+                <p>This material is not an offer or solicitation to buy, sell, or trade any financial instrument. Verify all information and seek professional advice.</p>
+              </div>
+            </div>
           </div>
 
           <div className="mb-16">
