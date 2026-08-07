@@ -133,22 +133,17 @@ export default function Trading() {
                 <p className="text-center text-xs text-white/40 mt-1">Cancel anytime</p>
               </div>
 
-              <a
-                href="https://buy.stripe.com/bJe14m42X7g8cZ35LLbbG00"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Button
+                size="lg"
+                variant="outline"
+                disabled
+                className="w-full rounded-full gap-2 border-white/20 text-white/30 bg-transparent cursor-not-allowed"
                 data-testid="button-join-signals-discord"
               >
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="w-full rounded-full gap-2 border-[#d9a520] text-[#d9a520] bg-transparent"
-                >
-                  <Bell className="w-5 h-5" />
-                  Join Signal Room
-                  <ExternalLink className="w-4 h-4" />
-                </Button>
-              </a>
+                <Bell className="w-5 h-5" />
+                Join Signal Room
+              </Button>
+              <p className="text-center text-xs text-white/40 mt-2">No spaces available — check back soon</p>
             </div>
 
           </div>
