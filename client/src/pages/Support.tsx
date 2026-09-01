@@ -33,7 +33,7 @@ export default function Support() {
               Choose with intention
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>Vonguul shares useful products, tools, and resources from partners we believe can help you and indirectly support human progress. When you choose to explore or purchase through one of those recommendations, you can support the work here in passing.</p>
+              <p>Vonguul shares trending products, useful tools, and actual resources from partners we believe can help you and indirectly support human progress. When you choose to explore or purchase through one of those recommendations, you can support the work here in passing.</p>
               <p>
                 There is no pressure and no extra cost to you. Simply use the recommendations when they genuinely serve you.
               </p>
