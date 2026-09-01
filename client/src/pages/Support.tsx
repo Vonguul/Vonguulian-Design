@@ -38,6 +38,19 @@ export default function Support() {
                 There is no pressure and no extra cost to you. Simply use the recommendations when they genuinely serve you.
               </p>
             </div>
+            <div className="flex justify-center mt-8">
+              <Link href="/about">
+                <Button
+                  variant="outline"
+                  size="lg"
+                  className="rounded-full px-8 gap-2 border-[#d9a520] text-[#d9a520] hover:bg-[#d9a520] hover:text-black"
+                  data-testid="button-learn-about-vonguul"
+                >
+                  Learn About Vonguul
+                  <ArrowRight className="w-4 h-4" />
+                </Button>
+              </Link>
+            </div>
           </div>
 
           <div className="max-w-3xl mx-auto border border-black/10 dark:border-white/10 rounded-lg p-8 mb-12">
