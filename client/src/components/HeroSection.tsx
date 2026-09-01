@@ -69,14 +69,14 @@ export default function HeroSection() {
           >
             Book Consultation
           </Button>
-          <a href="/trading">
+          <a href="/support">
             <Button
               variant="outline"
               size="lg"
-              className="rounded-full px-8 border-2 border-[#d9a520] text-[#d9a520] bg-black/30 backdrop-blur-sm"
-              data-testid="button-v-signals"
+              className="rounded-full px-8 border-2 border-[#d9a520] text-[#d9a520] bg-black/30 backdrop-blur-sm hover:bg-[#d9a520] hover:text-black"
+              data-testid="button-support-vonguul"
             >
-              V Signals
+              Support Vonguul
             </Button>
           </a>
         </div>

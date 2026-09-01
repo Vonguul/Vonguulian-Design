@@ -19,6 +19,7 @@ import Privacy from "@/pages/privacy";
 import AlignmentZone from "@/pages/AlignmentZone";
 import Zone from "@/pages/Zone";
 import Trading from "@/pages/Trading";
+import Support from "@/pages/Support";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -39,6 +40,7 @@ function Router() {
       <Route path="/app" component={AlignmentZone} />
       <Route path="/zone" component={Zone} />
       <Route path="/trading" component={Trading} />
+      <Route path="/support" component={Support} />
       <Route component={NotFound} />
     </Switch>
   );
