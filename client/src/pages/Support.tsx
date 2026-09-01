@@ -25,7 +25,6 @@ export default function Support() {
           </p>
         </div>
       </section>
-
       <main className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="max-w-3xl mx-auto bg-[#d9a520]/5 border border-[#d9a520]/20 rounded-lg p-8 md:p-12 text-center mb-10">
@@ -34,9 +33,7 @@ export default function Support() {
               Choose with intention
             </h2>
             <div className="space-y-4 text-muted-foreground leading-relaxed">
-              <p>
-                Vonguul shares useful products, tools, and resources from partners we believe can support human progress. When you choose to explore or purchase through one of those recommendations, you can support the work here in passing.
-              </p>
+              <p>Vonguul shares useful products, tools, and resources from partners we believe can help you and indirectly support human progress. When you choose to explore or purchase through one of those recommendations, you can support the work here in passing.</p>
               <p>
                 There is no pressure and no extra cost to you. Simply use the recommendations when they genuinely serve you.
               </p>
