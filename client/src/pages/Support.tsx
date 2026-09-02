@@ -95,6 +95,39 @@ export default function Support() {
             </div>
           </section>
 
+          <section className="mb-12" aria-labelledby="clarity-title">
+            <div className="text-center mb-6">
+              <h2 id="clarity-title" className="font-serif text-3xl font-bold text-[#d9a520] mb-3">
+                Explore Vonguulian Clarity
+              </h2>
+              <p className="text-muted-foreground max-w-2xl mx-auto">
+                Discover metaphysical products and practical services designed to support clarity, reflection, and intentional growth.
+              </p>
+            </div>
+            <div className="rounded-lg overflow-hidden border border-black/10 dark:border-white/10 bg-black shadow-lg">
+              <iframe
+                src="https://vonguulian-clarity.vercel.app/"
+                className="w-full h-[70vh] min-h-[620px] border-0"
+                title="Vonguulian Clarity metaphysical products and practical services"
+                loading="lazy"
+                referrerPolicy="strict-origin-when-cross-origin"
+                data-testid="iframe-vonguulian-clarity"
+              />
+            </div>
+            <div className="flex justify-center mt-4">
+              <a
+                href="https://vonguulian-clarity.vercel.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" className="rounded-full gap-2">
+                  Open Vonguulian Clarity in a new tab
+                  <ExternalLink className="w-4 h-4" />
+                </Button>
+              </a>
+            </div>
+          </section>
+
           <div className="max-w-3xl mx-auto bg-black text-white rounded-lg p-6 md:p-8 text-center">
             <p className="text-sm text-white/60 leading-relaxed">
               Affiliate disclosure: Vonguul may earn a small commission from qualifying purchases made through some of our recommendation links. This does not change the price you pay, and we only want you to choose what is right for you.
