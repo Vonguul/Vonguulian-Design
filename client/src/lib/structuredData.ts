@@ -9,8 +9,8 @@ export const orgSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "Vonguulian Design",
-  url: "https://vonguulian.com",
-  logo: "https://vonguulian.com/logo.png",
+  url: "https://vonguul.com",
+  logo: "https://vonguul.com/logo.png",
   description: "Premium digital products and consultation services for Human Design",
   sameAs: [
     "https://www.youtube.com/vonguuliandesign",

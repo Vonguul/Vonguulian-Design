@@ -110,7 +110,7 @@ export default function ArticleDetail() {
 
       ogMeta("og:title", article.title);
       ogMeta("og:description", article.excerpt);
-      ogMeta("og:url", `https://vonguulian.com/resources/${article.slug}`);
+      ogMeta("og:url", `https://vonguul.com/resources/${article.slug}`);
     }
   }, [article]);
 

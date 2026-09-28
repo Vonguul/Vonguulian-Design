@@ -13,8 +13,8 @@ export function useSEOMeta({
   image,
   url,
 }: SEOHeadProps) {
-  const imageUrl = image || "https://vonguulian.com/og-image.png";
-  const pageUrl = url || "https://vonguulian.com";
+  const imageUrl = image || "https://vonguul.com/og-image.png";
+  const pageUrl = url || "https://vonguul.com";
 
   // Update document title
   React.useEffect(() => {

@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 Disallow: /api/
 
-Sitemap: https://vonguulian.com/sitemap.xml
+Sitemap: https://vonguul.com/sitemap.xml
