@@ -11,13 +11,13 @@ export default function BasicCheatsheets() {
     description: "Purchase premium Human Design cheatsheets including Type, Profile, Authority, and Aura guides. Comprehensive digital products to unlock your unique design.",
   });
   const cheatsheets = [
-    { id: 1, title: "Foundational Human Design Cheatsheet", url: "https://vonguul.gumroad.com/l/HumDesCS" },
-    { id: 2, title: "Manifestor Cheatsheet", url: "https://vonguul.gumroad.com/l/ManiCS" },
-    { id: 3, title: "Generator Cheatsheet", url: "https://vonguul.gumroad.com/l/GenCS" },
-    { id: 4, title: "Manifesting Generator Cheatsheet", url: "https://vonguul.gumroad.com/l/MGCS" },
-    { id: 5, title: "Projector Cheatsheet", url: "https://vonguul.gumroad.com/l/ProCS" },
-    { id: 6, title: "Reflector Cheatsheet", url: "https://vonguul.gumroad.com/l/RefCS" },
-    { id: 7, title: "Complete Cheatsheets Bundle", url: "https://vonguul.gumroad.com/l/bundle" },
+    { id: 1, title: "Foundational Human Design Cheatsheet", url: "https://vonguul.gumroad.com/l/HumDesCS", price: "$40" },
+    { id: 2, title: "Manifestor Cheatsheet", url: "https://vonguul.gumroad.com/l/ManiCS", price: "$40" },
+    { id: 3, title: "Generator Cheatsheet", url: "https://vonguul.gumroad.com/l/GenCS", price: "$40" },
+    { id: 4, title: "Manifesting Generator Cheatsheet", url: "https://vonguul.gumroad.com/l/MGCS", price: "$40" },
+    { id: 5, title: "Projector Cheatsheet", url: "https://vonguul.gumroad.com/l/ProCS", price: "$40" },
+    { id: 6, title: "Reflector Cheatsheet", url: "https://vonguul.gumroad.com/l/RefCS", price: "$40" },
+    { id: 7, title: "Complete Cheatsheets Bundle", url: "https://vonguul.gumroad.com/l/bundle", price: "$99.99", originalPrice: "$240" },
   ];
 
   return (
@@ -48,6 +48,12 @@ export default function BasicCheatsheets() {
                   <CardTitle className="font-serif text-xl text-black dark:text-white">
                     {cheatsheet.title}
                   </CardTitle>
+                  <div className="flex items-baseline gap-2 pt-2" data-testid={`text-price-${cheatsheet.id}`}>
+                    <span className="text-2xl font-bold text-primary">{cheatsheet.price}</span>
+                    {cheatsheet.originalPrice && (
+                      <span className="text-sm text-muted-foreground line-through">{cheatsheet.originalPrice}</span>
+                    )}
+                  </div>
                 </CardHeader>
                 <CardContent>
                   <a href={cheatsheet.url} data-testid={`link-cheatsheet-${cheatsheet.id}`}>
