@@ -1,10 +1,11 @@
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
-import { ExternalLink, Star } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { Youtube, Instagram, Twitter, Mail } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
 import { useScrollMemory } from "@/hooks/useScrollMemory";
 import BottomNavigation from "@/components/BottomNavigation";
+import NotifyMeForm from "@/components/NotifyMeForm";
 
 export default function Catalog() {
   useScrollMemory();
@@ -101,28 +102,7 @@ export default function Catalog() {
               <p className="text-muted-foreground mb-6">
                 Coming Soon. Wear your commitment to Vonguulian values. Premium quality apparel featuring our distinctive branding and philosophy.
               </p>
-              <Button 
-                variant="outline" 
-                disabled 
-                data-testid="button-apparel-shop"
-              >
-                Shop Coming Soon
-              </Button>
-            </div>
-          </section>
-
-          {/* Education Section */}
-          <section data-testid="section-education" className="border-t border-black/10 dark:border-white/10 pt-20">
-            <h2 className="font-serif text-4xl font-bold mb-8 text-primary">Education</h2>
-            <div className="bg-white dark:bg-card border border-black/10 dark:border-white/10 rounded-lg p-8">
-              <h3 className="font-serif text-2xl font-bold mb-4 text-primary">Tutoring Services</h3>
-              <p className="text-muted-foreground mb-6">
-                Personalized K-12 tutoring and specialized guidance to help students excel academically and develop critical thinking skills aligned with Vonguulian principles.
-              </p>
-              <div className="flex items-center gap-2 text-primary font-semibold">
-                <Star className="w-5 h-5" />
-                <span>Coming Soon</span>
-              </div>
+              <NotifyMeForm tag="apparel-interest" testId="apparel-notify" />
             </div>
           </section>
 

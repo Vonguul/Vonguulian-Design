@@ -4,7 +4,7 @@ export default async function handler(req: any, res: any) {
   }
 
   try {
-    const { email } = req.body;
+    const { email, tags } = req.body;
 
     if (!email || !email.includes("@")) {
       return res.status(400).json({ message: "Invalid email address" });
@@ -19,17 +19,34 @@ export default async function handler(req: any, res: any) {
         .json({ message: "Newsletter service not configured" });
     }
 
-    // Subscribe to Buttondown
-    const response = await fetch("https://api.buttondown.email/v1/subscribers", {
-      method: "POST",
-      headers: {
-        Authorization: `Token ${apiKey}`,
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        email_address: email,
-      }),
-    });
+    // Subscribe to Buttondown. `tags` lets a signup form (e.g. "notify me"
+    // on a specific upcoming product) mark itself distinctly from the
+    // general newsletter list, without needing a separate integration.
+    const hasTags = Array.isArray(tags) && tags.length > 0;
+    const subscribeOnce = (withTags: boolean) =>
+      fetch("https://api.buttondown.email/v1/subscribers", {
+        method: "POST",
+        headers: {
+          Authorization: `Token ${apiKey}`,
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email_address: email,
+          ...(withTags ? { tags } : {}),
+        }),
+      });
+
+    let response = await subscribeOnce(hasTags);
+
+    // Tags are a paid-plan feature on Buttondown; if the account doesn't
+    // have them, retry once without tags so the signup still succeeds
+    // instead of failing outright over a segmentation nicety.
+    if (!response.ok && hasTags && response.status === 403) {
+      const retryCheck = await response.clone().json().catch(() => null);
+      if (retryCheck?.code === "feature_disabled") {
+        response = await subscribeOnce(false);
+      }
+    }
 
     if (!response.ok) {
       const errorData = await response.json();
